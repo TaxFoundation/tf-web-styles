@@ -18,3 +18,27 @@
     @content;
   }
 }
+
+@mixin font-sizes ($mobile: .9rem, $tablet: 1rem, $desktop: 1rem) {
+  font-size: $mobile;
+
+  @include tablet {
+    font-size: $tablet;
+  }
+
+  @include desktop {
+    font-size: $desktop;
+  }
+}
+
+@mixin line-heights ($mobile: 1.4, $tablet: 1.5, $desktop: 1.5) {
+  line-height: $mobile;
+
+  @include tablet {
+    line-height: $tablet;
+  }
+
+  @include desktop {
+    line-height: $desktop;
+  }
+}
