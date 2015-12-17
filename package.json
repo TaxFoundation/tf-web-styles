@@ -2,5 +2,9 @@
   "name": "tf-web-styles",
   "version": "1.0.0",
   "description": "Style Guide for Tax Foundation Websites",
-  "author": "Tom VanAntwerp"
+  "author": "Tom VanAntwerp",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7"
+  }
 }
