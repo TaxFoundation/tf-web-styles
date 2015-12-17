@@ -1,0 +1,13 @@
+p,
+.paragraph-text {
+  @include set-font();
+  margin-bottom: 1rem;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}

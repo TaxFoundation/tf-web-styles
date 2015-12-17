@@ -1,6 +1,20 @@
+// Typography mixins
 @mixin set-font ($size: 1rem, $height: 1.5, $weight: 400, $style: normal) {
   font-size: $size;
   font-style: $style;
   font-weight: $weight;
   line-height: $height;
+}
+
+// Media Query mixins
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
 }
