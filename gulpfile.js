@@ -1,10 +1,11 @@
-'use strict'
+'use strict';
 
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    webserver = require('gulp-webserver');
 
-gulp.task('default', ['compileSass', 'watch']);
+gulp.task('default', ['compileSass', 'webserver', 'watch']);
 
 gulp.task('compileSass', function() {
   gulp.src('./src/scss/style.scss')
@@ -14,6 +15,15 @@ gulp.task('compileSass', function() {
   return gutil.log('Compiled Sass');
 });
 
+gulp.task('webserver', function() {
+  gulp.src('./dist')
+  .pipe(webserver({
+    fallback: 'index.html',
+    livereload: true,
+    open: true,
+  }));
+});
+
 gulp.task('watch', function() {
-  gulp.watch('./src/scss/**/*.scss', ['compileSass'])
+  gulp.watch('./src/scss/**/*.scss', ['compileSass']);
 });
