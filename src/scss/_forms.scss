@@ -1,0 +1,45 @@
+%shared-form-styles {
+  border-radius: 4px;
+  font-family: $font-sans-serif;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  @extend %shared-form-styles;
+  background: $background-color;
+  border: solid 1px $tf-blue;
+  padding: 0;
+  width: 100%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  align-self: flex-start;
+}
+
+button {
+  @extend %shared-form-styles;
+  background: $tf-blue;
+  border: solid 1px $background-color;
+  color: #fff;
+  padding: .5rem;
+}
+
+label {
+  align-self: flex-start;
+  display: block;
+  margin-bottom: .4rem;
+}

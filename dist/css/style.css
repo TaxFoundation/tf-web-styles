@@ -370,3 +370,43 @@ header {
   .header-bar * {
     margin: 0;
     padding: 0; }
+
+input,
+select,
+textarea, button {
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  margin: 0 0 1rem; }
+  input:last-child,
+  select:last-child,
+  textarea:last-child, button:last-child {
+    margin: 0; }
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+input,
+select,
+textarea {
+  background: #fefefe;
+  border: solid 1px #0094ff;
+  padding: 0;
+  width: 100%; }
+
+input[type=radio],
+input[type=checkbox] {
+  align-self: flex-start; }
+
+button {
+  background: #0094ff;
+  border: solid 1px #fefefe;
+  color: #fff;
+  padding: .5rem; }
+
+label {
+  align-self: flex-start;
+  display: block;
+  margin-bottom: .4rem; }
