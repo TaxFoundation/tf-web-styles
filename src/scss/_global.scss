@@ -13,6 +13,9 @@ $text-default-color: rgba(0, 0, 0, .8);
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+// Structure Variables
+$content-margin: 1rem;
+
 // Global Screen Styles
 @media only screen {
   html {
@@ -43,5 +46,12 @@ $desktop-width: 1024px;
 
   @page {
     margin: 1in;
+  }
+}
+
+// Utilities
+.hidden-mobile {
+  @media only screen and (min-width: 0) and (max-width: #{$tablet-width}) {
+    display: none;
   }
 }

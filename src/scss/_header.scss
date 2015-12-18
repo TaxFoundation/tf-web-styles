@@ -1,0 +1,36 @@
+header {
+  margin-bottom: 1rem;
+}
+
+.header-bar {
+  align-items: center;
+  background-color: $tf-blue;
+  color: #fff;
+  display: flex;
+  font-family: $font-sans-serif;
+  font-size: 1rem;
+  justify-content: space-between;
+  height: 59px;
+  width: 100%;
+
+  a,
+  a:hover {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logo {
+    flex: 1 auto;
+    vertical-align: middle;
+  }
+
+  @media print {
+    display: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
