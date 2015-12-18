@@ -1,43 +1,49 @@
-$headings-weight: 700;
-
 h1,
 .h1-text {
-  @include font-sizes(1.2rem, 2.8rem, 2.8rem);
+  @include font-sizes(2.1rem, 2.4rem, 2.4rem);
   @include line-heights(1.2, 1.2, 1.2);
-  font-weight: $headings-weight;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 h2,
 .h2-text {
-  @include font-sizes(2rem, 2.4rem, 2.4rem);
+  @include font-sizes(1.8rem, 2rem, 2rem);
   @include line-heights(1.3, 1.3, 1.3);
-  font-weight: $headings-weight;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 h3,
 .h3-text {
-  @include font-sizes(1.8rem, 2rem, 2.1rem);
+  @include font-sizes(1.7rem, 1.8rem, 1.8rem);
   @include line-heights(1.3, 1.4, 1.4);
-  font-weight: $headings-weight;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 h4,
 .h4-text {
-  @include font-sizes(1.6rem, 1.8rem, 1.8rem);
+  @include font-sizes(1.5rem, 1.6rem, 1.6rem);
   @include line-heights(1.3, 1.4, 1.4);
-  font-weight: $headings-weight;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 h5,
 .h5-text {
   @include font-sizes(1.4rem, 1.5rem, 1.5rem);
   @include line-heights(1.4, 1.4, 1.4);
-  font-weight: $headings-weight;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 h6,
 .h6-text {
   @include font-sizes(1.2rem, 1.2rem, 1.2rem);
   @include line-heights(1.5, 1.5, 1.5);
-  font-weight: $headings-weight;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }

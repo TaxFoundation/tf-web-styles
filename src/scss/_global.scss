@@ -1,10 +1,43 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic|Merriweather:400,400italic,700,700italic);
 
-html {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-}
+// Font Families
+$font-serif: 'Merriweather', serif;
+$font-sans-serif: 'Lato', sans-serif;
+
+// Colors
+$tf-blue: #0094ff;
+$background-color: #fefefe;
+$text-default-color: rgba(0, 0, 0, .8);
 
 // Screen Sizes
 $tablet-width: 768px;
 $desktop-width: 1024px;
+
+// Global Styles
+html {
+  background-color: $background-color;
+  color: $text-default-color;
+  font-family: $font-sans-serif;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga" on;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Print Styles
+  @media print {
+    background: none;
+    color: #000;
+    font-family: $font-sans-serif;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    font-size: 12pt;
+    text-rendering: optimizeLegibility;
+
+    @page {
+      margin: 1in;
+    }
+  }
+}
