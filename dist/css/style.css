@@ -108,29 +108,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html {
-  background-color: #fefefe;
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "Lato", sans-serif;
-  font-feature-settings: 'kern' 1;
-  font-kerning: normal;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-feature-settings: "liga" on;
-  -moz-osx-font-smoothing: grayscale; }
-  @media print {
-    html {
-      background: none;
-      color: #000;
-      font-family: "Lato", sans-serif;
-      font-feature-settings: 'kern' 1;
-      font-kerning: normal;
-      font-size: 12pt;
-      text-rendering: optimizeLegibility; }
-    @page {
-      html {
-        margin: 1in; } } }
+@media only screen {
+  html {
+    background-color: #fefefe;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Lato", sans-serif;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-feature-settings: "liga" on;
+    -moz-osx-font-smoothing: grayscale; } }
+
+@media print {
+  html {
+    background: none;
+    color: #000;
+    font-family: "Lato", sans-serif;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    font-size: 8pt;
+    text-rendering: optimizeLegibility; }
+  @page {
+    margin: 1in; } }
 
 h1,
 .h1-text {

@@ -13,31 +13,35 @@ $text-default-color: rgba(0, 0, 0, .8);
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-// Global Styles
-html {
-  background-color: $background-color;
-  color: $text-default-color;
-  font-family: $font-sans-serif;
-  font-feature-settings: 'kern' 1;
-  font-kerning: normal;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-feature-settings: "liga" on;
-  -moz-osx-font-smoothing: grayscale;
+// Global Screen Styles
+@media only screen {
+  html {
+    background-color: $background-color;
+    color: $text-default-color;
+    font-family: $font-sans-serif;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-feature-settings: "liga" on;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
 
-  // Print Styles
-  @media print {
+// Print Styles
+@media print {
+  html {
     background: none;
     color: #000;
     font-family: $font-sans-serif;
     font-feature-settings: 'kern' 1;
     font-kerning: normal;
-    font-size: 12pt;
+    font-size: 8pt;
     text-rendering: optimizeLegibility;
+  }
 
-    @page {
-      margin: 1in;
-    }
+  @page {
+    margin: 1in;
   }
 }
