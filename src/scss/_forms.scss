@@ -25,9 +25,10 @@ textarea {
   width: 100%;
 }
 
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   align-self: flex-start;
+  width: auto;
 }
 
 button {
@@ -38,8 +39,13 @@ button {
   padding: .5rem;
 }
 
-label {
+label,
+legend {
   align-self: flex-start;
   display: block;
   margin-bottom: .4rem;
+}
+
+fieldset {
+  width: 100%;
 }
