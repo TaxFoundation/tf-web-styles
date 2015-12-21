@@ -19,7 +19,11 @@
   }
 }
 
-@mixin font-sizes ($mobile: .9rem, $tablet: 1rem, $desktop: 1rem) {
+@mixin font-sizes (
+  $mobile: $paragraph-font-size-mobile,
+  $tablet: $paragraph-font-size-tablet,
+  $desktop: $paragraph-font-size-desktop
+  ) {
   font-size: $mobile;
 
   @include tablet {
@@ -31,7 +35,11 @@
   }
 }
 
-@mixin line-heights ($mobile: 1.4, $tablet: 1.5, $desktop: 1.5) {
+@mixin line-heights (
+  $mobile: $paragraph-line-height-mobile,
+  $tablet: $paragraph-line-height-tablet,
+  $desktop: $paragraph-line-height-desktop
+  ) {
   line-height: $mobile;
 
   @include tablet {

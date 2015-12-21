@@ -1,11 +1,15 @@
-ol {
-  list-style: decimal;
+ol,
+ul {
+  @include font-sizes();
+  @include line-heights();
   list-style-position: inside;
-  padding-left: .8rem;
+  padding-left: .2rem;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 ul {
   list-style-type: disc;
-  list-style-position: inside;
-  padding-left: .8rem;
 }

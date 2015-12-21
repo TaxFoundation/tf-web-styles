@@ -1,7 +1,7 @@
 p,
 .paragraph-text {
-  @include font-sizes(.9, 1, 1);
-  @include line-heights(1.4, 1.5, 1.5);
+  @include font-sizes();
+  @include line-heights();
   font-family: $font-serif;
   margin-bottom: .9rem;
 
