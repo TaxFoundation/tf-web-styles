@@ -7,10 +7,8 @@ a {
 
   &:hover,
   &:active {
-    background-image: linear-gradient(to bottom, $background-color 95%, $link-color 5%);
-    background-position: 50% 90%;
+    background-image: linear-gradient(to top, $background-color 1px, $link-color 1px, $link-color 2px, $background-color 2px);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     color: $link-color;
     text-decoration: none;
     text-shadow: -1px 0 $background-color, 0 1px $background-color, 1px 0 $background-color, 0 -1px $background-color;
@@ -18,20 +16,9 @@ a {
 }
 
 article {
-  a {
-    background: none;
+  a:hover,
+  a:active {
+    background-image: linear-gradient(to top, $background-color 2px, $link-color 2px, $link-color 3px, $background-color 3px);
     color: $link-color;
-    text-decoration: none;
-
-    &:hover,
-    &:active {
-      background-image: linear-gradient(to top, $background-color 75%, $link-color 75%);
-      background-position: 50% 92%;
-      background-repeat: no-repeat;
-      background-size: 100% 10%;
-      color: $link-color;
-      text-decoration: none;
-      text-shadow: -1px 0 $background-color, 0 1px $background-color, 1px 0 $background-color, 0 -1px $background-color;
-    }
   }
 }
