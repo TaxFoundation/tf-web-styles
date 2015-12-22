@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic|Merriweather:400,400italic,700,700italic);
 html,
 body,
+main,
 div,
 span,
 applet,
@@ -99,6 +100,7 @@ figure,
 footer,
 header,
 hgroup,
+main,
 menu,
 nav,
 section {
@@ -146,7 +148,15 @@ html {
 header > *,
 main,
 footer > * {
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  width: 100%; }
+
+hr {
+  background-color: #0094ff;
+  border: 0;
+  color: #0094ff;
+  height: 1px;
+  margin: 1rem 0; }
 
 h1,
 .h1-text {

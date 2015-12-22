@@ -2,4 +2,13 @@ header > *,
 main,
 footer > * {
   padding: 0 $content-margin;
+  width: 100%;
+}
+
+hr {
+  background-color: $tf-blue;
+  border: 0;
+  color: $tf-blue;
+  height: 1px;
+  margin: 1rem 0;
 }
