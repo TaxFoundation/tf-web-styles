@@ -21,7 +21,7 @@ textarea {
   @extend %shared-form-styles;
   background: $background-color;
   border: solid 1px $tf-blue;
-  padding: 0;
+  padding: .5rem;
   width: 100%;
 }
 
