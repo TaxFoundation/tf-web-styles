@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.row {
+  flex-direction: row;
+
+  > * {
+    margin: 0 .5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.column {
+  flex-direction: column;
+
+  > * {
+    margin: .5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.norap {
+  flex-wrap: nowrap;
+}

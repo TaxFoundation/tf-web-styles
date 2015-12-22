@@ -2,8 +2,8 @@ p,
 .paragraph-text {
   @include font-sizes();
   @include line-heights();
-  font-family: $font-serif;
-  margin-bottom: .9rem;
+  font-family: $font-sans-serif;
+  margin-bottom: .5rem;
 
   @include tablet {
     margin-bottom: 1rem;
@@ -20,4 +20,11 @@ em {
 
 strong {
   font-weight: 700;
+}
+
+article {
+  p {
+    font-family: $font-serif;
+    margin-bottom: .9rem;
+  }
 }

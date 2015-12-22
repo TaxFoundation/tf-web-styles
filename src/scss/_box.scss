@@ -1,0 +1,10 @@
+.box {
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1rem;
+}
+
+.box-subtle {
+  border-color: $gray-lighter;
+}
