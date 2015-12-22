@@ -17,7 +17,7 @@ $desktop-width: 1024px;
 $paragraph-font-size-mobile: .9rem;
 $paragraph-font-size-tablet: 1rem;
 $paragraph-font-size-desktop: 1rem;
-$paragraph-line-height-mobile: 1.4rem;
+$paragraph-line-height-mobile: 1.5rem;
 $paragraph-line-height-tablet: 1.5rem;
 $paragraph-line-height-desktop: 1.5rem;
 
@@ -25,18 +25,20 @@ $paragraph-line-height-desktop: 1.5rem;
 $content-margin: 1rem;
 
 // Global Screen Styles
-@media only screen {
-  html {
-    background-color: $background-color;
-    color: $text-default-color;
-    font-family: $font-sans-serif;
-    font-feature-settings: 'kern' 1;
-    font-kerning: normal;
+html {
+  background-color: $background-color;
+  color: $text-default-color;
+  font-family: $font-sans-serif;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga" on;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (min-width: #{$tablet-width}) {
     font-size: 16px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-feature-settings: "liga" on;
-    -moz-osx-font-smoothing: grayscale;
   }
 }
 

@@ -48,4 +48,13 @@ legend {
 
 fieldset {
   width: 100%;
+
+  label {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

@@ -109,18 +109,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media only screen {
-  html {
-    background-color: #fefefe;
-    color: rgba(0, 0, 0, 0.8);
-    font-family: "Lato", sans-serif;
-    font-feature-settings: 'kern' 1;
-    font-kerning: normal;
-    font-size: 16px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-feature-settings: "liga" on;
-    -moz-osx-font-smoothing: grayscale; } }
+html {
+  background-color: #fefefe;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Lato", sans-serif;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga" on;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
 
 @media print {
   html {
@@ -148,7 +150,7 @@ h1,
   font-size: 2.34rem;
   font-weight: 300;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .8rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1,
     .h1-text {
@@ -160,7 +162,7 @@ h1,
 
 h2,
 .h2-text {
-  font-size: 1.98rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: normal;
   margin-bottom: 1rem; }
@@ -175,32 +177,24 @@ h2,
 
 h3,
 .h3-text {
-  font-size: 1.9rem;
-  line-height: 1.3;
+  font-size: 1.44rem;
   font-weight: 300;
-  margin-bottom: 1rem; }
+  line-height: normal;
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h3,
     .h3-text {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 1024px) {
     h3,
     .h3-text {
-      font-size: 2rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h3,
-    .h3-text {
-      line-height: 1.4; } }
-  @media only screen and (min-width: 1024px) {
-    h3,
-    .h3-text {
-      line-height: 1.4; } }
+      font-size: 1.8rem; } }
 
 h4,
 .h4-text {
-  font-size: 1.4rem;
-  line-height: 1.3;
+  font-size: 1.08rem;
   font-weight: 400;
+  line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h4,
@@ -210,21 +204,13 @@ h4,
     h4,
     .h4-text {
       font-size: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h4,
-    .h4-text {
-      line-height: 1.4; } }
-  @media only screen and (min-width: 1024px) {
-    h4,
-    .h4-text {
-      line-height: 1.4; } }
 
 h5,
 .h5-text {
-  font-size: 1.4rem;
-  line-height: 1.4;
+  font-size: 1.08rem;
   font-style: italic;
   font-weight: 400;
+  line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h5,
@@ -234,21 +220,13 @@ h5,
     h5,
     .h5-text {
       font-size: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h5,
-    .h5-text {
-      line-height: 1.4; } }
-  @media only screen and (min-width: 1024px) {
-    h5,
-    .h5-text {
-      line-height: 1.4; } }
 
 h6,
 .h6-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 0.99rem;
   font-style: italic;
   font-weight: 400;
+  line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h6,
@@ -258,19 +236,11 @@ h6,
     h6,
     .h6-text {
       font-size: 1.2rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h6,
-    .h6-text {
-      line-height: 1.5; } }
-  @media only screen and (min-width: 1024px) {
-    h6,
-    .h6-text {
-      line-height: 1.5; } }
 
 p,
 .paragraph-text {
   font-size: 0.9rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   font-family: "Merriweather", serif;
   margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -320,7 +290,7 @@ a {
 ol,
 ul {
   font-size: 0.9rem;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   list-style-position: inside;
   padding-left: .2rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -419,3 +389,8 @@ legend {
 
 fieldset {
   width: 100%; }
+  fieldset label {
+    display: inline-block;
+    margin-right: 1rem; }
+  fieldset:last-child {
+    margin-right: 0; }
