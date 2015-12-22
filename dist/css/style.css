@@ -428,7 +428,8 @@ button {
   background: #0094ff;
   border: solid 1px #fefefe;
   color: #fff;
-  padding: .5rem; }
+  cursor: pointer;
+  padding: .5rem 1rem; }
 
 label,
 legend {

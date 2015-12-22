@@ -36,7 +36,8 @@ button {
   background: $tf-blue;
   border: solid 1px $background-color;
   color: #fff;
-  padding: .5rem;
+  cursor: pointer;
+  padding: .5rem 1rem;
 }
 
 label,
