@@ -20,7 +20,7 @@ select,
 textarea {
   @extend %shared-form-styles;
   background: $background-color;
-  border: solid 1px $tf-blue;
+  border: solid 1px $gray-light;
   padding: .5rem;
   width: 100%;
 }

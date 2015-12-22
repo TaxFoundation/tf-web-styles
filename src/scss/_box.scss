@@ -5,6 +5,15 @@
   padding: 1rem;
 }
 
+.box-brand {
+  border-color: $tf-blue;
+}
+
 .box-subtle {
   border-color: $gray-lighter;
+}
+
+.box-gray {
+  background-color: $gray-lighter;
+  border-color: $gray-light;
 }

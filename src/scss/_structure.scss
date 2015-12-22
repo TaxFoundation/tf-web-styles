@@ -5,10 +5,13 @@ footer > * {
   width: 100%;
 }
 
+// Horizontal Rules
+$hr-color: $gray-lighter;
+
 hr {
-  background-color: $tf-blue;
+  background-color: $hr-color;
   border: 0;
-  color: $tf-blue;
+  color: $hr-color;
   height: 1px;
   margin: 1rem 0;
 }

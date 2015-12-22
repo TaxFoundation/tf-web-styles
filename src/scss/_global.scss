@@ -5,15 +5,15 @@ $font-serif: 'Merriweather', serif;
 $font-sans-serif: 'Lato', sans-serif;
 
 // Colors
-$tf-blue: #0094ff;
-$background-color: #fefefe;
-$text-default-color: rgba(0, 0, 0, .8);
-
 $gray-lighter: rgba(0, 0, 0, .1);
-$gray-light: rgba(0, 0, 0, .3);
+$gray-light: rgba(0, 0, 0, .25);
 $gray-medium: rgba(0, 0, 0, .5);
 $gray-dark: rgba(0, 0, 0, .7);
 $gray-darker: rgba(0, 0, 0, .8);
+
+$tf-blue: #0094ff;
+$background-color: #fefefe;
+$text-default-color: $gray-darker;
 
 // Screen Sizes
 $tablet-width: 768px;
