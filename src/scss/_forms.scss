@@ -31,13 +31,19 @@ input[type="checkbox"] {
   width: auto;
 }
 
-button {
+button,
+.button {
   @extend %shared-form-styles;
   background: $tf-blue;
-  border: solid 1px $background-color;
+  border: solid 1px $tf-blue;
   color: #fff;
   cursor: pointer;
   padding: .5rem 1rem;
+
+  &.inverted {
+    background: $background-color;
+    color: $tf-blue;
+  }
 }
 
 label,
