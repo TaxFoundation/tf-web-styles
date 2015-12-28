@@ -8,6 +8,10 @@ p,
   @include tablet-up {
     margin-bottom: 1rem;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 em {

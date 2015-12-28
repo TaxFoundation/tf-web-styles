@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 1rem;
 
   > * {
     flex: 1;
@@ -15,7 +16,15 @@
   flex-direction: row;
 
   > * {
-    margin: 0;
+    margin: .5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @include tablet-up {
       margin: 0 .5rem;

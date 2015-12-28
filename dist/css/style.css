@@ -147,7 +147,8 @@ html {
 
 .container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 0 0 1rem; }
   .container > * {
     flex: 1; }
     @media only screen and (min-width: 0) and (max-width: 768px) {
@@ -157,7 +158,11 @@ html {
 .row {
   flex-direction: row; }
   .row > * {
-    margin: 0; }
+    margin: .5rem 0; }
+    .row > *:first-child {
+      margin-top: 0; }
+    .row > *:last-child {
+      margin-bottom: 0; }
     @media only screen and (min-width: 768px) {
       .row > * {
         margin: 0 .5rem; }
@@ -309,6 +314,9 @@ p,
     p,
     .paragraph-text {
       margin-bottom: 1rem; } }
+  p:last-child,
+  .paragraph-text:last-child {
+    margin-bottom: 0; }
 
 em {
   font-style: italic; }
