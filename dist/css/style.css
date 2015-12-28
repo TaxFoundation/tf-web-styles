@@ -146,33 +146,37 @@ html {
     display: none; } }
 
 .container {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .container > * {
     flex: 1; }
+    @media only screen and (min-width: 0) and (max-width: 768px) {
+      .container > * {
+        min-width: 100%; } }
 
 .row {
   flex-direction: row; }
   .row > * {
-    margin: 0 .5rem; }
-    .row > *:first-child {
-      margin-left: 0; }
-    .row > *:last-child {
-      margin-right: 0; }
+    margin: 0; }
+    @media only screen and (min-width: 768px) {
+      .row > * {
+        margin: 0 .5rem; }
+        .row > *:first-child {
+          margin-left: 0; }
+        .row > *:last-child {
+          margin-right: 0; } }
 
 .column {
   flex-direction: column; }
   .column > * {
-    margin: .5rem 0; }
-    .column > *:first-child {
-      margin-top: 0; }
-    .column > *:last-child {
-      margin-bottom: 0; }
-
-.wrap {
-  flex-wrap: wrap; }
-
-.norap {
-  flex-wrap: nowrap; }
+    margin: 0; }
+    @media only screen and (min-width: 768px) {
+      .column > * {
+        margin: .5rem 0; }
+        .column > *:first-child {
+          margin-top: 0; }
+        .column > *:last-child {
+          margin-bottom: 0; } }
 
 header > *,
 main,
@@ -301,11 +305,7 @@ p,
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    p,
-    .paragraph-text {
-      margin-bottom: 1rem; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     p,
     .paragraph-text {
       margin-bottom: 1rem; } }

@@ -5,11 +5,7 @@ p,
   font-family: $font-sans-serif;
   margin-bottom: .5rem;
 
-  @include tablet {
-    margin-bottom: 1rem;
-  }
-
-  @include desktop {
+  @include tablet-up {
     margin-bottom: 1rem;
   }
 }

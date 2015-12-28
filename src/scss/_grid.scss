@@ -1,8 +1,13 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
 
   > * {
     flex: 1;
+
+    @include mobile-only {
+      min-width: 100%;
+    }
   }
 }
 
@@ -10,14 +15,18 @@
   flex-direction: row;
 
   > * {
-    margin: 0 .5rem;
+    margin: 0;
 
-    &:first-child {
-      margin-left: 0;
-    }
+    @include tablet-up {
+      margin: 0 .5rem;
 
-    &:last-child {
-      margin-right: 0;
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -26,22 +35,26 @@
   flex-direction: column;
 
   > * {
-    margin: .5rem 0;
+    margin: 0;
 
-    &:first-child {
-      margin-top: 0;
-    }
+    @include tablet-up {
+      margin: .5rem 0;
 
-    &:last-child {
-      margin-bottom: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
-.wrap {
-  flex-wrap: wrap;
+%nowrap {
+  flex-wrap: nowrap;
 }
 
-.norap {
-  flex-wrap: nowrap;
+@include tablet-up {
+  @extend %nowrap;
 }

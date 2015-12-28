@@ -7,13 +7,25 @@
 }
 
 // Media Query mixins
-@mixin tablet {
+@mixin mobile-only {
+  @media only screen and (min-width: 0) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media only screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
   @media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
 
-@mixin desktop {
+@mixin desktop-up {
   @media only screen and (min-width: #{$desktop-width}) {
     @content;
   }
@@ -26,11 +38,11 @@
   ) {
   font-size: $mobile;
 
-  @include tablet {
+  @include tablet-only {
     font-size: $tablet;
   }
 
-  @include desktop {
+  @include desktop-up {
     font-size: $desktop;
   }
 }
@@ -42,11 +54,11 @@
   ) {
   line-height: $mobile;
 
-  @include tablet {
+  @include tablet-only {
     line-height: $tablet;
   }
 
-  @include desktop {
+  @include desktop-up {
     line-height: $desktop;
   }
 }
