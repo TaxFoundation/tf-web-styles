@@ -3,10 +3,14 @@ p,
   @include font-sizes();
   @include line-heights();
   font-family: $font-sans-serif;
-  margin-bottom: .5rem;
+  margin-bottom: $paragraph-line-height-mobile;
 
-  @include tablet-up {
-    margin-bottom: 1rem;
+  @include tablet-only {
+    margin-bottom: $paragraph-line-height-tablet;
+  }
+
+  @include desktop-up {
+    margin-bottom: $paragraph-line-height-desktop;
   }
 
   &:last-child {
@@ -25,6 +29,5 @@ strong {
 article {
   p {
     font-family: $font-serif;
-    margin-bottom: .9rem;
   }
 }

@@ -286,7 +286,7 @@ p,
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-family: "Lato", sans-serif;
-  margin-bottom: .5rem; }
+  margin-bottom: 1.5rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
@@ -303,10 +303,14 @@ p,
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    p,
+    .paragraph-text {
+      margin-bottom: 1.5rem; } }
   p:last-child,
   .paragraph-text:last-child {
     margin-bottom: 0; }
@@ -318,8 +322,7 @@ strong {
   font-weight: 700; }
 
 article p {
-  font-family: "Merriweather", serif;
-  margin-bottom: .9rem; }
+  font-family: "Merriweather", serif; }
 
 a {
   background: none;
