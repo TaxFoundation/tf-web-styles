@@ -10,9 +10,10 @@
 }
 
 form {
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 input,
