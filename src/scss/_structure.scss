@@ -1,8 +1,29 @@
-header > *,
-main,
-footer > * {
-  padding: 0 $content-margin;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header,
+footer {
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
+
+  > * {
+    max-width: $max-width;
+    padding: 0 $content-margin;
+  }
+}
+
+main {
+  flex: 1;
+  max-width: $max-width;
+  padding: 0 $content-margin;
 }
 
 // Horizontal Rules

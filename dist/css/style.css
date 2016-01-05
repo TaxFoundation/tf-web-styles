@@ -210,11 +210,40 @@ html {
     -webkit-box-flex: 0;
             flex: 0 0 calc(50% - 1rem); } }
 
-header > *,
-main,
-footer > * {
-  padding: 0 1rem;
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center; }
+
+header,
+footer {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 0;
+          flex: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
   width: 100%; }
+  header > *,
+  footer > * {
+    max-width: 1280px;
+    padding: 0 1rem; }
+
+main {
+  -webkit-box-flex: 1;
+          flex: 1;
+  max-width: 1280px;
+  padding: 0 1rem; }
 
 hr {
   background-color: rgba(0, 0, 0, 0.1);
@@ -229,7 +258,7 @@ h1,
   font-weight: 300;
   line-height: normal;
   margin-bottom: .8rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h1,
     .h1-text {
       font-size: 3rem; } }
@@ -244,7 +273,7 @@ h2,
   font-weight: 300;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h2,
     .h2-text {
       font-size: 2.4rem; } }
@@ -259,7 +288,7 @@ h3,
   font-weight: 300;
   line-height: normal;
   margin-bottom: .9rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h3,
     .h3-text {
       font-size: 1.8rem; } }
@@ -274,7 +303,7 @@ h4,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h4,
     .h4-text {
       font-size: 1.5rem; } }
@@ -290,7 +319,7 @@ h5,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h5,
     .h5-text {
       font-size: 1.5rem; } }
@@ -306,7 +335,7 @@ h6,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h6,
     .h6-text {
       font-size: 1.2rem; } }
@@ -321,7 +350,7 @@ p,
   line-height: 1.5rem;
   font-family: "Lato", sans-serif;
   margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     p,
     .paragraph-text {
       font-size: 1rem; } }
@@ -329,7 +358,7 @@ p,
     p,
     .paragraph-text {
       font-size: 1rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
@@ -337,7 +366,7 @@ p,
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     p,
     .paragraph-text {
       margin-bottom: 1.5rem; } }
@@ -382,7 +411,7 @@ ul {
   line-height: 1.5rem;
   list-style-position: inside;
   padding-left: .2rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     ol,
     ul {
       font-size: 1rem; } }
@@ -390,7 +419,7 @@ ul {
     ol,
     ul {
       font-size: 1rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     ol,
     ul {
       line-height: 1.5rem; } }
@@ -409,20 +438,17 @@ code {
   font-family: monospace; }
 
 header {
+  background-color: #0094ff;
   margin-bottom: 1rem; }
 
 .header-bar {
   -webkit-box-align: center;
           align-items: center;
-  background-color: #0094ff;
   color: #fff;
-  display: -webkit-box;
-  display: flex;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
   height: 59px;
+  margin-bottom: 0;
   width: 100%; }
   .header-bar a,
   .header-bar a:hover {
@@ -431,8 +457,8 @@ header {
     text-decoration: none;
     text-shadow: none; }
   .header-bar .logo {
-    -webkit-box-flex: 1;
-            flex: 1 auto;
+    align-self: center;
+    text-align: center;
     vertical-align: middle; }
   @media print {
     .header-bar {

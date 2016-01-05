@@ -15,9 +15,13 @@ $tf-blue: #0094ff;
 $background-color: #fefefe;
 $text-default-color: $gray-darker;
 
+// Root Em Size
+$root-em: 16px;
+
 // Screen Sizes
 $tablet-width: 768px;
 $desktop-width: 1024px;
+$max-width: 1280px;
 
 // Font sizes
 $paragraph-font-size-mobile: .9rem;
@@ -37,14 +41,14 @@ html {
   font-family: $font-sans-serif;
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
-  font-size: 14px;
+  font-size: .875 * $root-em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga" on;
   -moz-osx-font-smoothing: grayscale;
 
   @media (min-width: #{$tablet-width}) {
-    font-size: 16px;
+    font-size: $root-em;
   }
 }
 
