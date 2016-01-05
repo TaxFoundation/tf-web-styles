@@ -149,7 +149,7 @@
 
       <hr><!-- Containers -->
       <h2>Boxes</h2>
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand">
           <p>
             This is a brand box, classed <code>box box-brand</code>.
@@ -203,7 +203,7 @@
       <p>
         Our grids are simple and use flexbox. Below are some boxes placed inside grid containers.
       </p>
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand">
           <p>
             This is a container row. It has two children automatically filling the available area. On mobile, they stack.
@@ -211,7 +211,7 @@
         </div>
         <div class="box box-brand"></div>
       </div>
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand"></div>
         <div class="box box-brand">
           <p>
@@ -220,7 +220,7 @@
         </div>
         <div class="box box-brand"></div>
       </div>
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand"></div>
         <div class="box box-brand">
           <p>
@@ -231,7 +231,7 @@
         <div class="box box-brand"></div>
       </div>
 
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand">
           <p>
             This column sizes automatically.
@@ -244,7 +244,7 @@
         </div>
       </div>
 
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand tablet-column-33">
           <p>
             This column will always be one-third width on tablets and bigger screens using the <code>.tablet-column-33</code> class.
@@ -262,7 +262,7 @@
         </div>
       </div>
 
-      <div class="container row nowrap">
+      <div class="container row">
         <div class="box box-brand">
           <div class="container column">
             <div class="box box-gray">
@@ -276,7 +276,16 @@
         <div class="box box-brand">
           <div class="container column">
             <div class="box box-gray"></div>
-            <div class="box box-gray"></div>
+            <div class="box box-gray">
+              <div class="container row">
+                <div class="box box-subtle">
+                  <p>
+                    More nesting grids.
+                  </p>
+                </div>
+                <div class="box box-subtle"></div>
+              </div>
+            </div>
             <div class="box box-gray"></div>
           </div>
         </div>

@@ -7,7 +7,12 @@
 
     @include tablet-up {
       flex: 1;
+      flex-wrap: nowrap;
     }
+  }
+
+  .container {
+    margin-bottom: 0;
   }
 }
 
@@ -33,17 +38,12 @@
   margin: -.5rem 0;
 
   > * {
-    margin: .5rem 0 1rem;
+    flex: none;
+    margin: .5rem 0;
   }
 }
 
-%nowrap {
-  flex-wrap: nowrap;
-}
-
 @include tablet-up {
-  @extend %nowrap;
-
   .tablet-column-25 {
     flex: 0 0 calc(25% - 1rem);
   }

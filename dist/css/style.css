@@ -159,7 +159,10 @@ html {
     @media only screen and (min-width: 768px) {
       .container > * {
         -webkit-box-flex: 1;
-                flex: 1; } }
+                flex: 1;
+        flex-wrap: nowrap; } }
+  .container .container {
+    margin-bottom: 0; }
 
 .row {
   -webkit-box-orient: horizontal;
@@ -181,7 +184,9 @@ html {
           flex-direction: column;
   margin: -.5rem 0; }
   .column > * {
-    margin: .5rem 0 1rem; }
+    -webkit-box-flex: 0;
+            flex: none;
+    margin: .5rem 0; }
 
 @media only screen and (min-width: 768px) {
   .tablet-column-25 {
@@ -519,4 +524,4 @@ fieldset {
 
 .box-gray {
   background-color: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.25); }
+  border-color: transparent; }
