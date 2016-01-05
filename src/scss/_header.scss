@@ -1,11 +1,14 @@
+$header-background: $tf-blue;
+$header-color: #fff;
+
 header {
-  background-color: $tf-blue;
+  background-color: $header-background;
   margin-bottom: 1rem;
 }
 
 .header-bar {
   align-items: center;
-  color: #fff;
+  color: $header-color;
   font-family: $font-sans-serif;
   font-size: 1rem;
   height: 59px;
@@ -15,9 +18,40 @@ header {
   a,
   a:hover {
     background: none;
-    color: #fff;
+    color: $header-color;
     text-decoration: none;
     text-shadow: none;
+  }
+
+  input[type="search"] {
+    background-color: $header-background;
+    color: $header-color;
+    border: 0;
+    box-shadow: none;
+    text-align: right;
+
+    @include line-heights();
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $header-color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color: $header-color;
+       opacity: 1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color: $header-color;
+       opacity: 1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+       color: $header-color;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $header-color;
+      border-radius: 0;
+      outline: none;
+    }
   }
 
   .logo {

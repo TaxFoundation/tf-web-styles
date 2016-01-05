@@ -52,6 +52,11 @@ html {
   }
 }
 
+::selection {
+  background-color: $tf-blue;
+  color: $background-color;
+}
+
 // Print Styles
 @media print {
   html {
