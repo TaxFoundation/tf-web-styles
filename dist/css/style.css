@@ -535,6 +535,11 @@ textarea {
   border: solid 1px rgba(0, 0, 0, 0.25);
   padding: .5rem;
   width: 100%; }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border: solid 1px #0094ff;
+    outline: none; }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -545,7 +550,7 @@ button,
 .button {
   background: #0094ff;
   border: solid 1px #0094ff;
-  color: #fff;
+  color: #fefefe;
   cursor: pointer;
   padding: .5rem 1rem; }
   button.inverted,

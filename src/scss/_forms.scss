@@ -24,6 +24,11 @@ textarea {
   border: solid 1px $gray-light;
   padding: .5rem;
   width: 100%;
+
+  &:focus {
+    border: solid 1px $tf-blue;
+    outline: none;
+  }
 }
 
 input[type="radio"],
@@ -37,7 +42,7 @@ button,
   @extend %shared-form-styles;
   background: $tf-blue;
   border: solid 1px $tf-blue;
-  color: #fff;
+  color: $background-color;
   cursor: pointer;
   padding: .5rem 1rem;
 
