@@ -462,6 +462,11 @@ header {
     color: #fff;
     text-decoration: none;
     text-shadow: none; }
+  .header-bar .header-menu-link {
+    background-image: url("/images/icons/hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 1.5rem; }
   .header-bar input[type="search"] {
     line-height: 1.5rem;
     background-color: #0094ff;
@@ -477,10 +482,7 @@ header {
         line-height: 1.5rem; } }
     .header-bar input[type="search"]::-webkit-input-placeholder {
       color: #fff; }
-    .header-bar input[type="search"]:-moz-placeholder {
-      color: #fff;
-      opacity: 1; }
-    .header-bar input[type="search"]::-moz-placeholder {
+    .header-bar input[type="search"]:-moz-placeholder, .header-bar input[type="search"]::-moz-placeholder {
       color: #fff;
       opacity: 1; }
     .header-bar input[type="search"]:-ms-input-placeholder {
