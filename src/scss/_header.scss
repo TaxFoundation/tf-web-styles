@@ -24,27 +24,29 @@ header {
   }
 
   input[type="search"] {
+    @include line-heights();
     background-color: $header-background;
-    color: $header-color;
     border: 0;
     box-shadow: none;
+    color: $header-color;
     text-align: right;
 
-    @include line-heights();
-
-    &::-webkit-input-placeholder { /* WebKit browsers */
+    &::-webkit-input-placeholder { // WebKit browsers
       color: $header-color;
     }
-    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-       color: $header-color;
-       opacity: 1;
+
+    &:-moz-placeholder { // Mozilla Firefox 4 to 18
+      color: $header-color;
+      opacity: 1;
     }
-    &::-moz-placeholder { /* Mozilla Firefox 19+ */
-       color: $header-color;
-       opacity: 1;
+
+    &::-moz-placeholder { // Mozilla Firefox 19+
+      color: $header-color;
+      opacity: 1;
     }
-    &:-ms-input-placeholder { /* Internet Explorer 10+ */
-       color: $header-color;
+
+    &:-ms-input-placeholder { // Internet Explorer 10+
+      color: $header-color;
     }
 
     &:focus {

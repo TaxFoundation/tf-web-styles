@@ -1,8 +1,9 @@
 body {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  width: 100%;
 }
 
 header,
@@ -24,6 +25,7 @@ main {
   flex: 1;
   max-width: $max-width;
   padding: 0 $content-margin;
+  width: 100%;
 }
 
 // Horizontal Rules

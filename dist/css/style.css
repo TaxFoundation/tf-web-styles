@@ -215,6 +215,8 @@ html {
             flex: 0 0 calc(50% - 1rem); } }
 
 body {
+  -webkit-box-align: center;
+          align-items: center;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -222,8 +224,7 @@ body {
           flex-direction: column;
   -webkit-box-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-          align-items: center; }
+  width: 100%; }
 
 header,
 footer {
@@ -247,7 +248,8 @@ main {
   -webkit-box-flex: 1;
           flex: 1;
   max-width: 1280px;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  width: 100%; }
 
 hr {
   background-color: rgba(0, 0, 0, 0.1);
@@ -461,12 +463,12 @@ header {
     text-decoration: none;
     text-shadow: none; }
   .header-bar input[type="search"] {
+    line-height: 1.5rem;
     background-color: #0094ff;
-    color: #fff;
     border: 0;
     box-shadow: none;
-    text-align: right;
-    line-height: 1.5rem; }
+    color: #fff;
+    text-align: right; }
     @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
       .header-bar input[type="search"] {
         line-height: 1.5rem; } }
@@ -474,18 +476,14 @@ header {
       .header-bar input[type="search"] {
         line-height: 1.5rem; } }
     .header-bar input[type="search"]::-webkit-input-placeholder {
-      /* WebKit browsers */
       color: #fff; }
     .header-bar input[type="search"]:-moz-placeholder {
-      /* Mozilla Firefox 4 to 18 */
       color: #fff;
       opacity: 1; }
     .header-bar input[type="search"]::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
       color: #fff;
       opacity: 1; }
     .header-bar input[type="search"]:-ms-input-placeholder {
-      /* Internet Explorer 10+ */
       color: #fff; }
     .header-bar input[type="search"]:focus {
       border-bottom: 1px solid #fff;
