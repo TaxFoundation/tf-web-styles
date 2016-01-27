@@ -6,18 +6,23 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
 
-gulp.task('default', ['compileSass', 'webserver', 'watch']);
+gulp.task('default', ['moveImages', 'compileSass', 'webserver', 'watch']);
 
-gulp.task('compileSass', function() {
+gulp.task('compileSass', function () {
   gulp.src('./src/scss/style.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer({browsers: ['> 5%']}))
+  .pipe(autoprefixer({ browsers: ['> 5%'] }))
   .pipe(gulp.dest('./dist/css/'));
 
   return gutil.log('Compiled Sass');
 });
 
-gulp.task('webserver', function() {
+gulp.task('moveImages', function () {
+  gulp.src('./src/images/*/**')
+  .pipe(gulp.dest('./dist/images/'));
+});
+
+gulp.task('webserver', function () {
   gulp.src('./dist')
   .pipe(webserver({
     fallback: 'index.html',
@@ -26,6 +31,7 @@ gulp.task('webserver', function() {
   }));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch('./src/scss/**/*.scss', ['compileSass']);
+  gulp.watch('./src/images/**/*', ['moveImages']);
 });
