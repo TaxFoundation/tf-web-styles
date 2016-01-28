@@ -2,8 +2,17 @@ $header-background: $tf-blue;
 $header-color: #fff;
 
 header {
+  align-items: center;
   background-color: $header-background;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  z-index: 100;
+
+  > * {
+    max-width: $max-width;
+  }
 }
 
 .header-bar {
@@ -31,11 +40,15 @@ header {
   }
 
   input[type="search"] {
-    @include line-heights();
     background-color: $header-background;
+    background-image: url('/images/icons/search.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 0;
     box-shadow: none;
     color: $header-color;
+    padding-right: 1.5rem;
     text-align: right;
 
     &::-webkit-input-placeholder { // WebKit browsers
@@ -72,5 +85,27 @@ header {
   * {
     margin: 0;
     padding: 0;
+  }
+}
+
+$nav-shadow-1: rgba(0, 0, 0, .19);
+$nav-shadow-2: rgba(0, 0, 0, .23);
+
+.header-nav {
+  align-items: center;
+  box-shadow: -3px -3px 3px 0 $nav-shadow-1, 3px 0 3px 0 $nav-shadow-1, 0 3px 3px 0 $nav-shadow-2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+
+  > * {
+    max-width: $max-width;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
   }
 }

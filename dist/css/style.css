@@ -228,26 +228,16 @@ body {
 
 header,
 footer {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: flex;
   -webkit-box-flex: 0;
           flex: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  justify-content: space-around;
   padding: 0 1rem;
   width: 100%; }
-  header > *,
-  footer > * {
-    max-width: 1280px; }
 
 main {
   -webkit-box-flex: 1;
           flex: 1;
   max-width: 1280px;
+  margin: 1rem 0 0;
   padding: 0 1rem;
   width: 100%; }
 
@@ -444,8 +434,19 @@ code {
   font-family: monospace; }
 
 header {
+  -webkit-box-align: center;
+          align-items: center;
   background-color: #0094ff;
-  margin-bottom: 1rem; }
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  z-index: 100; }
+  header > * {
+    max-width: 1280px; }
 
 .header-bar {
   -webkit-box-align: center;
@@ -468,18 +469,16 @@ header {
     background-size: contain;
     padding-left: 1.5rem; }
   .header-bar input[type="search"] {
-    line-height: 1.5rem;
     background-color: #0094ff;
+    background-image: url("/images/icons/search.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 0;
     box-shadow: none;
     color: #fff;
+    padding-right: 1.5rem;
     text-align: right; }
-    @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
-      .header-bar input[type="search"] {
-        line-height: 1.5rem; } }
-    @media only screen and (min-width: 1024px) {
-      .header-bar input[type="search"] {
-        line-height: 1.5rem; } }
     .header-bar input[type="search"]::-webkit-input-placeholder {
       color: #fff; }
     .header-bar input[type="search"]:-moz-placeholder, .header-bar input[type="search"]::-moz-placeholder {
@@ -502,8 +501,36 @@ header {
     margin: 0;
     padding: 0; }
 
+.header-nav {
+  -webkit-box-align: center;
+          align-items: center;
+  box-shadow: -3px -3px 3px 0 rgba(0, 0, 0, 0.19), 3px 0 3px 0 rgba(0, 0, 0, 0.19), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%; }
+  .header-nav > * {
+    max-width: 1280px; }
+  .header-nav li {
+    display: inline-block;
+    list-style: none; }
+
 footer {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
   margin-top: 1rem; }
+  footer > * {
+    max-width: 1280px; }
 
 input,
 select,
