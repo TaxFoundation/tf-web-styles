@@ -62,3 +62,9 @@
     line-height: $desktop;
   }
 }
+
+@mixin hover-transition($timing) {
+  transition-property: background-color, color;
+  transition-duration: $timing;
+  transition-timing-function: ease-out;
+}
