@@ -5,9 +5,12 @@ header {
   align-items: center;
   background-color: $header-background;
   display: flex;
+  flex: none;
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
+  padding: 0;
+  width: 100%;
   z-index: 100;
 
   > * {
@@ -22,6 +25,7 @@ header {
   font-size: 1rem;
   height: 59px;
   margin: 0;
+  padding-left: $content-margin;
   width: 100%;
 
   a,
@@ -84,7 +88,24 @@ header {
 .header-menu {
   align-self: center;
   flex: 1;
+  text-align: right;
   vertical-align: middle;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 $content-margin;
+
+    &:hover {
+    }
+  }
 }
 
 $nav-shadow-1: rgba(0, 0, 0, .19);

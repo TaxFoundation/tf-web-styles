@@ -1,9 +1,12 @@
 footer {
   align-items: center;
   display: flex;
+  flex: none;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1rem;
+  padding: 0 $content-margin;
+  width: 100%;
 
   > * {
     max-width: $max-width;
