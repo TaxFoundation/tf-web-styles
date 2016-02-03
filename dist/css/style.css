@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic|Merriweather:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic);
 html,
 body,
 main,
@@ -379,9 +379,6 @@ em {
 
 strong {
   font-weight: 700; }
-
-article p {
-  font-family: "Merriweather", serif; }
 
 a {
   background: none;
