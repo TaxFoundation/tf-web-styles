@@ -2,9 +2,8 @@ ol,
 ul {
   @include font-sizes();
   @include line-heights();
-  list-style-position: inside;
-  margin-bottom: $paragraph-line-height-mobile;
-  padding-left: .2rem;
+  list-style-position: outside;
+  margin: 0 0 $paragraph-line-height-mobile 1.2rem;
 
   @include tablet-only {
     margin-bottom: $paragraph-line-height-tablet;
@@ -18,13 +17,15 @@ ul {
 ol {
   list-style-type: decimal; //First, numbers
 
+  li {
+    padding-left: .3rem;
+  }
+
   ol {
     list-style-type: lower-alpha; //Then, letters
-    padding-left: .4rem;
 
     ol {
       list-style-type: lower-roman; //Finally, numerals
-      padding-left: .6rem;
     }
   }
 }
@@ -34,10 +35,5 @@ ul {
 
   ul {
     list-style-type: circle; //Then, empty bullet
-    padding-left: .4rem;
-
-    ul {
-      padding-left: .6rem;
-    }
   }
 }
