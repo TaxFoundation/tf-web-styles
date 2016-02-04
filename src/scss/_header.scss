@@ -91,11 +91,17 @@ header {
   text-align: right;
   vertical-align: middle;
 
-  ul {
+  > ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
 
     li {
-      display: inline;
+      align-items: stretch;
+      display: flex;
+      flex: none;
+      justify-content: center;
     }
   }
 

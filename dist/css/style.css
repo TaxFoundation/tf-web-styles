@@ -116,7 +116,7 @@ table {
 
 html {
   background-color: #fefefe;
-  color: rgba(0, 0, 0, 0.8);
+  color: #333;
   font-family: "Lato", sans-serif;
   -webkit-font-feature-settings: 'kern' 1;
           font-feature-settings: 'kern' 1;
@@ -235,9 +235,9 @@ main {
   width: 100%; }
 
 hr {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
   border: 0;
-  color: rgba(0, 0, 0, 0.1);
+  color: #ccc;
   height: 1px;
   margin: 1rem 0; }
 
@@ -519,10 +519,23 @@ header {
           flex: 1;
   text-align: right;
   vertical-align: middle; }
-  .header-menu ul {
+  .header-menu > ul {
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
     list-style: none; }
-    .header-menu ul li {
-      display: inline; }
+    .header-menu > ul li {
+      -webkit-box-align: stretch;
+              align-items: stretch;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 0;
+              flex: none;
+      -webkit-box-pack: center;
+              justify-content: center; }
   .header-menu a {
     display: inline-block;
     padding: 0 1rem; }
@@ -551,7 +564,7 @@ header {
     margin: 0;
     padding: 0; }
   .header-nav li {
-    border-left: solid 1px rgba(0, 0, 0, 0.1);
+    border-left: solid 1px #eee;
     display: inline-block;
     -webkit-box-flex: 1;
             flex: 1;
@@ -559,7 +572,7 @@ header {
     text-align: center;
     width: 100%; }
     .header-nav li:last-child {
-      border-right: solid 1px rgba(0, 0, 0, 0.1); }
+      border-right: solid 1px #eee; }
   .header-nav a {
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
@@ -568,15 +581,15 @@ header {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
     background: transparent;
-    color: rgba(0, 0, 0, 0.7);
+    color: #555;
     display: block;
     padding: .3rem 0;
     text-shadow: none;
     text-transform: uppercase;
     width: 100%; }
     .header-nav a:hover, .header-nav a:focus, .header-nav a:active {
-      background: rgba(0, 0, 0, 0.1);
-      color: rgba(0, 0, 0, 0.8);
+      background: #eee;
+      color: #333;
       text-shadow: none; }
 
 footer {
@@ -625,7 +638,7 @@ input,
 select,
 textarea {
   background: #fefefe;
-  border: solid 1px rgba(0, 0, 0, 0.25);
+  border: solid 1px #ccc;
   padding: .5rem;
   width: 100%; }
   input:focus,
@@ -665,6 +678,33 @@ fieldset {
   fieldset:last-child {
     margin-right: 0; }
 
+table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #ccc;
+  margin: 25px auto 25px auto;
+  max-width: 100%; }
+  table tbody > tr:nth-of-type(odd) {
+    background-color: #eee; }
+  table td, table th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px 15px; }
+  table th {
+    font-weight: 700;
+    border-top: none; }
+  table th:first-child {
+    border-radius: 4px 0 0 0; }
+  table th:last-child {
+    border-radius: 0 4px 0 0; }
+  table th:only-child {
+    border-radius: 4px 4px 0 0; }
+  table tr:last-child td:first-child {
+    border-radius: 0 0 0 4px; }
+  table tr:last-child td:last-child {
+    border-radius: 0 0 4px 0; }
+
 .box {
   border-radius: .5rem;
   border-style: solid;
@@ -677,8 +717,8 @@ fieldset {
 
 .box-subtle {
   background-color: #fefefe;
-  border-color: rgba(0, 0, 0, 0.1); }
+  border-color: #ccc; }
 
 .box-gray {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #eee;
   border-color: transparent; }
