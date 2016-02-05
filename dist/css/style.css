@@ -541,7 +541,13 @@ header {
   .header-menu a {
     padding: 15px 1rem 0; }
     .header-menu a:hover {
-      background-color: #66bfff; }
+      -webkit-transition-property: background-color, color;
+      transition-property: background-color, color;
+      -webkit-transition-duration: 0.1s;
+              transition-duration: 0.1s;
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+      background-color: #4db4ff; }
 
 .header-nav {
   -webkit-box-align: center;
@@ -594,6 +600,9 @@ header {
       background: #eee;
       color: #333;
       text-shadow: none; }
+
+.header-icons {
+  height: 1.2rem; }
 
 footer {
   -webkit-box-align: center;

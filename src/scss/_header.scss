@@ -111,7 +111,9 @@ header {
     padding: ($header-height / 4) $content-margin 0;
 
     &:hover {
-      background-color: lighten($tf-blue, 20%);
+      @include hover-transition(.1s);
+
+      background-color: lighten($tf-blue, 15%);
     }
   }
 }
@@ -171,4 +173,8 @@ $nav-shadow-2: rgba(0, 0, 0, .23);
       text-shadow: none;
     }
   }
+}
+
+.header-icons {
+  height: 1.2rem;
 }
