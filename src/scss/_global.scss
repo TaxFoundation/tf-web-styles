@@ -4,11 +4,11 @@
 $font-sans-serif: 'Lato', sans-serif;
 
 // Colors
-$gray-lighter: rgba(0, 0, 0, .1);
-$gray-light: rgba(0, 0, 0, .25);
-$gray-medium: rgba(0, 0, 0, .5);
-$gray-dark: rgba(0, 0, 0, .7);
-$gray-darker: rgba(0, 0, 0, .8);
+$gray-lighter: #eee;
+$gray-light: #ccc;
+$gray-medium: #888;
+$gray-dark: #555;
+$gray-darker: #333;
 
 $tf-blue: #0094ff;
 $background-color: #fefefe;
@@ -16,6 +16,9 @@ $text-default-color: $gray-darker;
 
 // Root Em Size
 $root-em: 16px;
+
+// Borders
+$border-radius: 4px;
 
 // Screen Sizes
 $tablet-width: 768px;

@@ -26,26 +26,25 @@
   <body>
     <header>
       <div class="container row header-bar">
-        <div class="hidden-mobile tablet-column-25">
-          <a class="header-menu-link">Menu</a>
-        </div>
-        <div class="logo">
+        <div class="header-logo">
           <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
         </div>
-        <div class="hidden-mobile tablet-column-25">
-          <form>
-            <input type="search" name="search" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'">
-          </form>
+        <nav class="header-menu">
+          <ul>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </nav>
+        <div class="header-menu-mobile-toggle">
+          <a href="#">
+            <img src="images/icons/hamburger.svg" alt="" />
+          </a>
         </div>
       </div>
     </header>
-    <nav class="container row header-nav">
-      <ul>
-        <li><a href="#">Test</a></li>
-        <li><a href="#">Test 2</a></li>
-        <li><a href="#">Test 3</a></li>
-      </ul>
-    </nav>
 
     <main>
       <h1>Tax Foundation Style Guide</h1>
@@ -95,6 +94,10 @@
             <li>List item</li>
             <li>List item</li>
             <li>List item</li>
+            <ul>
+              <li>Sublist item</li>
+              <li>Sublist item</li>
+            </ul>
           </ul>
         </div>
         <div>
@@ -103,9 +106,58 @@
             <li>List item</li>
             <li>List item</li>
             <li>List item</li>
+            <ol>
+              <li>Sublist item</li>
+              <li>Sublist item</li>
+              <ol>
+                <li>Seriously</li>
+                <li>How many lists do you need?</li>
+              </ol>
+            </ol>
           </ol>
         </div>
       </div>
+
+      <hr><!-- Tables -->
+
+      <table>
+        <thead>
+          <tr>
+            <th>
+              Item
+            </th>
+            <th>
+              Value
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Apples
+            </td>
+            <td>
+              5
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Bananas
+            </td>
+            <td>
+              3
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pineapples
+            </td>
+            <td>
+              7000
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <hr><!-- Forms -->
 
@@ -297,7 +349,56 @@
 
     </main>
     <footer>
-
+      <div class="footer-container">
+        <div class="container row">
+          <div class="footer-contact">
+            <p>
+              Tax Foundation<br>
+              1325 G St NW<br>
+              Suite 950<br>
+              Washington, DC 20005<br>
+            </p>
+            <p>
+              202-464-6200
+            </p>
+            <p>
+              <a href="#">Contact Us</a>
+            </p>
+          </div>
+          <div class="footer-about tablet-column-50">
+            <h3>About Us</h3>
+            <p>
+              The Tax Foundation is the nation’s leading independent tax policy research organization. Since 1937, our principled research, insightful analysis, and engaged experts have informed smarter tax policy at the federal, state, and local levels. We improve lives through tax policy research and education that leads to greater economic growth and opportunity.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>More Links</h3>
+            <ul>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Press Room</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://twitter.com/taxfoundation">Twitter</a></li>
+              <li><a href="https://www.facebook.com/taxfoundation">Facebook</a></li>
+              <li><a href="http://www.linkedin.com/company/tax-foundation">LinkedIn</a></li>
+              <li><a href="https://plus.google.com/+taxfoundation">Google+</a></li>
+              <li><a href="http://www.youtube.com/user/TaxFoundation">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer-copyright">
+          <li>© Copyright 1937 - 2016 Tax Foundation</li>
+          <li><a href="http://dev.taxfoundation.org/privacy">Privacy Policy</a></li>
+          <li><a href="http://dev.taxfoundation.org/copyright">Copyright Notice</a></li>
+          <li><a href="http://dev.taxfoundation.org/contact-us">Contact Us</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

@@ -2,14 +2,38 @@ ol,
 ul {
   @include font-sizes();
   @include line-heights();
-  list-style-position: inside;
-  padding-left: .2rem;
+  list-style-position: outside;
+  margin: 0 0 $paragraph-line-height-mobile 1.2rem;
+
+  @include tablet-only {
+    margin-bottom: $paragraph-line-height-tablet;
+  }
+
+  @include desktop-up {
+    margin-bottom: $paragraph-line-height-desktop;
+  }
 }
 
 ol {
-  list-style-type: decimal;
+  list-style-type: decimal; //First, numbers
+
+  li {
+    padding-left: .3rem;
+  }
+
+  ol {
+    list-style-type: lower-alpha; //Then, letters
+
+    ol {
+      list-style-type: lower-roman; //Finally, numerals
+    }
+  }
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: disc; //First, bullet
+
+  ul {
+    list-style-type: circle; //Then, empty bullet
+  }
 }

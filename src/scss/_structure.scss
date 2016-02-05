@@ -6,13 +6,6 @@ body {
   width: 100%;
 }
 
-header,
-footer {
-  flex: none;
-  padding: 0 $content-margin;
-  width: 100%;
-}
-
 main {
   flex: 1;
   max-width: $max-width;
@@ -22,7 +15,7 @@ main {
 }
 
 // Horizontal Rules
-$hr-color: $gray-lighter;
+$hr-color: $gray-light;
 
 hr {
   background-color: $hr-color;
