@@ -45,10 +45,30 @@ button,
   color: $background-color;
   cursor: pointer;
   padding: .5rem 1rem;
+  transition-property: background-color, border;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: lighten($tf-blue, 15%);
+    border: solid 1px lighten($tf-blue, 15%);
+  }
 
   &.inverted {
     background: $background-color;
     color: $tf-blue;
+    transition-property: border, color;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: solid 1px lighten($tf-blue, 15%);
+      color: lighten($tf-blue, 15%);
+    }
   }
 }
 
