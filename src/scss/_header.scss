@@ -1,8 +1,9 @@
+$header-height: 60px;
 $header-background: $tf-blue;
 $header-color: #fff;
 
 header {
-  align-items: center;
+  align-items: stretch;
   background-color: $header-background;
   display: flex;
   flex: none;
@@ -19,11 +20,11 @@ header {
 }
 
 .header-bar {
-  align-items: center;
+  align-items: stretch;
   color: $header-color;
   font-family: $font-sans-serif;
   font-size: 1rem;
-  height: 59px;
+  height: $header-height;
   margin: 0;
   padding-left: $content-margin;
   width: 100%;
@@ -80,36 +81,37 @@ header {
 }
 
 .header-logo {
-  align-self: center;
+  align-items: center;
+  display: flex;
   flex: none;
-  vertical-align: middle;
 }
 
 .header-menu {
-  align-self: center;
+  align-content: stretch;
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: center;
   text-align: right;
-  vertical-align: middle;
 
   > ul {
-    align-items: center;
+    align-items: stretch;
     display: flex;
+    flex: 1;
     justify-content: flex-end;
     list-style: none;
 
     li {
-      align-items: stretch;
       display: flex;
       flex: none;
-      justify-content: center;
     }
   }
 
   a {
-    display: inline-block;
-    padding: 0 $content-margin;
+    padding: ($header-height / 4) $content-margin 0;
 
     &:hover {
+      background-color: lighten($tf-blue, 20%);
     }
   }
 }
