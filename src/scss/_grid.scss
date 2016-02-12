@@ -18,17 +18,17 @@
 
 .row {
   flex-direction: row;
-  margin: 0 0 1rem -1rem;
+  margin: 0 0 0 -1rem;
 
   @include tablet-up {
-    margin: 0 0 1rem -1rem;
+    margin: 0 0 0 -1rem;
   }
 
   > * {
     margin: 0 0 1rem 1rem;
 
     @include tablet-up {
-      margin: 0 0 0 1rem;
+      margin: 0 0 1rem 1rem;
     }
   }
 }
@@ -55,6 +55,14 @@
   .tablet-column-50 {
     flex: 0 0 calc(50% - 1rem);
   }
+
+  .tablet-column-66 {
+    flex: 0 0 calc(66.666% - 1rem);
+  }
+
+  .tablet-column-100 {
+    flex: 0 0 calc(100% - 1rem);
+  }
 }
 
 @include desktop-up {
@@ -68,5 +76,13 @@
 
   .desktop-column-50 {
     flex: 0 0 calc(50% - 1rem);
+  }
+
+  .desktop-column-66 {
+    flex: 0 0 calc(66.666% - 1rem);
+  }
+
+  .desktop-column-100 {
+    flex: 0 0 calc(100% - 1rem);
   }
 }
