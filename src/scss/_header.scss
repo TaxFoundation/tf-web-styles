@@ -22,6 +22,7 @@ header {
 .header-bar {
   align-items: stretch;
   color: $header-color;
+  flex-wrap: nowrap;
   font-family: $font-sans-serif;
   font-size: 1rem;
   height: $header-height;
@@ -91,19 +92,45 @@ header {
       justify-content: flex-end;
       list-style: none;
 
-      li {
+      > li {
         display: flex;
         flex: none;
+
+        &:hover {
+          @include hover-transition(.1s);
+
+          background-color: lighten($tf-blue, 15%);
+          cursor: pointer;
+        }
       }
     }
 
-    a {
+    input {
+      display: none;
+
+      ~ ul {
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        top: -$header-height;
+        visibility: hidden;
+        z-index: 1;
+      }
+
+      &:checked ~ ul {
+        opacity: 1;
+        top: $header-height;
+        visibility: visible;
+      }
+    }
+
+    label {
       padding: ($header-height / 4) $content-margin 0;
+      z-index: 2;
 
       &:hover {
-        @include hover-transition(.1s);
-
-        background-color: lighten($tf-blue, 15%);
+        cursor: pointer;
       }
     }
   }
