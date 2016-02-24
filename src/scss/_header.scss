@@ -103,16 +103,7 @@ header {
     input {
       display: none;
 
-      ~ ul {
-        left: 0;
-        opacity: 0;
-        position: absolute;
-        top: -$header-height;
-        visibility: hidden;
-        z-index: 1;
-      }
-
-      &:checked ~ ul {
+      &:checked ~ .nav-dropdown {
         opacity: 1;
         top: $header-height;
         visibility: visible;
@@ -130,7 +121,7 @@ header {
         background-color: lighten($tf-blue, 15%);
         cursor: pointer;
 
-        ~ ul {
+        ~ .nav-dropdown {
           opacity: 1;
           top: $header-height;
           visibility: visible;
@@ -146,6 +137,28 @@ header {
 
 .nav-dropdown {
   background: $tf-blue;
+  left: 0;
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: -$header-height;
+  visibility: hidden;
+  z-index: 1;
+
+  &:hover {
+    opacity: 1;
+    top: $header-height;
+    visibility: visible;
+  }
+
+  li {
+    padding: ($content-margin / 2) $content-margin;
+
+    &:hover {
+      background-color: lighten($tf-blue, 15%);
+    }
+  }
 
   a,
   a:hover {
