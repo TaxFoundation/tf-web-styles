@@ -14,11 +14,3 @@ a {
     text-shadow: -1px 0 $background-color, 0 1px $background-color, 1px 0 $background-color, 0 -1px $background-color;
   }
 }
-
-article {
-  a:hover,
-  a:active {
-    background-image: linear-gradient(to top, $background-color 2px, $link-color 2px, $link-color 3px, $background-color 3px);
-    color: $link-color;
-  }
-}
