@@ -565,13 +565,16 @@ header {
               transition-timing-function: ease-out;
       background-color: #4db4ff;
       cursor: pointer; }
+    a.nav-link:hover + .nav-submenu {
+      background-color: #0094ff;
+      display: block; }
   .nav-submenu {
     display: none;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     text-align: left; }
-    .nav-submenu.nav-submenu-open {
+    .nav-submenu:hover {
       background-color: #0094ff;
       display: block; }
   .header-icons {

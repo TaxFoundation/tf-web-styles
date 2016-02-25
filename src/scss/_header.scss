@@ -111,16 +111,21 @@ header {
       background-color: lighten($tf-blue, 15%);
       cursor: pointer;
     }
+
+    &:hover + .nav-submenu {
+      background-color: $tf-blue;
+      display: block;
+    }
   }
 
   .nav-submenu {
     display: none;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     text-align: left;
 
-    &.nav-submenu-open {
+    &:hover {
       background-color: $tf-blue;
       display: block;
     }
