@@ -462,6 +462,9 @@ header {
   z-index: 100; }
   header > * {
     max-width: 1280px; }
+  @media print {
+    header {
+      display: none; } }
 
 .header-logo a,
 .header-logo a:hover, a.nav-link, a.nav-link:hover {
@@ -481,9 +484,6 @@ header {
   margin: 0;
   padding-left: 1rem;
   width: 100%; }
-  @media print {
-    .header-bar {
-      display: none; } }
   .header-bar * {
     margin: 0;
     padding: 0; }
@@ -566,17 +566,14 @@ header {
     background: #fff;
     border-bottom: 1px solid #0094ff;
     color: #333;
-    display: none;
     left: 0;
     position: fixed;
     right: 0;
     text-align: left; }
-    .nav-submenu:hover {
-      display: block; }
     .nav-submenu > * {
       margin: 0 auto;
       max-width: 1280px;
-      padding: 1rem 0 1rem 1rem; }
+      padding: 1rem; }
     .nav-submenu a {
       color: #0094ff; }
     .nav-submenu li {
