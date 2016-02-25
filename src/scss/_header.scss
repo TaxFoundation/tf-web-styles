@@ -118,25 +118,17 @@ header {
       background-color: lighten($tf-blue, 15%);
       cursor: pointer;
     }
-
-    &:hover + .nav-submenu {
-      display: block;
-    }
   }
 
   .nav-submenu {
     background: $header-color;
     border-bottom: 1px solid $header-background;
     color: $text-default-color;
-    //display: none;
+    display: none;
     left: 0;
     position: fixed;
     right: 0;
     text-align: left;
-
-    &:hover {
-      //display: block;
-    }
 
     > * {
       margin: 0 auto;

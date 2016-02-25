@@ -560,12 +560,11 @@ header {
               transition-timing-function: ease-out;
       background-color: #4db4ff;
       cursor: pointer; }
-    a.nav-link:hover + .nav-submenu {
-      display: block; }
   .nav-submenu {
     background: #fff;
     border-bottom: 1px solid #0094ff;
     color: #333;
+    display: none;
     left: 0;
     position: fixed;
     right: 0;
