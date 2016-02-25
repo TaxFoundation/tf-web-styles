@@ -22,6 +22,8 @@
     <meta name="msapplication-TileColor" content="#0094ff">
     <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#0094ff">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -32,33 +34,49 @@
         <nav class="header-menu">
           <ul id="nav-items">
             <li>
-              <input type="checkbox" name="nav-items" id="nav-research">
-              <label for="nav-research">Research</label>
-              <ul class="nav-dropdown">
-                <li><a href="#">Federal</a></li>
-                <li><a href="#">State</a></li>
-                <li><a href="#">Legal</a></li>
-              </ul>
+              <a class="nav-link">Research</a>
+              <div class="nav-submenu">
+                <ul>
+                  <li>Test 1</li>
+                  <li>Test 2</li>
+                </ul>
+              </div>
             </li>
             <li>
-              <input type="checkbox" name="nav-items" id="nav-data">
-              <label for="nav-data">Data</label>
-              <ul class="nav-dropdown">
-                <li><a href="#">Federal Data</a></li>
-                <li><a href="#">State Data</a></li>
-              </ul>
+              <a class="nav-link">Data</a>
+              <div class="nav-submenu">
+                <ul>
+                  <li>Test 1</li>
+                  <li>Test 2</li>
+                </ul>
+              </div>
             </li>
             <li>
-              <input type="checkbox" name="nav-items" id="nav-blog">
-              <label for="nav-blog">Blog</label>
+              <a class="nav-link">Blog</a>
+              <div class="nav-submenu">
+                <ul>
+                  <li>Test 1</li>
+                  <li>Test 2</li>
+                </ul>
+              </div>
             </li>
             <li>
-              <input type="checkbox" name="nav-items" id="nav-about-us">
-              <label for="nav-about-us">About Us</label>
+              <a class="nav-link">About</a>
+              <div class="nav-submenu">
+                <ul>
+                  <li>Test 1</li>
+                  <li>Test 2</li>
+                </ul>
+              </div>
             </li>
             <li>
-              <input type="checkbox" name="nav-items" id="nav-donate">
-              <label for="nav-donate">Donate</label>
+              <a class="nav-link">Text</a>
+              <div class="nav-submenu">
+                <ul>
+                  <li>Test 1</li>
+                  <li>Test 2</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
