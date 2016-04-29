@@ -241,6 +241,7 @@ body {
 main {
   -webkit-box-flex: 1;
           flex: 1;
+  margin-top: 76px;
   max-width: 1280px;
   padding: 0 1rem;
   width: 100%; }
@@ -448,16 +449,9 @@ header {
   -webkit-box-align: stretch;
           align-items: stretch;
   background-color: #0094ff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 0;
-          flex: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  justify-content: space-around;
-  margin: 0 0 1rem;
   padding: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 100; }
   header > * {
