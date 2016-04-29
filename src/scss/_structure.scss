@@ -4,6 +4,10 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  
+  &.admin-bar header {
+    top: 32px;
+  }
 }
 
 main {

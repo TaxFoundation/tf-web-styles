@@ -237,6 +237,8 @@ body {
   -webkit-box-pack: start;
           justify-content: flex-start;
   width: 100%; }
+  body.admin-bar header {
+    top: 32px; }
 
 main {
   -webkit-box-flex: 1;
