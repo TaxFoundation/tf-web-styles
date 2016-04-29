@@ -6,7 +6,7 @@ table {
   border-radius: $border-radius;
   border-style: hidden;
   box-shadow: 0 0 0 1px $table-border-color;
-  margin: 25px auto;
+  margin: 1.5rem auto;
   max-width: 100%;
 
   tbody > tr:nth-of-type(odd) {
@@ -17,7 +17,7 @@ table {
   th {
     border-left: 1px solid $table-border-color;
     border-top: 1px solid $table-border-color;
-    padding: 10px 15px;
+    padding: .7rem 1rem;
   }
 
   th {
