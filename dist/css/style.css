@@ -451,6 +451,15 @@ header {
   -webkit-box-align: stretch;
           align-items: stretch;
   background-color: #0094ff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 0;
+          flex: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 1rem;
   padding: 0;
   position: fixed;
   top: 0;

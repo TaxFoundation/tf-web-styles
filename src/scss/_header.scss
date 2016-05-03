@@ -5,6 +5,11 @@ $header-color: #fff;
 header {
   align-items: stretch;
   background-color: $header-background;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 1rem;
   padding: 0;
   position: fixed;
   top: 0;
