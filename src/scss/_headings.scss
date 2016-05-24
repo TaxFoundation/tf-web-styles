@@ -1,9 +1,9 @@
 h1,
 .h1-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 2.6,
-    $paragraph-font-size-tablet * 3,
-    $paragraph-font-size-desktop * 3
+    $paragraph-font-size-mobile * 3,
+    $paragraph-font-size-tablet * 3.25,
+    $paragraph-font-size-desktop * 3.5
     );
   font-weight: 300;
   line-height: normal;
@@ -13,11 +13,11 @@ h1,
 h2,
 .h2-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 2,
-    $paragraph-font-size-tablet * 2.4,
-    $paragraph-font-size-desktop * 2.4
+    $paragraph-font-size-mobile * 1.5,
+    $paragraph-font-size-tablet * 1.8,
+    $paragraph-font-size-desktop * 1.8
     );
-  font-weight: 300;
+  font-weight: 700;
   line-height: normal;
   margin-bottom: 1rem;
 }
@@ -25,11 +25,11 @@ h2,
 h3,
 .h3-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 1.6,
-    $paragraph-font-size-tablet * 1.8,
-    $paragraph-font-size-desktop * 1.8
+    $paragraph-font-size-mobile * 1.25,
+    $paragraph-font-size-tablet * 1.5,
+    $paragraph-font-size-desktop * 1.5
     );
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
   margin-bottom: .9rem;
 }
@@ -37,37 +37,36 @@ h3,
 h4,
 .h4-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 1.2,
-    $paragraph-font-size-tablet * 1.5,
-    $paragraph-font-size-desktop * 1.5
+    $paragraph-font-size-mobile * 1.25,
+    $paragraph-font-size-tablet * 1.25,
+    $paragraph-font-size-desktop * 1.25
     );
+  font-style: italic;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem;
+  margin-bottom: .9rem;
 }
 
 h5,
 .h5-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 1.2,
+    $paragraph-font-size-mobile * 1.25,
     $paragraph-font-size-tablet * 1.5,
     $paragraph-font-size-desktop * 1.5
     );
-  font-style: italic;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem;
+  margin-bottom: .9rem;
 }
 
 h6,
 .h6-text {
   @include font-sizes(
-    $paragraph-font-size-mobile * 1.1,
-    $paragraph-font-size-tablet * 1.2,
-    $paragraph-font-size-desktop * 1.2
+    $paragraph-font-size-mobile * 1.25,
+    $paragraph-font-size-tablet * 1.5,
+    $paragraph-font-size-desktop * 1.5
     );
-  font-style: italic;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem;
+  margin-bottom: .9rem;
 }

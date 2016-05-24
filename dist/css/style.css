@@ -116,20 +116,24 @@ table {
 
 html {
   background-color: #fefefe;
-  color: #333;
+  color: #555;
   font-family: "Lato", sans-serif;
   -webkit-font-feature-settings: 'kern' 1;
           font-feature-settings: 'kern' 1;
   -webkit-font-kerning: normal;
           font-kerning: normal;
-  font-size: 14px;
+  font-size: 15.75px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga" on;
   -moz-osx-font-smoothing: grayscale; }
   @media (min-width: 768px) {
     html {
-      font-size: 16px; } }
+      font-size: 18px; } }
+
+::-moz-selection {
+  background-color: #0094ff;
+  color: #fefefe; }
 
 ::selection {
   background-color: #0094ff;
@@ -241,84 +245,84 @@ body {
 main {
   -webkit-box-flex: 1;
           flex: 1;
-  max-width: 1280px;
-  padding: 0 1rem;
+  max-width: 1150px;
+  padding: 0 2rem;
   width: 100%; }
 
 hr {
-  background-color: #ccc;
+  background-color: #eee;
   border: 0;
-  color: #ccc;
+  color: #eee;
   height: 1px;
-  margin: 1rem 0; }
+  margin: 2.5rem 0; }
 
 h1,
 .h1-text {
-  font-size: 2.34rem;
+  font-size: 2.7rem;
   font-weight: 300;
   line-height: normal;
   margin-bottom: .8rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h1,
     .h1-text {
-      font-size: 3rem; } }
+      font-size: 3.25rem; } }
   @media only screen and (min-width: 1024px) {
     h1,
     .h1-text {
-      font-size: 3rem; } }
+      font-size: 3.5rem; } }
 
 h2,
 .h2-text {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.35rem;
+  font-weight: 700;
   line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h2,
     .h2-text {
-      font-size: 2.4rem; } }
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 1024px) {
     h2,
     .h2-text {
-      font-size: 2.4rem; } }
+      font-size: 1.8rem; } }
 
 h3,
 .h3-text {
-  font-size: 1.44rem;
-  font-weight: 300;
+  font-size: 1.125rem;
+  font-weight: 400;
   line-height: normal;
   margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h3,
     .h3-text {
-      font-size: 1.8rem; } }
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     h3,
     .h3-text {
-      font-size: 1.8rem; } }
+      font-size: 1.5rem; } }
 
 h4,
 .h4-text {
-  font-size: 1.08rem;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
-    h4,
-    .h4-text {
-      font-size: 1.5rem; } }
-  @media only screen and (min-width: 1024px) {
-    h4,
-    .h4-text {
-      font-size: 1.5rem; } }
-
-h5,
-.h5-text {
-  font-size: 1.08rem;
+  font-size: 1.125rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .9rem; }
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+    h4,
+    .h4-text {
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1024px) {
+    h4,
+    .h4-text {
+      font-size: 1.25rem; } }
+
+h5,
+.h5-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h5,
     .h5-text {
@@ -330,19 +334,18 @@ h5,
 
 h6,
 .h6-text {
-  font-size: 0.99rem;
-  font-style: italic;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h6,
     .h6-text {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     h6,
     .h6-text {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
 
 p,
 .paragraph-text {
@@ -462,22 +465,23 @@ header {
   -webkit-box-direction: normal;
           flex-direction: row;
   justify-content: space-around;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   width: 100%;
   z-index: 100; }
   header > * {
-    max-width: 1280px; }
+    max-width: 1150px; }
 
 .header-bar {
   -webkit-box-align: stretch;
+              -ms-grid-row-align: stretch;
           align-items: stretch;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   height: 60px;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 2rem;
   width: 100%; }
   .header-bar a,
   .header-bar a:hover {
@@ -512,7 +516,7 @@ header {
           flex: 1;
   -webkit-box-pack: end;
           justify-content: flex-end;
-  padding-right: 1rem; }
+  padding-right: 2rem; }
   .header-menu-mobile-toggle img {
     height: 20px;
     width: 20px; }
@@ -548,7 +552,9 @@ header {
         -webkit-box-flex: 0;
                 flex: none; }
     .header-menu a {
-      padding: 15px 1rem 0; }
+      padding: 15px 0.90909rem 0;
+      font-weight: 700;
+      font-size: .85rem; }
       .header-menu a:hover {
         -webkit-transition-property: background-color, color;
         transition-property: background-color, color;
@@ -564,7 +570,7 @@ footer {
   -webkit-box-align: center;
           align-items: center;
   background-color: #eee;
-  color: #555;
+  color: #666;
   display: -webkit-box;
   display: flex;
   -webkit-box-flex: 0;
@@ -574,16 +580,16 @@ footer {
           flex-direction: row;
   justify-content: space-around;
   margin-top: 1rem;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 2rem 1rem;
   width: 100%; }
   footer > * {
-    max-width: 1280px; }
+    max-width: 1150px; }
   footer a {
-    color: #555; }
+    color: #666; }
     footer a:active, footer a:focus, footer a:hover {
       background: transparent;
       border-bottom: 0;
-      color: #333;
+      color: #555;
       text-shadow: none; }
 
 .footer-links,

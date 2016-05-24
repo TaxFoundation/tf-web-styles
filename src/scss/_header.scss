@@ -9,7 +9,7 @@ header {
   flex: none;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   width: 100%;
   z-index: 100;
@@ -98,7 +98,9 @@ header {
     }
 
     a {
-      padding: ($header-height / 4) $content-margin 0;
+      padding: ($header-height / 4) ($content-margin / 2.2) 0;
+      font-weight: 700;
+      font-size: .85rem;
 
       &:hover {
         @include hover-transition(.1s);
