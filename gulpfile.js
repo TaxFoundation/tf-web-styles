@@ -33,6 +33,7 @@ gulp.task('webserver', function () {
     fallback: 'index.html',
     livereload: true,
     open: true,
+    port: 1937,
   }));
 });
 
