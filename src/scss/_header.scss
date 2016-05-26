@@ -61,10 +61,6 @@ header {
   }
 }
 
-.header-menu {
-  display: none;
-}
-
 .header-menu-mobile-toggle {
   align-content: stretch;
   align-self: center;
@@ -76,12 +72,6 @@ header {
   img {
     height: $header-height / 3;
     width: $header-height / 3;
-  }
-}
-
-@include tablet-up {
-  .header-menu-mobile-toggle {
-    display: none;
   }
 }
 
@@ -150,4 +140,16 @@ a.nav-link {
 
 .header-icons {
   height: 1.2rem;
+}
+
+@include mobile-only {
+  .header-menu {
+    display: none;
+  }
+}
+
+@include tablet-up {
+  .header-menu-mobile-toggle {
+    display: none;
+  }
 }

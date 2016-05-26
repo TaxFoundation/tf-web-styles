@@ -265,7 +265,7 @@ h1,
   font-weight: 300;
   line-height: normal;
   margin-bottom: .8rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1,
     .h1-text {
       font-size: 3rem; } }
@@ -280,7 +280,7 @@ h2,
   font-weight: 300;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h2,
     .h2-text {
       font-size: 2.4rem; } }
@@ -295,7 +295,7 @@ h3,
   font-weight: 300;
   line-height: normal;
   margin-bottom: .9rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h3,
     .h3-text {
       font-size: 1.8rem; } }
@@ -310,7 +310,7 @@ h4,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h4,
     .h4-text {
       font-size: 1.5rem; } }
@@ -326,7 +326,7 @@ h5,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h5,
     .h5-text {
       font-size: 1.5rem; } }
@@ -342,7 +342,7 @@ h6,
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h6,
     .h6-text {
       font-size: 1.2rem; } }
@@ -357,7 +357,7 @@ p,
   line-height: 1.5rem;
   font-family: "Lato", sans-serif;
   margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
       font-size: 1rem; } }
@@ -365,7 +365,7 @@ p,
     p,
     .paragraph-text {
       font-size: 1rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
@@ -373,7 +373,7 @@ p,
     p,
     .paragraph-text {
       line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
       margin-bottom: 1.5rem; } }
@@ -409,7 +409,7 @@ ul {
   line-height: 1.5rem;
   list-style-position: outside;
   margin: 0 0 1.5rem 1.2rem; }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     ol,
     ul {
       font-size: 1rem; } }
@@ -417,7 +417,7 @@ ul {
     ol,
     ul {
       font-size: 1rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     ol,
     ul {
       line-height: 1.5rem; } }
@@ -425,7 +425,7 @@ ul {
     ol,
     ul {
       line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     ol,
     ul {
       margin-bottom: 1.5rem; } }
@@ -506,9 +506,6 @@ header {
   -webkit-box-flex: 0;
           flex: none; }
 
-.header-menu {
-  display: none; }
-
 .header-menu-mobile-toggle {
   align-content: stretch;
   align-self: center;
@@ -522,10 +519,6 @@ header {
   .header-menu-mobile-toggle img {
     height: 20px;
     width: 20px; }
-
-@media only screen and (min-width: 768px) {
-  .header-menu-mobile-toggle {
-    display: none; } }
 
 .header-menu {
   align-content: stretch;
@@ -593,6 +586,14 @@ a.nav-link {
 
 .header-icons {
   height: 1.2rem; }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .header-menu {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .header-menu-mobile-toggle {
+    display: none; } }
 
 footer {
   -webkit-box-align: center;
