@@ -83,72 +83,71 @@ header {
   .header-menu-mobile-toggle {
     display: none;
   }
+}
 
-  .header-menu {
-    align-content: stretch;
+.header-menu {
+  align-content: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+
+  > ul {
+    align-items: stretch;
     display: flex;
     flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    justify-content: flex-end;
+    list-style: none;
 
-    > ul {
-      align-items: stretch;
+    > li {
       display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      list-style: none;
-
-      > li {
-        display: flex;
-        flex: none;
-        flex-direction: column;
-        position: relative;
-      }
+      flex: none;
+      flex-direction: column;
+      position: relative;
     }
-  }
-
-  a.nav-link {
-    @extend %header-bar-link-styles;
-    flex: 1;
-    padding: ($header-height / 4) $content-margin 0;
-
-    &:hover {
-      @extend %header-bar-link-styles;
-      @include hover-transition(.1s);
-
-      background-color: lighten($tf-blue, 15%);
-      cursor: pointer;
-    }
-  }
-
-  .nav-submenu {
-    background: $header-color;
-    border-bottom: 1px solid $header-background;
-    color: $text-default-color;
-    display: none;
-    left: 0;
-    position: fixed;
-    right: 0;
-    text-align: left;
-
-    > * {
-      margin: 0 auto;
-      max-width: $max-width;
-      padding: 1rem;
-    }
-
-    a {
-      color: $header-background;
-    }
-
-    li {
-      list-style: none;
-    }
-  }
-
-  .header-icons {
-    height: 1.2rem;
   }
 }
 
+a.nav-link {
+  @extend %header-bar-link-styles;
+  flex: 1;
+  padding: ($header-height / 4) $content-margin 0;
+
+  &:hover {
+    @extend %header-bar-link-styles;
+    @include hover-transition(.1s);
+
+    background-color: lighten($tf-blue, 15%);
+    cursor: pointer;
+  }
+}
+
+.nav-submenu {
+  background: $header-color;
+  border-bottom: 1px solid $header-background;
+  color: $text-default-color;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: left;
+
+  > * {
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: 1rem;
+  }
+
+  a {
+    color: $header-background;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.header-icons {
+  height: 1.2rem;
+}
