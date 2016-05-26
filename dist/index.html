@@ -256,8 +256,10 @@
       <hr><!-- Forms -->
 
       <h2>Forms</h2>
+      <p>
+        Forms are, by default, 100% width of the containing element. When you put items inside a fieldset, they become inline-block.
+      </p>
       <form>
-
           <label for="name">Name:</label>
           <input type="text" id="name" />
 
@@ -293,9 +295,10 @@
             <input id="c3" type="checkbox" name="checkbox-buttons" value="">
             <label for="c3">Another One</label>
           </fieldset>
-
-          <button type="button" name="button">Submit This</button>
-          <button type="button" name="button" class="inverted">Submit This</button>
+          <fieldset>
+            <button type="button" name="button">Submit This</button>
+            <button type="button" name="button" class="inverted">Submit This</button>
+          </fieldset>
 
       </form>
 
