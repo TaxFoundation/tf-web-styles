@@ -291,18 +291,18 @@ h2,
 
 h3,
 .h3-text {
-  font-size: 1.17rem;
+  font-size: 1.35rem;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: .9rem; }
+  margin-bottom: .8rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     h3,
     .h3-text {
-      font-size: 1.3rem; } }
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     h3,
     .h3-text {
-      font-size: 1.3rem; } }
+      font-size: 1.5rem; } }
 
 h4,
 .h4-text {
@@ -413,7 +413,7 @@ ul {
   font-size: 0.9rem;
   line-height: 1.5rem;
   list-style-position: outside;
-  margin: 0 0 1.5rem 1.2rem; }
+  margin: 0 0 1.5rem 1rem; }
   @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
     ol,
     ul {
@@ -453,7 +453,7 @@ ul {
   ul ul {
     list-style-type: circle; }
 
-tbody {
+code {
   font-family: monospace; }
 
 header {
@@ -624,7 +624,7 @@ input,
 select,
 textarea, button,
 .button {
-  border-radius: 2px;
+  border-radius: 3px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   margin: 0 0 1rem; }
@@ -682,6 +682,16 @@ button,
   .button:hover {
     background: #4db4ff;
     border: solid 1px #4db4ff; }
+  button.featured,
+  .button.featured {
+    background: #6eb76e;
+    color: #fefefe;
+    -webkit-transition-property: border, color;
+    transition-property: border, color;
+    -webkit-transition-duration: .1s;
+            transition-duration: .1s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; }
   button.inverted,
   .button.inverted {
     background: #fefefe;
@@ -715,7 +725,7 @@ fieldset {
 
 table {
   border-collapse: collapse;
-  border-radius: 2px;
+  border-radius: 3px;
   border-style: hidden;
   box-shadow: 0 0 0 1px #ccc;
   margin: 25px auto;
@@ -731,18 +741,18 @@ table {
     border-top: 0;
     font-weight: 700; }
   table th:first-child {
-    border-radius: 2px 0 0; }
+    border-radius: 3px 0 0; }
   table th:last-child {
-    border-radius: 0 2px 0 0; }
+    border-radius: 0 3px 0 0; }
   table th:only-child {
-    border-radius: 2px 2px 0 0; }
+    border-radius: 3px 3px 0 0; }
   table tr:last-child td:first-child {
-    border-radius: 0 0 0 2px; }
+    border-radius: 0 0 0 3px; }
   table tr:last-child td:last-child {
-    border-radius: 0 0 2px; }
+    border-radius: 0 0 3px; }
 
 .box {
-  border-radius: 2px;
+  border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   padding: 1rem; }
@@ -758,3 +768,8 @@ table {
 .box-gray {
   background-color: #eee;
   border-color: transparent; }
+
+.box-feature {
+  background-color: #0094ff;
+  border-color: transparent;
+  color: white; }
