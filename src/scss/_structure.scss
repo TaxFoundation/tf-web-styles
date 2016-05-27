@@ -14,12 +14,12 @@ main {
 }
 
 // Horizontal Rules
-$hr-color: $gray-lighter;
+$hr-color: #ddd;
 
 hr {
   background-color: $hr-color;
   border: 0;
   color: $hr-color;
   height: 1px;
-  margin: 2.5rem 0;
+  margin: 2.75rem 0;
 }

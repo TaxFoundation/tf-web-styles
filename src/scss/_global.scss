@@ -14,11 +14,13 @@ $tf-blue: #0094ff;
 $background-color: #fefefe;
 $text-default-color: $gray-darker;
 
+$green: #6eb76e;
+
 // Root Em Size
 $root-em: 18px;
 
 // Borders
-$border-radius: 4px;
+$border-radius: 3px;
 
 // Screen Sizes
 $tablet-width: 768px;
@@ -35,6 +37,13 @@ $paragraph-line-height-desktop: 1.5rem;
 
 // Structure Variables
 $content-margin: 2rem;
+
+// Table Styles
+
+tbody {
+  font-family: monospace;
+}
+
 
 // Global Screen Styles
 html {
