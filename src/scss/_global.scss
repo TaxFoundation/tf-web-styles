@@ -18,7 +18,7 @@ $text-default-color: $gray-darker;
 $root-em: 18px;
 
 // Borders
-$border-radius: 4px;
+$border-radius: 2px;
 
 // Screen Sizes
 $tablet-width: 768px;
@@ -35,6 +35,13 @@ $paragraph-line-height-desktop: 1.5rem;
 
 // Structure Variables
 $content-margin: 2rem;
+
+// Table Styles
+
+tbody {
+  font-family: monospace;
+}
+
 
 // Global Screen Styles
 html {
