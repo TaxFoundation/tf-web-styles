@@ -692,15 +692,6 @@ button,
             transition-duration: .1s;
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out; }
-  button.smallbutton,
-  .button.smallbutton {
-    width: 15%; }
-  button.mediumbutton,
-  .button.mediumbutton {
-    width: 25%; }
-  button.largebutton,
-  .button.largebutton {
-    width: 33.333%; }
   button.inverted,
   .button.inverted {
     background: #fefefe;
@@ -782,3 +773,20 @@ table {
   background-color: #0094ff;
   border-color: transparent;
   color: white; }
+
+.state-widget img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 85%; }
+
+.state-widget div {
+  max-width: 500px;
+  margin-bottom: 1rem; }
+
+.email-widget img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 85%; }
+
+.email-widget div {
+  max-width: 500px; }

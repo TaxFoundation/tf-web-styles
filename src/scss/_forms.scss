@@ -64,18 +64,6 @@ button,
     transition-timing-function: ease-out;
   }
 
-  &.smallbutton {
-    width: 15%;
-  }
-
-  &.mediumbutton {
-    width: 25%;
-  }
-
-  &.largebutton {
-    width: 33.333%;
-  }
-
   &.inverted {
     background: $background-color;
     color: $tf-blue;
