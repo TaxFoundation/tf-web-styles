@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
 
-gulp.task('default', ['moveImages', 'compileSass', 'webserver', 'watch']);
+gulp.task('default', ['moveImages', 'moveJavascript', 'compileSass', 'webserver', 'watch']);
 
 gulp.task('compileSass', function () {
   gulp.src('./src/scss/style.scss')
@@ -18,8 +18,13 @@ gulp.task('compileSass', function () {
 });
 
 gulp.task('moveImages', function () {
-  gulp.src('./src/images/*/**')
+  gulp.src('./src/images/**/*')
   .pipe(gulp.dest('./dist/images/'));
+});
+
+gulp.task('moveJavascript', function () {
+  gulp.src('./src/js/**/*')
+  .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('webserver', function () {
@@ -35,4 +40,5 @@ gulp.task('webserver', function () {
 gulp.task('watch', function () {
   gulp.watch('./src/scss/**/*.scss', ['compileSass']);
   gulp.watch('./src/images/**/*', ['moveImages']);
+  gulp.watch('./src/js/**/*', ['moveJavascript']);
 });
