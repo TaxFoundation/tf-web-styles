@@ -9,7 +9,7 @@ header {
   flex: none;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   position: fixed;
   top: 0;
@@ -113,8 +113,10 @@ header {
 
 a.nav-link {
   @extend %header-bar-link-styles;
-  flex: 1; 
-  padding: ($header-height / 4) $content-margin 0;
+  flex: 1;
+  font-weight: 700;
+  font-size: .85rem;
+  padding: ($header-height / 4) ($content-margin / 2.5) 0;
 
   &:hover {
     @extend %header-bar-link-styles;

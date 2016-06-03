@@ -7,23 +7,25 @@ $font-sans-serif: 'Lato', sans-serif;
 $gray-lighter: #eee;
 $gray-light: #ccc;
 $gray-medium: #888;
-$gray-dark: #555;
-$gray-darker: #333;
+$gray-dark: #666;
+$gray-darker: #555;
 
 $tf-blue: #0094ff;
 $background-color: #fefefe;
 $text-default-color: $gray-darker;
 
+$green: #6eb76e;
+
 // Root Em Size
-$root-em: 16px;
+$root-em: 18px;
 
 // Borders
-$border-radius: 4px;
+$border-radius: 3px;
 
 // Screen Sizes
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$max-width: 1280px;
+$max-width: 1100px;
 
 // Font sizes
 $paragraph-font-size-mobile: .9rem;
@@ -31,10 +33,17 @@ $paragraph-font-size-tablet: 1rem;
 $paragraph-font-size-desktop: 1rem;
 $paragraph-line-height-mobile: 1.5rem;
 $paragraph-line-height-tablet: 1.5rem;
-$paragraph-line-height-desktop: 1.5rem;
+$paragraph-line-height-desktop: 1.7rem;
 
 // Structure Variables
-$content-margin: 1rem;
+$content-margin: 2rem;
+
+// Table Styles
+
+tbody {
+  font-family: monospace;
+}
+
 
 // Global Screen Styles
 html {
