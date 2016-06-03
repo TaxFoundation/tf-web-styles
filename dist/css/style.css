@@ -261,7 +261,7 @@ hr {
 
 h1,
 .h1-text {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: normal;
   margin-bottom: .8rem; }
@@ -276,7 +276,7 @@ h1,
 
 h2,
 .h2-text {
-  font-size: 1.575rem;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 1rem; }
@@ -291,7 +291,7 @@ h2,
 
 h3,
 .h3-text {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: .8rem; }
@@ -306,7 +306,7 @@ h3,
 
 h4,
 .h4-text {
-  font-size: 1.17rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
@@ -322,7 +322,7 @@ h4,
 
 h5,
 .h5-text {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: .9rem; }
@@ -337,7 +337,7 @@ h5,
 
 h6,
 .h6-text {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: .9rem; }
@@ -352,7 +352,7 @@ h6,
 
 p,
 .paragraph-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   font-family: "Lato", sans-serif;
   margin-bottom: 1.5rem; }
@@ -410,7 +410,7 @@ article a:active {
 
 ol,
 ul {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   list-style-position: outside;
   margin: 0 0 1.5rem 1rem; }
@@ -682,16 +682,30 @@ button,
   .button:hover {
     background: #4db4ff;
     border: solid 1px #4db4ff; }
-  button.featured,
-  .button.featured {
-    background: #6eb76e;
-    color: #fefefe;
-    -webkit-transition-property: border, color;
-    transition-property: border, color;
+  button.button-form,
+  .button.button-form {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0px;
+    margin-left: -1.2em;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
     -webkit-transition-duration: .1s;
             transition-duration: .1s;
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out; }
+  button.featured,
+  .button.featured {
+    background: #6eb76e;
+    border: solid 1px #6eb76e; }
+    button.featured:active, button.featured:focus, button.featured:hover,
+    .button.featured:active,
+    .button.featured:focus,
+    .button.featured:hover {
+      border: solid 1px #89c589;
+      background-color: #89c589;
+      color: #fefefe; }
   button.inverted,
   .button.inverted {
     background: #fefefe;
@@ -777,16 +791,15 @@ table {
 .state-widget img {
   display: block;
   margin: 0 auto 1rem auto;
-  width: 85%; }
+  width: 85%;
+  max-width: 500px; }
 
 .state-widget div {
-  max-width: 500px;
   margin-bottom: 1rem; }
 
 .email-widget img {
   display: block;
-  margin: 0 auto 1rem auto;
-  width: 85%; }
+  margin: 0 auto 1rem auto; }
 
 .email-widget div {
-  max-width: 500px; }
+  margin-bottom: 1rem; }
