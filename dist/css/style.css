@@ -547,7 +547,9 @@ header {
       position: relative; }
 
 .nav-top-level-item:hover .nav-submenu {
-  display: block; }
+  height: auto;
+  opacity: 1;
+  z-index: 100; }
 
 a.nav-link {
   -webkit-box-flex: 1;
@@ -567,11 +569,14 @@ a.nav-link {
   background: #fff;
   border-bottom: 1px solid #0094ff;
   color: #333;
-  display: none;
+  height: 0;
   left: 0;
+  opacity: 0;
   position: fixed;
   right: 0;
-  text-align: left; }
+  text-align: left;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear; }
   .nav-submenu > * {
     margin: 0 auto;
     max-width: 1280px;

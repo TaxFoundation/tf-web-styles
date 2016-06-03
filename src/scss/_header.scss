@@ -101,7 +101,9 @@ header {
 
 .nav-top-level-item {
   &:hover .nav-submenu {
-    display: block;
+    height: auto;
+    opacity: 1;
+    z-index: 100;
   }
 }
 
@@ -123,11 +125,13 @@ a.nav-link {
   background: $header-color;
   border-bottom: 1px solid $header-background;
   color: $text-default-color;
-  display: none;
+  height: 0;
   left: 0;
+  opacity: 0;
   position: fixed;
   right: 0;
   text-align: left;
+  transition: opacity .3s linear;
 
   > * {
     margin: 0 auto;
