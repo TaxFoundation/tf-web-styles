@@ -114,22 +114,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+tbody {
+  font-family: monospace; }
+
 html {
   background-color: #fefefe;
-  color: #333;
+  color: #555;
   font-family: "Lato", sans-serif;
   -webkit-font-feature-settings: 'kern' 1;
           font-feature-settings: 'kern' 1;
   -webkit-font-kerning: normal;
           font-kerning: normal;
-  font-size: 14px;
+  font-size: 15.75px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga" on;
   -moz-osx-font-smoothing: grayscale; }
   @media (min-width: 768px) {
     html {
-      font-size: 16px; } }
+      font-size: 18px; } }
+
+::-moz-selection {
+  background-color: #0094ff;
+  color: #fefefe; }
 
 ::-moz-selection {
   background-color: #0094ff;
@@ -248,85 +255,88 @@ main {
   -webkit-box-flex: 1;
           flex: 1;
   margin-top: 76px;
-  max-width: 1280px;
-  padding: 0 1rem;
+  max-width: 1100px;
+  padding: 0 2rem;
   width: 100%; }
 
 hr {
-  background-color: #ccc;
+  background-color: #ddd;
   border: 0;
-  color: #ccc;
+  color: #ddd;
   height: 1px;
-  margin: 1rem 0; }
+  margin: 2.75rem 0; }
 
 h1,
 .h1-text {
-  font-size: 2.34rem;
+  font-size: 2.7rem;
   font-weight: 300;
   line-height: normal;
   margin-bottom: .8rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1,
     .h1-text {
-      font-size: 3rem; } }
+      font-size: 3.5rem; } }
   @media only screen and (min-width: 1024px) {
     h1,
     .h1-text {
-      font-size: 3rem; } }
+      font-size: 3.5rem; } }
 
 h2,
 .h2-text {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.575rem;
+  font-weight: 700;
   line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h2,
     .h2-text {
-      font-size: 2.4rem; } }
+      font-size: 1.75rem; } }
   @media only screen and (min-width: 1024px) {
     h2,
     .h2-text {
-      font-size: 2.4rem; } }
+      font-size: 1.75rem; } }
 
 h3,
 .h3-text {
-  font-size: 1.44rem;
-  font-weight: 300;
-  line-height: normal;
-  margin-bottom: .9rem; }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h3,
-    .h3-text {
-      font-size: 1.8rem; } }
-  @media only screen and (min-width: 1024px) {
-    h3,
-    .h3-text {
-      font-size: 1.8rem; } }
-
-h4,
-.h4-text {
-  font-size: 1.08rem;
+  font-size: 1.35rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    h4,
-    .h4-text {
+
+    h3,
+    .h3-text {
       font-size: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
-    h4,
-    .h4-text {
+    h3,
+    .h3-text {
       font-size: 1.5rem; } }
 
-h5,
-.h5-text {
-  font-size: 1.08rem;
+h4,
+.h4-text {
+  font-size: 1.17rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    h4,
+    .h4-text {
+      font-size: 1.3rem; } }
+  @media only screen and (min-width: 1024px) {
+    h4,
+    .h4-text {
+      font-size: 1.3rem; } }
+
+h5,
+.h5-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
     h5,
     .h5-text {
       font-size: 1.5rem; } }
@@ -337,19 +347,19 @@ h5,
 
 h6,
 .h6-text {
-  font-size: 0.99rem;
-  font-style: italic;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
     h6,
     .h6-text {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     h6,
     .h6-text {
-      font-size: 1.2rem; } }
+      font-size: 1.5rem; } }
 
 p,
 .paragraph-text {
@@ -372,15 +382,16 @@ p,
   @media only screen and (min-width: 1024px) {
     p,
     .paragraph-text {
-      line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      line-height: 1.7rem; } }
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+
     p,
     .paragraph-text {
       margin-bottom: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     p,
     .paragraph-text {
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1.7rem; } }
   p:last-child,
   .paragraph-text:last-child {
     margin-bottom: 0; }
@@ -410,6 +421,7 @@ ul {
   list-style-position: outside;
   margin: 0 0 1.5rem 1.2rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
     ol,
     ul {
       font-size: 1rem; } }
@@ -424,15 +436,16 @@ ul {
   @media only screen and (min-width: 1024px) {
     ol,
     ul {
-      line-height: 1.5rem; } }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      line-height: 1.7rem; } }
+  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+
     ol,
     ul {
       margin-bottom: 1.5rem; } }
   @media only screen and (min-width: 1024px) {
     ol,
     ul {
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1.7rem; } }
 
 ol {
   list-style-type: decimal; }
@@ -463,7 +476,7 @@ header {
   -webkit-box-direction: normal;
           flex-direction: row;
   justify-content: space-around;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   position: fixed;
   top: 0;
@@ -482,6 +495,7 @@ header {
   text-decoration: none;
   text-shadow: none; }
 
+
 .header-bar {
   -webkit-box-align: stretch;
               -ms-grid-row-align: stretch;
@@ -492,7 +506,7 @@ header {
   font-size: 1rem;
   height: 60px;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 2rem;
   width: 100%; }
   .header-bar * {
     margin: 0;
@@ -515,7 +529,7 @@ header {
           flex: 1;
   -webkit-box-pack: end;
           justify-content: flex-end;
-  padding-right: 1rem; }
+  padding-right: 2rem; }
   .header-menu-mobile-toggle img {
     height: 20px;
     width: 20px; }
@@ -592,12 +606,13 @@ a.nav-link {
     display: flex; }
   .header-menu-mobile-toggle {
     display: none; } }
+>>>>>>> refs/remotes/origin/master
 
 footer {
   -webkit-box-align: center;
           align-items: center;
   background-color: #eee;
-  color: #555;
+  color: #666;
   display: -webkit-box;
   display: flex;
   -webkit-box-flex: 0;
@@ -607,16 +622,16 @@ footer {
           flex-direction: row;
   justify-content: space-around;
   margin-top: 1rem;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 2rem 1rem;
   width: 100%; }
   footer > * {
-    max-width: 1280px; }
+    max-width: 1100px; }
   footer a {
-    color: #555; }
+    color: #666; }
     footer a:active, footer a:focus, footer a:hover {
       background: transparent;
       border-bottom: 0;
-      color: #333;
+      color: #555;
       text-shadow: none; }
 
 .footer-links,
@@ -648,7 +663,7 @@ input,
 select,
 textarea, button,
 .button {
-  border-radius: 4px;
+  border-radius: 3px;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   margin: 0 0 1rem; }
@@ -706,6 +721,25 @@ button,
   .button:hover {
     background: #4db4ff;
     border: solid 1px #4db4ff; }
+  button.featured,
+  .button.featured {
+    background: #6eb76e;
+    color: #fefefe;
+    -webkit-transition-property: border, color;
+    transition-property: border, color;
+    -webkit-transition-duration: .1s;
+            transition-duration: .1s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; }
+  button.smallbutton,
+  .button.smallbutton {
+    width: 15%; }
+  button.mediumbutton,
+  .button.mediumbutton {
+    width: 25%; }
+  button.largebutton,
+  .button.largebutton {
+    width: 33.333%; }
   button.inverted,
   .button.inverted {
     background: #fefefe;
@@ -739,7 +773,7 @@ fieldset {
 
 table {
   border-collapse: collapse;
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: hidden;
   box-shadow: 0 0 0 1px #ccc;
   margin: 1.5rem auto;
@@ -758,18 +792,18 @@ table {
     border-top: 0;
     font-weight: 700; }
   table th:first-child {
-    border-radius: 4px 0 0; }
+    border-radius: 3px 0 0; }
   table th:last-child {
-    border-radius: 0 4px 0 0; }
+    border-radius: 0 3px 0 0; }
   table th:only-child {
-    border-radius: 4px 4px 0 0; }
+    border-radius: 3px 3px 0 0; }
   table tr:last-child td:first-child {
-    border-radius: 0 0 0 4px; }
+    border-radius: 0 0 0 3px; }
   table tr:last-child td:last-child {
-    border-radius: 0 0 4px; }
+    border-radius: 0 0 3px; }
 
 .box {
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   padding: 1rem; }
@@ -785,3 +819,8 @@ table {
 .box-gray {
   background-color: #eee;
   border-color: transparent; }
+
+.box-feature {
+  background-color: #0094ff;
+  border-color: transparent;
+  color: white; }

@@ -3,7 +3,7 @@ ul {
   @include font-sizes();
   @include line-heights();
   list-style-position: outside;
-  margin: 0 0 $paragraph-line-height-mobile 1.2rem;
+  margin: 0 0 $paragraph-line-height-mobile 1rem;
 
   @include tablet-only {
     margin-bottom: $paragraph-line-height-tablet;

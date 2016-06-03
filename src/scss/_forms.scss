@@ -56,6 +56,26 @@ button,
     border: solid 1px lighten($tf-blue, 15%);
   }
 
+  &.featured {
+    background: $green;
+    color: $background-color;
+    transition-property: border, color;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+  }
+
+  &.smallbutton {
+    width: 15%;
+  }
+
+  &.mediumbutton {
+    width: 25%;
+  }
+
+  &.largebutton {
+    width: 33.333%;
+  }
+
   &.inverted {
     background: $background-color;
     color: $tf-blue;
