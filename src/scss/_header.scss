@@ -99,9 +99,15 @@ header {
   }
 }
 
+.nav-top-level-item {
+  &:hover .nav-submenu {
+    display: block;
+  }
+}
+
 a.nav-link {
   @extend %header-bar-link-styles;
-  flex: 1;
+  flex: 1; 
   padding: ($header-height / 4) $content-margin 0;
 
   &:hover {
