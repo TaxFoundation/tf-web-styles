@@ -550,6 +550,9 @@ header {
   height: auto;
   opacity: 1;
   z-index: 100; }
+  .nav-top-level-item:hover .nav-submenu > * {
+    display: -webkit-box;
+    display: flex; }
 
 a.nav-link {
   -webkit-box-flex: 1;
@@ -578,6 +581,7 @@ a.nav-link {
   -webkit-transition: opacity .3s linear;
   transition: opacity .3s linear; }
   .nav-submenu > * {
+    display: none;
     margin: 0 auto;
     max-width: 1280px;
     padding: 1rem; }

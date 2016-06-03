@@ -104,6 +104,10 @@ header {
     height: auto;
     opacity: 1;
     z-index: 100;
+
+    > * {
+      display: flex;
+    }
   }
 }
 
@@ -134,6 +138,7 @@ a.nav-link {
   transition: opacity .3s linear;
 
   > * {
+    display: none;
     margin: 0 auto;
     max-width: $max-width;
     padding: 1rem;
