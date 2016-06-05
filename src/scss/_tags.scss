@@ -1,0 +1,27 @@
+.tags {
+  text-transform: lowercase;
+  font-size: .8rem;
+  line-height: 1rem;
+  margin: .5rem 0 1rem;
+
+  li {
+  border-radius: 4px;
+  display: inline-block;
+  border: solid 1.5px #aaa;
+  color: #aaa;
+  cursor: pointer;
+  margin: .75rem .5rem 0 0;
+  padding: .25rem .5rem .35rem;
+  transition-property: background-color, border;
+  transition-duration: .25s;
+  transition-timing-function: ease-out ease-in;
+
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $gray-dark;
+    border:solid 1.5px $gray-dark;
+    }
+  }
+}
