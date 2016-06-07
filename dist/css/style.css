@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic,900);
 html,
 body,
 main,
@@ -808,7 +808,10 @@ table {
   text-transform: lowercase;
   font-size: .8rem;
   line-height: 1rem;
-  margin: .5rem 0 1rem; }
+  margin: 0; }
+  .tags a {
+    color: inherit;
+    text-decoration: none; }
   .tags li {
     border-radius: 4px;
     display: inline-block;
@@ -816,7 +819,7 @@ table {
     color: #aaa;
     cursor: pointer;
     margin: .75rem .5rem 0 0;
-    padding: .25rem .5rem .35rem;
+    padding: .3rem .6rem .3rem;
     -webkit-transition-property: background-color, border;
     transition-property: background-color, border;
     -webkit-transition-duration: .2s;
@@ -826,3 +829,30 @@ table {
     .tags li:active, .tags li:focus, .tags li:hover {
       color: #0094ff;
       border: solid 1.5px #0094ff; }
+
+.categories {
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: bold;
+  line-height: .25rem;
+  padding: .25rem 0 1rem;
+  margin: 0;
+  text-decoration: none; }
+  .categories a {
+    color: inherit;
+    text-decoration: none; }
+  .categories li {
+    display: inline-block;
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .5rem 1rem .5rem 0;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+    -webkit-transition-timing-function: ease-out ease-in;
+            transition-timing-function: ease-out ease-in; }
+    .categories li:active, .categories li:focus, .categories li:hover {
+      color: #0094ff;
+      text-decoration: none; }
