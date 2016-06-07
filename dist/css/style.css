@@ -395,12 +395,9 @@ a {
   color: #0094ff;
   text-decoration: none; }
   a:hover, a:active {
-    background-image: -webkit-linear-gradient(bottom, #fefefe 1px, #0094ff 1px, #0094ff 2px, #fefefe 2px);
-    background-image: linear-gradient(to top, #fefefe 1px, #0094ff 1px, #0094ff 2px, #fefefe 2px);
-    background-repeat: no-repeat;
     color: #0094ff;
-    text-decoration: none;
-    text-shadow: -1px 0 #fefefe, 0 1px #fefefe, 1px 0 #fefefe, 0 -1px #fefefe; }
+    cursor: pointer;
+    text-decoration: underline; }
 
 article a:hover,
 article a:active {
@@ -822,13 +819,14 @@ table {
     padding: .3rem .6rem .3rem;
     -webkit-transition-property: background-color, border;
     transition-property: background-color, border;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
     -webkit-transition-timing-function: ease-out ease-in;
             transition-timing-function: ease-out ease-in; }
     .tags li:active, .tags li:focus, .tags li:hover {
-      color: #0094ff;
-      border: solid 1.5px #0094ff; }
+      color: #fefefe;
+      border: solid 1.5px #0094ff;
+      background-color: #0094ff; }
 
 .categories {
   text-transform: uppercase;
@@ -849,8 +847,8 @@ table {
     padding: .5rem 1rem .5rem 0;
     -webkit-transition-property: background-color, border;
     transition-property: background-color, border;
-    -webkit-transition-duration: .2s;
-            transition-duration: .2s;
+    -webkit-transition-duration: .4s;
+            transition-duration: .4s;
     -webkit-transition-timing-function: ease-out ease-in;
             transition-timing-function: ease-out ease-in; }
     .categories li:active, .categories li:focus, .categories li:hover {
