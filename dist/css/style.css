@@ -801,15 +801,15 @@ table {
 .email-widget div {
   margin-bottom: 1rem; }
 
-.tags {
+.tags ul {
   text-transform: lowercase;
   font-size: .8rem;
   line-height: 1rem;
-  margin: 0; }
-  .tags a {
+  margin: .5rem 0 0 0; }
+  .tags ul a {
     color: inherit;
     text-decoration: none; }
-  .tags li {
+  .tags ul li {
     border-radius: 4px;
     display: inline-block;
     border: solid 1.5px #aaa;
@@ -819,27 +819,27 @@ table {
     padding: .3rem .6rem .3rem;
     -webkit-transition-property: background-color, border;
     transition-property: background-color, border;
-    -webkit-transition-duration: .4s;
-            transition-duration: .4s;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
     -webkit-transition-timing-function: ease-out ease-in;
             transition-timing-function: ease-out ease-in; }
-    .tags li:active, .tags li:focus, .tags li:hover {
+    .tags ul li:active, .tags ul li:focus, .tags ul li:hover {
       color: #fefefe;
       border: solid 1.5px #0094ff;
       background-color: #0094ff; }
 
-.categories {
+.categories ul {
   text-transform: uppercase;
   font-size: .7rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: .25rem;
-  padding: .25rem 0 1rem;
+  padding: .25rem 0 .4rem;
   margin: 0;
   text-decoration: none; }
-  .categories a {
+  .categories ul a {
     color: inherit;
     text-decoration: none; }
-  .categories li {
+  .categories ul li {
     display: inline-block;
     color: #aaa;
     text-decoration: none;
@@ -847,10 +847,48 @@ table {
     padding: .5rem 1rem .5rem 0;
     -webkit-transition-property: background-color, border;
     transition-property: background-color, border;
-    -webkit-transition-duration: .4s;
-            transition-duration: .4s;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
     -webkit-transition-timing-function: ease-out ease-in;
             transition-timing-function: ease-out ease-in; }
-    .categories li:active, .categories li:focus, .categories li:hover {
+    .categories ul li:active, .categories ul li:focus, .categories ul li:hover {
       color: #0094ff;
       text-decoration: none; }
+
+.byline {
+  display: inline-block;
+  cursor: pointer;
+  margin: .75rem 1rem 1rem 0; }
+  .byline img {
+    background: #ccc;
+    width: 3rem;
+    height: 3rem;
+    float: left; }
+  .byline p {
+    float: right;
+    align: center;
+    padding: .6rem 1.5rem 1rem 1.5rem;
+    height: 3rem;
+    color: #aaa;
+    font-size: 1rem;
+    border-left: none;
+    border-top: solid 1.5px #aaa;
+    border-right: solid 1.5px #aaa;
+    border-bottom: solid 1.5px #aaa;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out ease-in;
+            transition-timing-function: ease-out ease-in; }
+    .byline p:active, .byline p:focus, .byline p:hover {
+      color: #fefefe;
+      border: solid 1.5px #0094ff;
+      background-color: #0094ff; }
+
+.date p {
+  color: #aaa;
+  font-size: .75em;
+  margin: 0; }
