@@ -1,8 +1,8 @@
-.tags ul {
+.tags {
   text-transform: lowercase;
   font-size: .8rem;
   line-height: 1rem;
-  margin: .5rem 0 0 0 ;
+  margin: 0 0 4rem 0;
 
   a {
     color: inherit;
@@ -17,7 +17,7 @@
     cursor: pointer;
     margin: .75rem .5rem 0 0;
     padding: .3rem .6rem .3rem;
-    transition-property: background-color, border;
+    transition-property: background-color, border, color;
     transition-duration: .5s;
     transition-timing-function: ease-out ease-in;
 
@@ -32,10 +32,10 @@
 
 }
 
-.categories ul {
+.categories {
   text-transform: uppercase;
   font-size: .7rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: .25rem;
   padding: .25rem 0 .4rem;
   margin: 0;
@@ -52,8 +52,8 @@
   text-decoration: none;
   cursor: pointer;
   padding: .5rem 1rem .5rem 0;
-  transition-property: background-color, border;
-  transition-duration: .5s;
+  transition-property: color;
+  transition-duration: .4s;
   transition-timing-function: ease-out ease-in;
 
   &:active,
@@ -63,4 +63,80 @@
     text-decoration: none;
     }
   }
+}
+
+.category-title {
+  text-align: center;
+}
+
+.category-description {
+  margin: 2rem 0;
+}
+
+.category-links {
+  margin: 0;
+
+ ul {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-decoration: none;
+  padding: 1.25rem 0;
+  }
+
+  li {
+  display: block;
+  cursor: pointer;
+  }
+
+  ul:first-child {
+    padding-top: 0;
+  }
+
+  li:nth-child(2n+2) {
+    font-size: 1rem;
+    padding-top: .5rem;
+
+    a {
+      color: #aaa;
+      transition-property: color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out ease-in;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $tf-blue;
+        text-decoration: none;
+        }
+    }
+
+  }
+
+  a {
+  color: $text-default-color;
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: ease-out ease-in;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $tf-blue;
+    text-decoration: none;
+    }
+  }
+
+}
+
+.featured-link {
+  background-color: $gray-lighter;
+  border: 1.5px #aaa;
+  height: 175px;
+
+  li a {
+    background-color: blue;
+  }
+
 }
