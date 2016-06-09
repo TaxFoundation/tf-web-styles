@@ -64,13 +64,10 @@
   }
 }
 
-.category-title {
-  text-align: center;
-}
-
-.category-description {
-  margin: 2rem 0;
-}
+.category-header h1 {
+    text-align: center;
+    margin: 1rem 0 1.5rem 0;
+    }
 
 .category-links {
   margin: 0;
@@ -130,12 +127,12 @@
 }
 
 .featured-link {
-  background-color: $gray-lighter;
+  background-color: blue;
   border: 1.5px #aaa;
   height: 175px;
 
   li a {
-    background-color: blue;
+
   }
 
 }
