@@ -1,37 +1,3 @@
-.tags {
-  text-transform: lowercase;
-  font-size: .8rem;
-  line-height: 1rem;
-  margin: 0 0 4rem 0;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  li {
-    border-radius: 4px;
-    display: inline-block;
-    border: solid 1.5px #aaa;
-    color: #aaa;
-    cursor: pointer;
-    margin: .75rem .5rem 0 0;
-    padding: .3rem .6rem .3rem;
-    transition-property: background-color, border, color;
-    transition-duration: .4s;
-    transition-timing-function: ease-out ease-in;
-
-  &:active,
-  &:focus,
-  &:hover, {
-    color: $background-color;
-    border:solid 1.5px $tf-blue;
-    background-color: $tf-blue;
-    }
-  }
-
-}
-
 .categories {
   text-transform: uppercase;
   font-size: .75rem;
@@ -64,10 +30,17 @@
   }
 }
 
-.category-header h1 {
+.category-header {
+
+  h1 {
     text-align: center;
     margin: 1rem 0 1.5rem 0;
     }
+
+  p {
+
+    }
+  }
 
 .category-links {
   margin: 0;
@@ -97,7 +70,7 @@
     a {
       color: #aaa;
       transition-property: color;
-      transition-duration: .2s;
+      transition-duration: .25s;
       transition-timing-function: ease-out ease-in;
 
       &:active,
@@ -123,16 +96,48 @@
     text-decoration: none;
     }
   }
-
 }
 
-.featured-link {
-  background-color: blue;
-  border: 1.5px #aaa;
-  height: 175px;
+.featured-content {
 
-  li a {
 
+
+@include desktop-up {
+  width: 130%;
+  margin-left: -15%;
+  }
+}
+
+.tags {
+  text-transform: lowercase;
+  font-size: .8rem;
+  line-height: 1rem;
+  margin: 0 0 4rem 0;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li {
+    border-radius: 4px;
+    display: inline-block;
+    border: solid 1.5px #aaa;
+    color: #aaa;
+    cursor: pointer;
+    margin: .75rem .5rem 0 0;
+    padding: .3rem .6rem .3rem;
+    transition-property: background-color, border, color;
+    transition-duration: .4s;
+    transition-timing-function: ease-out ease-in;
+
+  &:active,
+  &:focus,
+  &:hover, {
+    color: $background-color;
+    border:solid 1.5px $tf-blue;
+    background-color: $tf-blue;
+    }
   }
 
 }
