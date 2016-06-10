@@ -260,7 +260,8 @@ hr {
   border: 0;
   color: #ccc;
   height: 1px;
-  margin: 2.75rem 0; }
+  margin: 2.75rem 0;
+  position: relative; }
 
 .divider {
   width: 500%;
@@ -1032,3 +1033,31 @@ table {
   .content p {
     line-height: 1.25;
     font-size: .9rem; }
+
+.pagination {
+  margin: 1rem auto 0 auto;
+  text-align: center; }
+  .pagination li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center; }
+    .pagination li a {
+      text-decoration: none; }
+
+.active {
+  background-color: #0094ff;
+  text-decoration: none;
+  color: #fefefe; }
+  .active a {
+    color: #fefefe; }
+
+.arrow {
+  height: 1rem;
+  padding-top: .25rem;
+  margin: 0 1rem; }
+
+.disabled {
+  opacity: .5; }
