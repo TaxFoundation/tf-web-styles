@@ -1,0 +1,76 @@
+/*--------------
+      Card
+---------------*/
+
+.cards {
+    @include desktop-up {
+      position: relative;
+      width: 120%;
+      margin-left: -10%;
+    }
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: $border-radius;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $gray-light;
+
+  a {
+    cursor: pointer;
+    }
+  }
+
+
+/*--------------
+  Rounded Edges
+---------------*/
+
+.cards .card :first-child {
+  border-radius: $border-radius $border-radius 0em 0em;
+  border-top: none;
+}
+.cards .card :last-child {
+  border-radius: 0em 0em $border-radius $border-radius;
+}
+.cards .card :only-child {
+  border-radius: $border-radius;
+}
+
+/*--------------
+     Images
+---------------*/
+
+.cards .card .image {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  padding: 0em;
+  background: $gray-lighter;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    }
+  }
+
+
+.content {
+  padding: 1em 1em;
+  font-size: 1rem;
+
+  h2 {
+    margin-bottom: .5rem;
+    }
+
+  p {
+    line-height: 1.4;
+
+    }
+
+
+}

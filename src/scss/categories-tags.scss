@@ -36,10 +36,10 @@
     text-align: center;
     margin: 1rem 0 1.5rem 0;
     }
+  }
 
-  p {
+.feature-content {
 
-    }
   }
 
 .category-links {
@@ -47,8 +47,6 @@
 
  ul {
   font-size: 1.5rem;
-  font-weight: 400;
-  line-height: normal;
   margin: 0;
   text-decoration: none;
   padding: 1.25rem 0;
@@ -57,6 +55,13 @@
   li {
   display: block;
   cursor: pointer;
+  @include font-sizes(
+    $paragraph-font-size-mobile * 1.5,
+    $paragraph-font-size-tablet * 1.5,
+    $paragraph-font-size-desktop * 1.5
+    );
+  font-weight: 400;
+  line-height: normal;
   }
 
   ul:first-child {
@@ -98,15 +103,6 @@
   }
 }
 
-.featured-content {
-
-
-
-@include desktop-up {
-  width: 130%;
-  margin-left: -15%;
-  }
-}
 
 .tags {
   text-transform: lowercase;
