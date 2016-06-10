@@ -12,12 +12,11 @@
     display: inline-block;
     margin: 0 .5rem .75rem 0;
     transition-property: opacity, background-color;
-    transition-duration: .25s;
+    transition-duration: .2s;
     transition-timing-function: ease-out;
 
     &:hover {
-      opacity: .8;
-      background-color: #e6f4ff;
+      opacity: .7;
       }
     }
 
