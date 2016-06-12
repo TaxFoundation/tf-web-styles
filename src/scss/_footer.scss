@@ -1,15 +1,44 @@
 $footer-text-color: $gray-dark;
 $footer-link-hover-color: $gray-darker;
 
+.pre-footer {
+  background-color: $tf-blue;
+  margin-top: 3rem;
+  padding: 0 $content-margin 1rem;
+  justify-content: center;
+  width: 100%;
+
+  h3 {
+    color: $background-color;
+    text-align: center;
+    width: 100%;
+    padding: 2rem $content-margin 1rem;
+  }
+}
+
+.pre-footer-buttons {
+  text-align: center;
+  justify-content: center;
+
+  button {
+    margin-right: 2rem;
+    padding: .75rem 1.25rem;
+    font-size: 1.2rem;
+    }
+}
+
 footer {
   background-color: $gray-lighter;
   color: $footer-text-color;
   display: flex;
   flex: none;
   flex-direction: row;
-  margin-top: 2rem;
   padding: 2rem $content-margin 0;
   width: 100%;
+
+  @include desktop-up {
+    padding: 2rem 10rem 0;
+  }
 }
 
 .footer-about,
@@ -45,26 +74,28 @@ footer {
   }
 }
 
-.bottom-links {
-  ul{
-  @include set-font(.8rem, 1.2);
 
-  align-items: center;
-  display: flex;
+.post-footer {
+  background-color: #e6e6e6;
+  color: $footer-text-color;
   justify-content: center;
-  list-style: none;
+  padding-top: 1.5rem;
+  margin-right: 0;
+  width: 100%;
   text-align: center;
-  margin-bottom: .25rem;
-  }
 
-  li {
-    padding-right: 1rem;
-  }
+  ul li {
+    @include set-font(.8rem, 1.2);
+
+    list-style: none;
+    display: inline-block;
+    padding-right: .75rem;
+    line-height: 2;
+    }
 
   a {
-    padding-left: .5rem;
     text-decoration: none;
-    color: #999;
+    color: $text-default-color;
     transition-property: color;
     transition-duration: .2s;
     transition-timing-function: ease-out;
@@ -72,30 +103,6 @@ footer {
     &:hover {
       color: $tf-blue;
       }
+    }
+
   }
-}
-
-.footer-copyright {
-
-    background-color: $gray-lighter;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    padding: 0 $content-margin .5rem;
-    width: 100%;
-    justify-content: center;
-
-  hr {
-    margin: 1rem;
-    width: 100%;
-  }
-
-  p {
-    @include set-font(.8rem, 1.2);
-
-    text-align: center;
-    margin: 0 auto0 .5rem;
-    color: #999;
-  }
-
-}
