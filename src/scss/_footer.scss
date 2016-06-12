@@ -2,58 +2,100 @@ $footer-text-color: $gray-dark;
 $footer-link-hover-color: $gray-darker;
 
 footer {
-  align-items: center;
   background-color: $gray-lighter;
   color: $footer-text-color;
   display: flex;
   flex: none;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: 3rem;
-  padding: 2rem $content-margin 1rem;
+  margin-top: 2rem;
+  padding: 2rem $content-margin 0;
   width: 100%;
-
-  > * {
-    max-width: $max-width;
-  }
-
-  a {
-    color: $footer-text-color;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background: transparent;
-      border-bottom: 0;
-      color: $footer-link-hover-color;
-      text-shadow: none;
-    }
-  }
 }
 
+.footer-about,
 .footer-links,
-.footer-social {
-  text-align: right;
+.footer-connect,
+.footer-contact {
+    padding: 1rem;
 
-  ul {
-    list-style: none;
+    ul {
+      list-style: none;
+      margin-left: 0;
+      line-height: 2;
+      }
+
+    a {
+      text-decoration: none;
+      color: $footer-text-color;
+      transition-property: color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        color: $tf-blue;
+        }
+      }
+    }
+
+.footer-contact {
+
+  p {
+    margin-bottom: .75rem;
+    line-height: 1.25rem;
   }
 }
 
-.footer-copyright {
+.bottom-links {
+  ul{
   @include set-font(.8rem, 1.2);
 
   align-items: center;
   display: flex;
   justify-content: center;
   list-style: none;
+  text-align: center;
+  margin-bottom: .25rem;
+  }
 
   li {
-    padding-right: .5rem;
+    padding-right: 1rem;
   }
 
   a {
-    border-left: solid 1px $gray-medium;
     padding-left: .5rem;
+    text-decoration: none;
+    color: #999;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      color: $tf-blue;
+      }
   }
+}
+
+.footer-copyright {
+
+    background-color: $gray-lighter;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    padding: 0 $content-margin .5rem;
+    width: 100%;
+    justify-content: center;
+
+  hr {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  p {
+    @include set-font(.8rem, 1.2);
+
+    text-align: center;
+    margin: 0 auto0 .5rem;
+    color: #999;
+  }
+
 }
