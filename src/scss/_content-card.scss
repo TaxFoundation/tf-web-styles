@@ -31,46 +31,43 @@
     }
 
     // Rounded corners
-    :first-child {
+    > *:first-child {
       border-radius: $border-radius $border-radius 0 0;
       border-top: 0;
     }
 
-    :last-child {
+    > *:last-child {
       border-radius: 0 0 $border-radius $border-radius;
     }
 
-    :only-child {
+    > *:only-child {
       border-radius: $border-radius;
     }
   }
 }
 
-/*--------------
-     Images
----------------*/
-
-.cards .card .image {
-  position: relative;
+// Card Images
+.card .image {
+  background: $gray-lighter;
   display: block;
   flex: 0 0 auto;
   padding: 0;
-  background: $gray-lighter;
-  transition-property: opacity;
+  position: relative;
   transition-duration: .3s;
+  transition-property: opacity;
   transition-timing-function: ease-in ease-out;
 
   &:hover {
     opacity: .75;
-    }
+  }
 
   img {
-    display: block;
-    width: 100%;
-    height: auto;
     border-radius: inherit;
-    }
+    display: block;
+    height: auto;
+    width: 100%;
   }
+}
 
 
 .content {
