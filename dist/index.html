@@ -22,6 +22,8 @@
     <meta name="msapplication-TileColor" content="#0094ff">
     <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#0094ff">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -30,13 +32,71 @@
           <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
         </div>
         <nav class="header-menu">
-          <ul>
-            <li><a href="#">STATE</a></li>
-            <li><a href="#">FEDERAL</a></li>
-            <li><a href="#">LEGAL</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">DONATE</a></li>
+          <ul id="nav-items">
+            <li>
+              <a class="nav-link">Research</a>
+              <div class="nav-submenu">
+                <div class="container row">
+                  <ul>
+                    <li><a href="#">Test 1</a></li>
+                    <li><a href="#">Test 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link">Data</a>
+              <div class="nav-submenu">
+                <div class="container row">
+                  <ul>
+                    <li><a href="#">Test 3</a></li>
+                    <li><a href="#">Test 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link">Blog</a>
+              <div class="nav-submenu">
+                <div class="container row">
+                  <div>
+                    <h4>Title</h4>
+                    <ul>
+                      <li><a href="#">Test 5</a></li>
+                      <li><a href="#">Test 6</a></li>
+                      <li>Text</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Title</h4>
+                    <ul>
+                      <li><a href="#">Test 5</a></li>
+                      <li><a href="#">Test 6</a></li>
+                      <li>Text</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link">About</a>
+              <div class="nav-submenu">
+                <div class="container row">
+                  <ul>
+                    <li><a href="#">Test 1</a></li>
+                    <li><a href="#">Test 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link">Search</a>
+              <div class="nav-submenu">
+                <div class="container row">
+                  <input type="search">
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="header-menu-mobile-toggle">
@@ -110,7 +170,7 @@
         <div>
           <h3>Categories</h3>
             <ul class="categories">
-              <li><a href="\category-page.html">I'm a category<?</a></li>
+              <li><a href="\category-page.html">I'm a category?</a></li>
               <li><a href="\category-page.html">so am I</a></li>
               <li><a href="\category-page.html">and me!</a></li>
               <li><a href="\category-page.html">Fourth category</a></li>
@@ -191,6 +251,7 @@
             </p>
           </div>
         </div>
+        <div>
         <ul class="tags">
           <li><a href="\tag-page.html">Presidential Tax Plans</a></li>
           <li><a href="\tag-page.html">Election 2016</a></li>
@@ -241,6 +302,10 @@
 
       <hr><!-- Tables -->
 
+      <h2>Tables</h2>
+      <p>
+        By default, tables are centered inside the parent container. To make a table horizontally fill its parent container, give it the <code>.full-width</code> class.
+      </p>
       <table>
         <thead>
           <tr>
@@ -249,6 +314,9 @@
             </th>
             <th>
               Value
+            </th>
+            <th>
+              Some Other Column
             </th>
           </tr>
         </thead>
@@ -260,6 +328,9 @@
             <td>
               5
             </td>
+            <td>
+              Resplendent
+            </td>
           </tr>
           <tr>
             <td>
@@ -267,6 +338,9 @@
             </td>
             <td>
               3
+            </td>
+            <td>
+              Morose
             </td>
           </tr>
           <tr>
@@ -276,15 +350,37 @@
             <td>
               7000
             </td>
+            <td>
+              Concerned
+            </td>
           </tr>
         </tbody>
       </table>
 
+      <hr><!-- Images -->
+
+      <h2>Images</h2>
+
+      <h3>Regular Image</h3>
+      <img src="http://placehold.it/350x150">
+
+      <h3>Image in a paragraph</h3>
+      <p>
+        <img src="http://placehold.it/350x150">
+      </p>
+
+      <h3>Image in a link in a paragraph</h3>
+       <p>
+        <a href="#"><img src="http://placehold.it/350x150"></a>
+      </p>
+
       <hr><!-- Forms -->
 
       <h2>Forms + Buttons</h2>
+      <p>
+        Forms are, by default, 100% width of the containing element. When you put items inside a fieldset, they become inline-block.
+      </p>
       <form>
-
           <label for="name">Name:</label>
           <input type="text" id="name" />
 
@@ -329,9 +425,10 @@
             <label for="c3">Another One</label>
           </fieldset>
 
-          <button type="button" name="button">Submit This</button>
-          <button type="button" name="button" class="inverted">Submit This</button>
-
+          <fieldset>
+            <button type="button" name="button">Submit This</button>
+            <button type="button" name="button" class="inverted">Submit This</button>
+          </fieldset>
       </form>
 
       <hr><!-- Containers -->

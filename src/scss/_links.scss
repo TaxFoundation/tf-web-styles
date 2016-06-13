@@ -12,11 +12,3 @@ a {
     text-decoration: underline;
   }
 }
-
-article {
-  a:hover,
-  a:active {
-    background-image: linear-gradient(to top, $background-color 2px, $link-color 2px, $link-color 3px, $background-color 3px);
-    color: $link-color;
-  }
-}
