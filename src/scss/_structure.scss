@@ -23,7 +23,7 @@ main {
 }
 
 // Horizontal Rules
-$hr-color: #ddd;
+$hr-color: $gray-light;
 
 hr {
   background-color: $hr-color;
@@ -31,4 +31,10 @@ hr {
   color: $hr-color;
   height: 1px;
   margin: 2.75rem 0;
+  position: relative;
+}
+
+.divider {
+  width: 500%;
+  margin-left: -200%;
 }

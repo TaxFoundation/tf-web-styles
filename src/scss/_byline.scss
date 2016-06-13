@@ -1,21 +1,24 @@
-.date p{
-  color: #aaa;
-  font-size: .8em;
-  margin-bottom: .8rem;
-  }
+  .title-bar {
+    margin-bottom: 1.75rem;
+    }
+
+  .date p{
+    color: #aaa;
+    font-size: .8em;
+    margin-bottom: .8rem;
+    }
 
   .byline {
     display: inline-block;
     margin: 0 .5rem .75rem 0;
-    transition-property: opacity;
-    transition-duration: .25s;
+    transition-property: opacity, background-color;
+    transition-duration: .2s;
     transition-timing-function: ease-out;
 
     &:hover {
       opacity: .7;
+      }
     }
-
-  }
 
   .author {
     display: inline-block;
@@ -41,9 +44,5 @@
       font-size: 1rem;
       line-height: 2.25rem;
       height: 2.25rem;
+      }
     }
-  }
-
-.title-bar {
-  margin-bottom: 1.75rem;
-}
