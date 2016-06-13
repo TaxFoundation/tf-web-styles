@@ -1,36 +1,36 @@
-/*--------------
-      Card
----------------*/
+//--------------
+//    Card
+//--------------
 
 .cards {
-    @include desktop-up {
-      position: relative;
-      width: 120%;
-      margin-left: -10%;
+  @include desktop-up {
+    margin-left: -10%;
+    position: relative;
+    width: 120%;
+  }
+
+  .card {
+    border-color: $gray-light;
+    border-style: solid;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .1s;
+    transition-property: opacity, border-bottom;
+    transition-timing-function: ease-in ease-out;
+
+    &:hover {
+      border-bottom: solid 5px $tf-blue;
+      cursor: pointer;
     }
-}
 
-.cards .card {
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $gray-light;
-  transition-property: opacity, border-bottom;
-  transition-duration: .1s;
-  transition-timing-function: ease-in ease-out;
-
-  &:hover {
-    cursor: pointer;
-    border-bottom: solid 5px $tf-blue;
-    }
-
-  a {
-    cursor: pointer;
+    a {
+      cursor: pointer;
     }
   }
+}
 
 
 /*--------------
