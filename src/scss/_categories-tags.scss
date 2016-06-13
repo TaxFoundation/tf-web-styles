@@ -107,14 +107,14 @@ $categories-text-color: #aaa;
     margin: .75rem .5rem 0 0;
     padding: .3rem .6rem;
     transition-duration: .4s;
-    transition-property: background-color, border, color;
+    transition-property: background-color, border-color, color;
     transition-timing-function: ease-out ease-in;
 
     &:active,
     &:focus,
     &:hover, {
       background-color: $tf-blue;
-      border: solid 1.5px $tf-blue;
+      border-color: $tf-blue;
       color: $background-color;
     }
   }
