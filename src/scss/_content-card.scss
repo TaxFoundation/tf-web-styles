@@ -1,4 +1,4 @@
-.cards {
+  .cards {
       position: relative;
       padding: 0 $content-margin;
       width: $content-width;
@@ -8,39 +8,61 @@
     }
 }
 
-.cards .card {
-  display: flex;
-  flex-direction: column;
-  background-color: $background-color;
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  border: solid 1px $gray-light;
-  border-bottom: solid 4px $tf-blue;
-  transition-property: opacity;
-  transition-duration: .3s;
-  transition-timing-function: ease-in ease-out;
+  .card {
+    border-color: $gray-light;
+    border-style: solid;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease-in ease-out;
 
-  &:hover {
-    cursor: pointer;
-    opacity: .75;
-  }
+    &:hover {
+      cursor: pointer;
+      opacity: .75;
+      border-bottom: solid 4px $tf-blue;
+    }
 
+    > *:first-child {
+      border-radius: $border-radius $border-radius 0 0;
+      border-top: 0;
+    }
+
+    > *:last-child {
+      border-radius: 0 0 $border-radius $border-radius;
+    }
+
+    > *:only-child {
+      border-radius: $border-radius;
+    }
 }
 
 
-.cards .card .image {
-  position: relative;
+.card .image {
+  background: $gray-lighter;
   display: block;
   flex: 0 0 auto;
+  padding: 0;
+  position: relative;
+  transition-duration: .3s;
+  transition-property: opacity;
+  transition-timing-function: ease-in ease-out;
 
   img {
+    border-radius: inherit;
     display: block;
-    width: 100%;
     height: auto;
+    width: 100%;
     border-radius: $border-radius $border-radius 0 0;
     }
-  }
 
+  &:hover {
+    opacity: .75;
+  }
+}
 
 .content {
   padding: 1em 1em 1.5rem;
