@@ -867,10 +867,10 @@ table {
   text-align: center; }
 
 .category-links {
-  margin: 0; }
+  margin: -3rem 0 0 0; }
   .category-links ul {
     margin: 0;
-    padding: 1.25rem 0;
+    padding: 0;
     text-decoration: none; }
     .category-links ul:first-child {
       padding-top: 0; }
@@ -879,25 +879,26 @@ table {
     display: block;
     font-weight: 400;
     line-height: normal;
-    margin: 0 0 1rem; }
+    margin: 0 0 3rem; }
+    .category-links li p {
+      margin-top: .5rem; }
 
 .category-links a {
   color: #555;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-timing-function: ease-out ease-in;
-          transition-timing-function: ease-out ease-in; }
+  text-decoration: none; }
   .category-links a h3 {
-    margin: 0; }
+    margin: 0;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-timing-function: ease-out ease-in;
+            transition-timing-function: ease-out ease-in; }
+    .category-links a h3:active, .category-links a h3:focus, .category-links a h3:hover {
+      color: #0094ff;
+      text-decoration: none; }
   .category-links a p {
     color: #aaa; }
-  .category-links a:active, .category-links a:focus, .category-links a:hover {
-    color: #0094ff;
-    text-decoration: none; }
-    .category-links a:active p, .category-links a:focus p, .category-links a:hover p {
-      color: #0094ff; }
 
 .tags {
   font-size: .8rem;
