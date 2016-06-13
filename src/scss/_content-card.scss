@@ -1,13 +1,12 @@
-//--------------
-//    Card
-//--------------
+  .cards {
+      position: relative;
+      padding: 0 $content-margin;
+      width: $content-width;
 
-.cards {
-  @include desktop-up {
-    margin-left: -10%;
-    position: relative;
-    width: 120%;
-  }
+    @include desktop-up {
+      max-width: 1200px;
+    }
+}
 
   .card {
     border-color: $gray-light;
@@ -17,20 +16,16 @@
     border-width: 1px;
     display: flex;
     flex-direction: column;
-    transition-duration: .1s;
-    transition-property: opacity, border-bottom;
+    transition-property: opacity;
+    transition-duration: .3s;
     transition-timing-function: ease-in ease-out;
 
     &:hover {
-      border-bottom: solid 5px $tf-blue;
       cursor: pointer;
+      opacity: .75;
+      border-bottom: solid 4px $tf-blue;
     }
 
-    a {
-      cursor: pointer;
-    }
-
-    // Rounded corners
     > *:first-child {
       border-radius: $border-radius $border-radius 0 0;
       border-top: 0;
@@ -43,10 +38,9 @@
     > *:only-child {
       border-radius: $border-radius;
     }
-  }
 }
 
-// Card Images
+
 .card .image {
   background: $gray-lighter;
   display: block;
@@ -57,30 +51,30 @@
   transition-property: opacity;
   transition-timing-function: ease-in ease-out;
 
-  &:hover {
-    opacity: .75;
-  }
-
   img {
     border-radius: inherit;
     display: block;
     height: auto;
     width: 100%;
+    border-radius: $border-radius $border-radius 0 0;
+    }
+
+  &:hover {
+    opacity: .75;
   }
 }
 
-// Card Text Content
-.card .content {
-  font-size: 1rem;
-  padding: 1em;
+.content {
+  padding: 1em 1em 1.5rem;
 
   h2 {
+    margin-bottom: .6rem;
     font-size: 1.4rem;
-    margin-bottom: .5rem;
   }
 
   p {
+    line-height: 1.3;
     font-size: .9rem;
-    line-height: 1.25;
   }
+
 }

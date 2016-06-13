@@ -138,10 +138,6 @@ html {
   background-color: #0094ff;
   color: #fefefe; }
 
-::-moz-selection {
-  background-color: #0094ff;
-  color: #fefefe; }
-
 ::selection {
   background-color: #0094ff;
   color: #fefefe; }
@@ -271,8 +267,7 @@ hr {
   position: relative; }
 
 .divider {
-  width: 500%;
-  margin-left: -200%; }
+  width: 100%; }
 
 h1,
 .h1-text {
@@ -309,9 +304,8 @@ h3,
   font-size: 1.5rem;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .8rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
     h3,
     .h3-text {
       font-size: 1.5rem; } }
@@ -326,9 +320,8 @@ h4,
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
     h4,
     .h4-text {
       font-size: 1.3rem; } }
@@ -342,9 +335,8 @@ h5,
   font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
     h5,
     .h5-text {
       font-size: 1.5rem; } }
@@ -358,9 +350,8 @@ h6,
   font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1rem; }
+  margin-bottom: .9rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
     h6,
     .h6-text {
       font-size: 1.5rem; } }
@@ -391,8 +382,7 @@ p,
     p,
     .paragraph-text {
       line-height: 1.7rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
-
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     p,
     .paragraph-text {
       margin-bottom: 1.5rem; } }
@@ -424,9 +414,8 @@ ul {
   font-size: 1rem;
   line-height: 1.5rem;
   list-style-position: outside;
-  margin: 0 0 1.5rem 1.2rem; }
+  margin: 0 0 1.5rem 1rem; }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
     ol,
     ul {
       font-size: 1rem; } }
@@ -442,8 +431,7 @@ ul {
     ol,
     ul {
       line-height: 1.7rem; } }
-  @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
-
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     ol,
     ul {
       margin-bottom: 1.5rem; } }
@@ -488,18 +476,17 @@ header {
   width: 100%;
   z-index: 100; }
   header > * {
-    max-width: 1280px; }
+    max-width: 1100px; }
   @media print {
     header {
       display: none; } }
 
 .header-logo a,
-.header-logo a:hover, a.nav-link, a.nav-link:hover {
+.header-logo a:hover, a:hover {
   background: none;
   color: #fff;
   text-decoration: none;
   text-shadow: none; }
-
 
 .header-bar {
   -webkit-box-align: stretch;
@@ -570,11 +557,11 @@ header {
               flex-direction: column;
       position: relative; }
 
-a.nav-link {
-  -webkit-box-flex: 1;
-          flex: 1;
-  padding: 15px 1rem 0; }
-  a.nav-link:hover {
+a {
+  padding: 15px 0.8rem 0;
+  font-weight: 700;
+  font-size: .85rem; }
+  a:hover {
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
     -webkit-transition-duration: 0.1s;
@@ -587,7 +574,7 @@ a.nav-link {
 .nav-submenu {
   background: #fff;
   border-bottom: 1px solid #0094ff;
-  color: #333;
+  color: #555;
   display: none;
   left: 0;
   position: fixed;
@@ -595,7 +582,7 @@ a.nav-link {
   text-align: left; }
   .nav-submenu > * {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1100px;
     padding: 1rem; }
   .nav-submenu a {
     color: #0094ff; }
@@ -611,7 +598,6 @@ a.nav-link {
     display: flex; }
   .header-menu-mobile-toggle {
     display: none; } }
->>>>>>> refs/remotes/origin/master
 
 footer {
   -webkit-box-align: center;
@@ -894,7 +880,7 @@ table {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: normal; }
-    @media only screen and (min-width: 768px) and (max-width: calc(1023px)) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .category-links li {
         font-size: 1.5rem; } }
     @media only screen and (min-width: 1024px) {
@@ -957,7 +943,7 @@ table {
 
 .tag-header h1 {
   text-align: center;
-  margin: 1rem 0 1.5rem 0; }
+  margin: 1rem 0 2rem 0; }
 
 .tags-related-header {
   text-align: center;
@@ -1033,14 +1019,13 @@ table {
     line-height: 2.25rem;
     height: 2.25rem; }
 
-/*--------------
-      Card
----------------*/
-@media only screen and (min-width: 1024px) {
-  .cards {
-    position: relative;
-    width: 120%;
-    margin-left: -10%; } }
+.cards {
+  position: relative;
+  padding: 0 2rem;
+  width: 99%; }
+  @media only screen and (min-width: 1024px) {
+    .cards {
+      max-width: 1200px; } }
 
 .cards .card {
   display: -webkit-box;
@@ -1048,68 +1033,39 @@ table {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  background-color: #fefefe;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ccc;
-  -webkit-transition-property: opacity, border-bottom;
-  transition-property: opacity, border-bottom;
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
-  -webkit-transition-timing-function: ease-in ease-out;
-          transition-timing-function: ease-in ease-out; }
-  .cards .card:hover {
-    cursor: pointer;
-    border-bottom: solid 5px #0094ff; }
-  .cards .card a {
-    cursor: pointer; }
-
-/*--------------
-  Rounded Edges
----------------*/
-.cards .card :first-child {
-  border-radius: 4px 4px 0em 0em;
-  border-top: none; }
-
-.cards .card :last-child {
-  border-radius: 0em 0em 4px 4px; }
-
-.cards .card :only-child {
-  border-radius: 4px; }
-
-/*--------------
-     Images
----------------*/
-.cards .card .image {
-  position: relative;
-  display: block;
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
-  padding: 0em;
-  background: #eee;
+  border: solid 1px #ccc;
+  border-bottom: solid 4px #0094ff;
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   -webkit-transition-timing-function: ease-in ease-out;
           transition-timing-function: ease-in ease-out; }
-  .cards .card .image:hover {
+  .cards .card:hover {
+    cursor: pointer;
     opacity: .75; }
+
+.cards .card .image {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 0;
+          flex: 0 0 auto; }
   .cards .card .image img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: inherit; }
+    border-radius: 4px 4px 0 0; }
 
 .content {
-  padding: 1em 1em;
-  font-size: 1rem; }
+  padding: 1em 1em 1.5rem; }
   .content h2 {
-    margin-bottom: .5rem;
+    margin-bottom: .6rem;
     font-size: 1.4rem; }
   .content p {
-    line-height: 1.25;
+    line-height: 1.3;
     font-size: .9rem; }
 
 .pagination {

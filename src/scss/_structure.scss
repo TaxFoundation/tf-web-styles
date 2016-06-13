@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  
+
   &.admin-bar header {
     top: 32px;
   }
@@ -35,6 +35,5 @@ hr {
 }
 
 .divider {
-  width: 500%;
-  margin-left: -200%;
+  width: 100%;
 }
