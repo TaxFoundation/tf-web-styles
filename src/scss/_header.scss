@@ -97,20 +97,19 @@ header {
       position: relative;
     }
   }
-}
 
+  a {
+    padding: ($header-height / 4) ($content-margin / 2.5) 0;
+    font-weight: 700;
+    font-size: .85rem;
 
-a {
-  padding: ($header-height / 4) ($content-margin / 2.5) 0;
-  font-weight: 700;
-  font-size: .85rem;
+    &:hover {
+      @extend %header-bar-link-styles;
+      @include hover-transition(.1s);
 
-  &:hover {
-    @extend %header-bar-link-styles;
-    @include hover-transition(.1s);
-
-    background-color: lighten($tf-blue, 15%);
-    cursor: pointer;
+      background-color: lighten($tf-blue, 15%);
+      cursor: pointer;
+    }
   }
 }
 
