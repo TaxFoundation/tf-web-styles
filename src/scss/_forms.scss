@@ -56,24 +56,28 @@ button,
     border: solid 1px lighten($tf-blue, 15%);
   }
 
-  &.featured {
-    background: $green;
-    color: $background-color;
-    transition-property: border, color;
+  &.button-form {
+    border-top-left-radius:0px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:0px;
+    margin-left: -1.2em;
+    transition-property: background-color, border;
     transition-duration: .1s;
     transition-timing-function: ease-out;
-  }
+    }
 
-  &.smallbutton {
-    width: 15%;
-  }
+  &.featured {
+    background: $green;
+    border: solid 1px $green;
 
-  &.mediumbutton {
-    width: 25%;
-  }
-
-  &.largebutton {
-    width: 33.333%;
+  &:active,
+  &:focus,
+  &:hover {
+    border: solid 1px lighten($green, 8%);
+    background-color: lighten($green, 8%);
+    color: $background-color;
+    }
   }
 
   &.inverted {

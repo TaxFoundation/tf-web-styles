@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  
+
   &.admin-bar header {
     top: 32px;
   }
@@ -15,11 +15,15 @@ main {
   margin-top: 76px; // Fixed position header offset
   max-width: $max-width;
   padding: 0 $content-margin;
-  width: 100%;
+  width: $content-width;
+
+  @include desktop-up {
+    max-width: 900px;
+  }
 }
 
 // Horizontal Rules
-$hr-color: #ddd;
+$hr-color: $gray-light;
 
 hr {
   background-color: $hr-color;
@@ -27,4 +31,9 @@ hr {
   color: $hr-color;
   height: 1px;
   margin: 2.75rem 0;
+  position: relative;
+}
+
+.divider {
+  width: 100%;
 }

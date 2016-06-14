@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic,900);
 
 // Font Families
 $font-sans-serif: 'Lato', sans-serif;
@@ -20,7 +20,7 @@ $green: #6eb76e;
 $root-em: 18px;
 
 // Borders
-$border-radius: 3px;
+$border-radius: 4px;
 
 // Screen Sizes
 $tablet-width: 768px;
@@ -28,7 +28,7 @@ $desktop-width: 1024px;
 $max-width: 1100px;
 
 // Font sizes
-$paragraph-font-size-mobile: .9rem;
+$paragraph-font-size-mobile: 1rem;
 $paragraph-font-size-tablet: 1rem;
 $paragraph-font-size-desktop: 1rem;
 $paragraph-line-height-mobile: 1.5rem;
@@ -37,6 +37,7 @@ $paragraph-line-height-desktop: 1.7rem;
 
 // Structure Variables
 $content-margin: 2rem;
+$content-width: 99%;
 
 // Table Styles
 
