@@ -1,59 +1,108 @@
 $footer-text-color: $gray-dark;
 $footer-link-hover-color: $gray-darker;
 
+.pre-footer {
+  background-color: $tf-blue;
+  margin-top: 3rem;
+  padding: 0 $content-margin 1rem;
+  justify-content: center;
+  width: 100%;
+
+  h3 {
+    color: $background-color;
+    text-align: center;
+    width: 100%;
+    padding: 2rem $content-margin 1rem;
+  }
+}
+
+.pre-footer-buttons {
+  text-align: center;
+  justify-content: center;
+
+  button {
+    margin-right: 2rem;
+    padding: .75rem 1.25rem;
+    font-size: 1.2rem;
+    }
+}
+
 footer {
-  align-items: center;
   background-color: $gray-lighter;
   color: $footer-text-color;
   display: flex;
   flex: none;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: 3rem;
-  padding: 2rem $content-margin 1rem;
+  padding: 2rem $content-margin 0;
   width: 100%;
 
-  > * {
-    max-width: $max-width;
-  }
-
-  a {
-    color: $footer-text-color;
-
-    &:active,
-    &:focus,
-    &:hover {
-      background: transparent;
-      border-bottom: 0;
-      color: $footer-link-hover-color;
-      text-shadow: none;
-    }
+  @include desktop-up {
+    padding: 2rem 10rem 0;
   }
 }
 
+.footer-about,
 .footer-links,
-.footer-social {
-  text-align: right;
+.footer-connect,
+.footer-contact {
+    padding: 1rem;
 
-  ul {
-    list-style: none;
+    ul {
+      list-style: none;
+      margin-left: 0;
+      line-height: 2;
+      }
+
+    a {
+      text-decoration: none;
+      color: $footer-text-color;
+      transition-property: color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        color: $tf-blue;
+        }
+      }
+    }
+
+.footer-contact {
+
+  p {
+    margin-bottom: .75rem;
+    line-height: 1.25rem;
   }
 }
 
-.footer-copyright {
-  @include set-font(.8rem, 1.2);
 
-  align-items: center;
-  display: flex;
+.post-footer {
+  background-color: #e6e6e6;
+  color: $footer-text-color;
   justify-content: center;
-  list-style: none;
+  padding-top: 1.5rem;
+  margin-right: 0;
+  width: 100%;
+  text-align: center;
 
-  li {
-    padding-right: .5rem;
-  }
+  ul li {
+    @include set-font(.8rem, 1.2);
+
+    list-style: none;
+    display: inline-block;
+    padding-right: .75rem;
+    line-height: 2;
+    }
 
   a {
-    border-left: solid 1px $gray-medium;
-    padding-left: .5rem;
+    text-decoration: none;
+    color: $text-default-color;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      color: $tf-blue;
+      }
+    }
+
   }
-}
