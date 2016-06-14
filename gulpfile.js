@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
 
-gulp.task('default', ['moveImages', 'moveJavascript', 'compileSass', 'webserver', 'watch']);
+gulp.task('default', ['moveHtml', 'moveImages', 'moveJavascript', 'compileSass', 'webserver', 'watch']);
 
 gulp.task('compileSass', function () {
   gulp.src('./src/scss/style.scss')
