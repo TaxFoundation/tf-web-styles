@@ -1,20 +1,21 @@
 'use strict';
 
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
 
-gulp.task('default', ['moveImages', 'moveJavascript', 'compileSass', 'webserver', 'watch']);
+gulp.task('default', ['build', 'webserver', 'watch']);
+
+gulp.task('build', ['moveHtml', 'moveImages', 'moveJavascript', 'compileSass'], function (cb) {
+  cb();
+});
 
 gulp.task('compileSass', function () {
   gulp.src('./src/scss/style.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({ browsers: ['> 5%'] }))
   .pipe(gulp.dest('./dist/css/'));
-
-  return gutil.log('Compiled Sass');
 });
 
 gulp.task('moveImages', function () {
@@ -25,6 +26,11 @@ gulp.task('moveImages', function () {
 gulp.task('moveJavascript', function () {
   gulp.src('./src/js/**/*')
   .pipe(gulp.dest('./dist/js/'));
+});
+
+gulp.task('moveHtml', function () {
+  gulp.src('./src/templates/**/*')
+  .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('webserver', function () {
@@ -41,4 +47,5 @@ gulp.task('watch', function () {
   gulp.watch('./src/scss/**/*.scss', ['compileSass']);
   gulp.watch('./src/images/**/*', ['moveImages']);
   gulp.watch('./src/js/**/*', ['moveJavascript']);
+  gulp.watch('./src/templates/**/*', ['moveHtml']);
 });
