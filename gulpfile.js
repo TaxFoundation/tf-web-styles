@@ -5,7 +5,11 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
 
-gulp.task('default', ['moveHtml', 'moveImages', 'moveJavascript', 'compileSass', 'webserver', 'watch']);
+gulp.task('default', ['build', 'webserver', 'watch']);
+
+gulp.task('build', ['moveHtml', 'moveImages', 'moveJavascript', 'compileSass'], function (cb) {
+  cb();
+});
 
 gulp.task('compileSass', function () {
   gulp.src('./src/scss/style.scss')
