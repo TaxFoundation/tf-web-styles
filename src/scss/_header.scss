@@ -111,11 +111,11 @@ header {
   }
 }
 
-a.nav-link {
+.nav-link {
   @extend %header-bar-link-styles;
   flex: 1;
-  font-weight: 700;
   font-size: .85rem;
+  font-weight: 700;
   padding: ($header-height / 4) ($content-margin / 2.5) 0;
   text-transform: uppercase;
 
@@ -133,7 +133,6 @@ a.nav-link {
   background: $header-color;
   border-bottom: 1px solid $header-background;
   color: $text-default-color;
-  height: 0;
   left: 0;
   opacity: 0;
   position: fixed;
