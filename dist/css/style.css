@@ -565,7 +565,8 @@ a.nav-link {
           flex: 1;
   font-weight: 700;
   font-size: .85rem;
-  padding: 15px 0.8rem 0; }
+  padding: 15px 0.8rem 0;
+  text-transform: uppercase; }
   a.nav-link:hover {
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;

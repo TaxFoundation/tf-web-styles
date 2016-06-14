@@ -117,6 +117,7 @@ a.nav-link {
   font-weight: 700;
   font-size: .85rem;
   padding: ($header-height / 4) ($content-margin / 2.5) 0;
+  text-transform: uppercase;
 
   &:hover {
     @extend %header-bar-link-styles;
