@@ -7,5 +7,5 @@ These are the standard CSS styles used in Tax Foundation web properties.
 ```
 git clone https://github.com/TaxFoundation/tf-web-styles.git
 npm install
-gulp
+npm start
 ```
