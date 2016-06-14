@@ -1,7 +1,6 @@
 'use strict';
 
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
@@ -13,8 +12,6 @@ gulp.task('compileSass', function () {
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({ browsers: ['> 5%'] }))
   .pipe(gulp.dest('./dist/css/'));
-
-  return gutil.log('Compiled Sass');
 });
 
 gulp.task('moveImages', function () {
