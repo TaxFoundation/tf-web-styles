@@ -6,6 +6,10 @@
     margin: 3rem 0 0 0;
     padding: 0;
     position: relative;
+
+    @include mobile-only {
+      height: 12rem;
+    }
 }
 
 .about-us-header-text {
@@ -33,34 +37,75 @@
           font-size: 3rem;
           line-height: 2.75rem;
         }
+
+        @include mobile-only {
+          font-size: 2.25rem;
+          line-height: 1.75rem;
+        }
     }
 }
 
-.about-nav-list li {
+.about-nav {
+
+  @include mobile-only {
+    display: table;
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+}
+
+.about-nav li {
   background-color: $background-color;
   border-right: 1.5px solid $gray-light;
   border-bottom: 1.5px solid $gray-light;
   color: $gray-medium;
+  display: block;
   float: left;
   list-style: none;
+  text-align: center;
   font-size: .9rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  padding: 0 .75rem;
   transition-duration: .1s;
   transition-property: background-color, color;
   transition-timing-function: ease-out;
 
+    @include desktop-up {
+      font-size: 1rem;
+      line-height: 2.5rem;
+      padding: 0 1.5rem;
+    }
+
+    @include mobile-only {
+      margin: 0 auto;
+      display: table-cell;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 2.75rem;
+      border: none;
+      border-bottom: 1.5px solid $gray-light;
+    }
+
   &:first-child {
     border-left: 1.5px solid $gray-light;
+
+    @include mobile-only {
+      border-left: none;
+    }
+
   }
 
-  &:hover {
-    background-color: #e6f4ff;
+  &:hover,
+  &:active {
+    color: $gray-dark;
+    background-color: #cceaff;
   }
 
   a {
     color: $gray-medium;
-    display: block;
-    padding:0 1.25rem;
     text-decoration:none;
     transition-duration: .1s;
     transition-property: color;
@@ -69,5 +114,17 @@
     &:hover {
       color: $gray-dark;
     }
+  }
+}
+
+.about-body {
+  flex: 1;
+  margin-top: 2rem;
+  max-width: $max-width;
+  padding: 0 $content-margin;
+  width: $content-width;
+
+  @include desktop-up {
+    max-width: 900px;
   }
 }

@@ -1,0 +1,43 @@
+.pullquote-right:before {
+
+	display: none;
+
+	@include desktop-up {
+		display: block;
+		padding: 0 0 0 1rem;
+		border: none;
+		content: attr(data-pullquote);
+		float: right;
+		width: 25rem;
+		margin: 1rem -5rem 1rem 2.5rem;
+		position: relative;
+		top: 5px;
+		font-weight: 700;
+		font-size: 1.7rem;
+		line-height: 2.3rem;
+		color: $tf-blue;
+		border-left: solid 5px $tf-blue;
+	}
+}
+
+.pullquote-left:before {
+
+	display: none;
+
+	@include desktop-up {
+		display: block;
+		padding: 0 0 0 1rem;
+		border: none;
+		content: attr(data-pullquote);
+		float: left;
+		width: 25rem;
+		margin: 1rem .5rem 1rem -5rem;
+		position: relative;
+		top: 5px;
+		font-weight: 700;
+		font-size: 1.7rem;
+		line-height: 2.3rem;
+		color: $tf-blue;
+		border-left: solid 5px $tf-blue;
+	}
+}
