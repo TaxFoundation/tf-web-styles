@@ -1,5 +1,5 @@
 .pagination {
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto 0;
   text-align: center;
 
   li {
@@ -12,26 +12,26 @@
 
     a {
       text-decoration: none;
-      }
     }
   }
+}
 
-  .active {
-    background-color: $tf-blue;
-    text-decoration: none;
+.active {
+  background-color: $tf-blue;
+  color: $background-color;
+  text-decoration: none;
+
+  a {
     color: $background-color;
-
-    a {
-      color: $background-color;
-      }
   }
+}
 
-  .arrow {
-    height: 1rem;
-    padding-top: .25rem;
-    margin: 0 1rem;
-  }
+.arrow {
+  height: 1rem;
+  margin: 0 1rem;
+  padding-top: .25rem;
+}
 
-  .disabled {
-    opacity: .5;
-  }
+.disabled {
+  opacity: .5;
+}
