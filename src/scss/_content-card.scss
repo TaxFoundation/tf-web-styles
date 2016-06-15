@@ -40,8 +40,12 @@
 
 .card .image {
   background: $gray-lighter;
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius $border-radius 0 0;
   display: block;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
+  min-height: 250px;
   padding: 0;
   position: relative;
   transition-duration: .3s;
@@ -63,16 +67,10 @@
   &:hover::before {
     opacity: .1;
   }
-
-  img {
-    border-radius: $border-radius $border-radius 0 0;
-    display: block;
-    height: auto;
-    width: 100%;
-  }
 }
 
 .content {
+  flex: 0 0 auto;
   padding: 1em 1em 1.5rem;
 
   h2 {
