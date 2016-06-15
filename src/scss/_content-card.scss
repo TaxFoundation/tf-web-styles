@@ -1,29 +1,27 @@
-  .cards {
-      position: relative;
-      padding: 0 $content-margin;
-      width: $content-width;
+.cards {
+  padding: 0 $content-margin;
+  position: relative;
+  width: $content-width;
 
-    @include desktop-up {
-      max-width: 1200px;
-    }
+  @include desktop-up {
+    max-width: 1200px;
+  }
 }
 
 .card {
-  border-color: $gray-light;
+  border: solid 1px $gray-light;
   border-style: solid;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  border: solid 1px $gray-light;
-  border-bottom: solid 4px $tf-blue;
   display: flex;
   flex-direction: column;
-  transition-property: opacity;
   transition-duration: .3s;
+  transition-property: background;
   transition-timing-function: ease-in ease-out;
 
   &:hover {
+    background: linear-gradient(to top, $tf-blue, $tf-blue 5px, $background-color 5px, $background-color);
     cursor: pointer;
-    opacity: .75;
   }
 
   > *:first-child {
@@ -42,38 +40,47 @@
 
 .card .image {
   background: $gray-lighter;
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius $border-radius 0 0;
   display: block;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
+  min-height: 250px;
   padding: 0;
   position: relative;
   transition-duration: .3s;
   transition-property: opacity;
   transition-timing-function: ease-in ease-out;
 
-  img {
-    border-radius: inherit;
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: $border-radius $border-radius 0 0;
-    }
+  &::before {
+    background: $background-color;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .2s ease-in-out;
+  }
 
-  &:hover {
-    opacity: .75;
+  &:hover::before {
+    opacity: .1;
   }
 }
 
 .content {
+  flex: 0 0 auto;
   padding: 1em 1em 1.5rem;
 
   h2 {
-    margin-bottom: .6rem;
     font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
-    line-height: 1.3;
     font-size: .9rem;
+    line-height: 1.5rem;
   }
-
 }
