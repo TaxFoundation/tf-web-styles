@@ -5,6 +5,7 @@ $header-color: #fff;
 header {
   align-items: stretch;
   background-color: $header-background;
+  box-shadow: 0 0 3px $gray-darker;
   display: flex;
   flex: none;
   flex-direction: row;

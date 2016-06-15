@@ -1,0 +1,131 @@
+$about-nav-li-hover-bg: #cceaff;
+
+.about-us-header {
+  background: $tf-blue;
+  background-image: url('../images/dots.png');
+  height: 15rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  @include mobile-only {
+    height: 12rem;
+  }
+}
+
+.about-us-header-text {
+  bottom: 0;
+  color: $background-color;
+  height: 55%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $content-width;
+
+  @include desktop-up {
+    height: 70%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @include desktop-up {
+      font-size: 3rem;
+      line-height: 2.75rem;
+    }
+
+    @include mobile-only {
+      font-size: 2.25rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+
+.about-nav {
+
+  @include mobile-only {
+    display: table;
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    background-color: $background-color;
+    border-bottom: 1.5px solid $gray-light;
+    border-right: 1.5px solid $gray-light;
+    color: $gray-medium;
+    display: block;
+    float: left;
+    font-size: .9rem;
+    line-height: 2rem;
+    list-style: none;
+    padding: 0 .75rem;
+    text-align: center;
+    transition-duration: .1s;
+    transition-property: background-color, color;
+    transition-timing-function: ease-out;
+
+    @include desktop-up {
+      font-size: 1rem;
+      line-height: 2.5rem;
+      padding: 0 1.5rem;
+    }
+
+    @include mobile-only {
+      border: 0;
+      border-bottom: 1.5px solid $gray-light;
+      display: table-cell;
+      font-size: 1rem;
+      line-height: 2.75rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &:first-child {
+      border-left: 1.5px solid $gray-light;
+
+      @include mobile-only {
+        border-left: 0;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-color: $about-nav-li-hover-bg;
+      color: $gray-dark;
+    }
+
+    a {
+      color: $gray-medium;
+      text-decoration: none;
+      transition-duration: .1s;
+      transition-property: color;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        color: $gray-dark;
+      }
+    }
+  }
+}
+
+.about-body {
+  flex: 1;
+  margin-top: 2rem;
+  max-width: $max-width;
+  padding: 0 $content-margin;
+  width: $content-width;
+
+  @include desktop-up {
+    max-width: 900px;
+  }
+}
