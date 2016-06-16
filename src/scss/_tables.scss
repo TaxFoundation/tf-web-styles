@@ -14,8 +14,12 @@ table {
     width: 100%;
   }
 
-  tbody > tr:nth-of-type(odd) {
-    background-color: $table-bg-accent;
+  tbody {
+    font-family: $font-monospace;
+
+    > tr:nth-of-type(odd) {
+      background-color: $table-bg-accent;
+    }
   }
 
   td,
