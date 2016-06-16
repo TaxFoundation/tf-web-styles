@@ -1,19 +1,4 @@
-.container {
-  max-width: $max-width;
-
-  .container {
-    margin-bottom: 0;
-  }
-
-  &--full-width {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-.container--flex {
-  @extend .container;
-
+%container--flex {
   display: flex;
   flex-wrap: wrap;
 
@@ -27,8 +12,23 @@
   }
 }
 
+.container {
+  max-width: $max-width;
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  &--full-width {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 // Default rows and columns with gutters
 .row {
+  @extend %container--flex;
+
   flex-direction: row;
   margin: 0 0 0 -1rem;
 
@@ -42,6 +42,7 @@
 }
 
 .column {
+  @extend %container--flex;
   flex-direction: column;
   margin: -.5rem 0;
 
