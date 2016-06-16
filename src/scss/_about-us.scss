@@ -23,7 +23,6 @@ $about-nav-li-hover-bg: #cceaff;
   position: absolute;
   right: 0;
   top: 0;
-  width: $content-width;
 
   @include desktop-up {
     height: 70%;
@@ -123,7 +122,6 @@ $about-nav-li-hover-bg: #cceaff;
   margin-top: 2rem;
   max-width: $max-width;
   padding: 0 $content-margin;
-  width: $content-width;
 
   @include desktop-up {
     max-width: 900px;

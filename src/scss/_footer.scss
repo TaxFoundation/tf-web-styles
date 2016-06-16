@@ -30,15 +30,8 @@ $footer-link-hover-color: $gray-darker;
 footer {
   background-color: $gray-lighter;
   color: $footer-text-color;
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  padding: 2rem $content-margin 0;
+  padding: 2rem 0 0;
   width: 100%;
-
-  @include desktop-up {
-    padding: 2rem 10rem 0;
-  }
 }
 
 .footer-about,
@@ -91,7 +84,7 @@ footer {
     display: inline-block;
     padding-right: .75rem;
     line-height: 2;
-    }
+  }
 
   a {
     text-decoration: none;
@@ -102,7 +95,7 @@ footer {
 
     &:hover {
       color: $tf-blue;
-      }
     }
-
   }
+
+}
