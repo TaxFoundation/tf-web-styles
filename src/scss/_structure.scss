@@ -13,13 +13,7 @@ body {
 main {
   flex: 1;
   margin-top: 76px; // Fixed position header offset
-  max-width: $max-width;
   padding: 0 $content-margin;
-  width: $content-width;
-
-  @include desktop-up {
-    max-width: 900px;
-  }
 }
 
 // Horizontal Rules

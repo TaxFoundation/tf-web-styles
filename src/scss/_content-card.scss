@@ -1,11 +1,5 @@
 .cards {
-  padding: 0 $content-margin;
   position: relative;
-  width: $content-width;
-
-  @include desktop-up {
-    max-width: 1200px;
-  }
 }
 
 .card {
