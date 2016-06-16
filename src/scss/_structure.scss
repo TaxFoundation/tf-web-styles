@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto;
   margin-top: 76px; // Fixed position header offset
   max-width: $max-width;
   padding: 0 $content-margin;
