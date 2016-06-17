@@ -30,15 +30,8 @@ $footer-link-hover-color: $gray-darker;
 footer {
   background-color: $gray-lighter;
   color: $footer-text-color;
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  padding: 2rem $content-margin 0;
+  padding: 2rem 0 0;
   width: 100%;
-
-  @include desktop-up {
-    padding: 2rem 10rem 0;
-  }
 }
 
 .footer-about,
@@ -87,22 +80,33 @@ footer {
   ul li {
     @include set-font(.8rem, 1.2);
 
-    list-style: none;
     display: inline-block;
-    padding-right: .75rem;
     line-height: 2;
+    list-style: none;
+    margin: 0 .75rem 0 0;
+
+    &::after {
+      content: '|';
+      display: inline-block;
+      margin: 0 0 0 .75rem;
     }
 
+    &:last-child::after {
+      content: '';
+      margin: 0;
+    }
+  }
+
   a {
-    text-decoration: none;
     color: $text-default-color;
-    transition-property: color;
+    text-decoration: none;
     transition-duration: .2s;
+    transition-property: color;
     transition-timing-function: ease-out;
 
     &:hover {
       color: $tf-blue;
-      }
     }
-
   }
+
+}

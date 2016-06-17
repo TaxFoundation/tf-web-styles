@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,300italic,900|Roboto+Mono);
 
 // Font Families
 $font-sans-serif: 'Lato', sans-serif;
+$font-monospace: 'Roboto Mono', monospace;
 
 // Colors
 $gray-lighter: #eee;
@@ -36,15 +37,7 @@ $paragraph-line-height-tablet: 1.5rem;
 $paragraph-line-height-desktop: 1.7rem;
 
 // Structure Variables
-$content-margin: 2rem;
-$content-width: 99%;
-
-// Table Styles
-
-tbody {
-  font-family: monospace;
-}
-
+$content-margin: 36px;
 
 // Global Screen Styles
 html {
