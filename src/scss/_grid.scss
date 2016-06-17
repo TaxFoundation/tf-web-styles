@@ -1,4 +1,4 @@
-.container {
+%container--flex {
   display: flex;
   flex-wrap: wrap;
 
@@ -10,13 +10,18 @@
       flex-wrap: nowrap;
     }
   }
+}
 
+.container {
   .container {
     margin-bottom: 0;
   }
 }
 
+// Default rows and columns with gutters
 .row {
+  @extend %container--flex;
+
   flex-direction: row;
   margin: 0 0 0 -1rem;
 
@@ -26,63 +31,67 @@
 
   > * {
     margin: 0 0 1rem 1rem;
-
-    @include tablet-up {
-      margin: 0 0 1rem 1rem;
-    }
   }
 }
 
 .column {
+  @extend %container--flex;
   flex-direction: column;
   margin: -.5rem 0;
 
   > * {
-    flex: none;
     margin: .5rem 0;
   }
 }
 
 @include tablet-up {
   .tablet-column-25 {
-    flex: 0 0 calc(25% - 1rem);
+    min-width: calc(25% - 1rem);
   }
 
   .tablet-column-33 {
-    flex: 0 0 calc(33.333% - 1rem);
+    min-width: calc(33.333% - 1rem);
   }
 
   .tablet-column-50 {
-    flex: 0 0 calc(50% - 1rem);
+    min-width: calc(50% - 1rem);
   }
 
   .tablet-column-66 {
-    flex: 0 0 calc(66.666% - 1rem);
+    min-width: calc(66.666% - 1rem);
   }
 
   .tablet-column-100 {
-    flex: 0 0 calc(100% - 1rem);
+    min-width: calc(100% - 1rem);
   }
 }
 
 @include desktop-up {
   .desktop-column-25 {
-    flex: 0 0 calc(25% - 1rem);
+    min-width: calc(25% - 1rem);
   }
 
   .desktop-column-33 {
-    flex: 0 0 calc(33.333% - 1rem);
+    min-width: calc(33.333% - 1rem);
   }
 
   .desktop-column-50 {
-    flex: 0 0 calc(50% - 1rem);
+    min-width: calc(50% - 1rem);
   }
 
   .desktop-column-66 {
-    flex: 0 0 calc(66.666% - 1rem);
+    min-width: calc(66.666% - 1rem);
   }
 
   .desktop-column-100 {
-    flex: 0 0 calc(100% - 1rem);
+    min-width: calc(100% - 1rem);
+  }
+}
+
+@media only screen and (min-width: #{$max-width + 2 * $content-margin}) {
+  .width-constrained {
+    margin-left: auto;
+    margin-right: auto;
+    width: $max-width;
   }
 }
