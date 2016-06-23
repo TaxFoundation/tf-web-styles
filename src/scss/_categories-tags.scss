@@ -1,4 +1,3 @@
-$categories-text-color: #aaa;
 
 .categories {
   font-size: .75rem;
@@ -38,52 +37,6 @@ $categories-text-color: #aaa;
     text-align: center;
   }
 }
-
-.category-links {
-  margin: 2rem 0 0;
-
-  a {
-    color: $text-default-color;
-    text-decoration: none;
-
-    h3 {
-      margin: 0;
-      transition-duration: .25s;
-      transition-property: color;
-      transition-timing-function: ease-out ease-in;
-
-      &:active,
-      &:focus,
-      &:hover {
-        color: $tf-blue;
-        text-decoration: none;
-      }
-    }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-
-    &:first-child {
-      padding-top: 0;
-    }
-  }
-
-  li {
-    cursor: pointer;
-    display: block;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0 0 3rem;
-
-    p {
-      color: $categories-text-color;
-      margin-top: .5rem;
-    }
-  }
-}
-
 
 .tags {
   font-size: .8rem;
