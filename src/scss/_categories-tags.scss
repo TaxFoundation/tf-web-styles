@@ -40,7 +40,25 @@ $categories-text-color: #aaa;
 }
 
 .category-links {
-  margin: -3rem 0 0 0;
+  margin: 2rem 0 0;
+
+  a {
+    color: $text-default-color;
+    text-decoration: none;
+
+    h3 {
+      margin: 0;
+      transition-duration: .25s;
+      transition-property: color;
+      transition-timing-function: ease-out ease-in;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $tf-blue;
+        text-decoration: none;
+      }
+    }
 
   ul {
     margin: 0;
@@ -60,34 +78,12 @@ $categories-text-color: #aaa;
     margin: 0 0 3rem;
 
     p {
+      color: $categories-text-color;
       margin-top: .5rem;
     }
   }
 }
 
-.category-links a {
-  color: $text-default-color;
-  text-decoration: none;
-
-  h3 {
-    margin: 0;
-    transition-duration: .25s;
-    transition-property: color;
-    transition-timing-function: ease-out ease-in;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: $tf-blue;
-      text-decoration: none;
-    }
-  }
-
-  p {
-    color: $categories-text-color;
-  }
-
-}
 
 .tags {
   font-size: .8rem;
