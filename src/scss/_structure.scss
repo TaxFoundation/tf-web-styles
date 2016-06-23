@@ -16,7 +16,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin-top: 76px; // Fixed position header offset
-  padding: 0 $content-margin;
+  padding: 0 $content-margin 5rem;
 }
 
 // Horizontal Rules

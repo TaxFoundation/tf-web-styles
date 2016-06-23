@@ -1,69 +1,81 @@
 $footer-text-color: $gray-dark;
 $footer-link-hover-color: $gray-darker;
 
+footer {
+  background-color: $gray-lighter;
+  color: $footer-text-color;
+  padding: 0;
+  width: 100%;
+}
+
 .pre-footer {
   background-color: $tf-blue;
-  margin-top: 3rem;
-  padding: 0 $content-margin 1rem;
   justify-content: center;
+  padding: 0 $content-margin 1rem;
   width: 100%;
 
   h3 {
     color: $background-color;
+    padding: 2rem $content-margin 1rem;
     text-align: center;
     width: 100%;
-    padding: 2rem $content-margin 1rem;
   }
 }
 
 .pre-footer-buttons {
-  text-align: center;
   justify-content: center;
+  text-align: center;
 
   button {
+    font-size: 1.2rem;
     margin-right: 2rem;
     padding: .75rem 1.25rem;
-    font-size: 1.2rem;
     }
-}
+  }
 
-footer {
-  background-color: $gray-lighter;
-  color: $footer-text-color;
-  padding: 2rem 0 0;
-  width: 100%;
+.footer-content {
+  margin: 1rem auto -1rem;
+  width: 95%;
+
+  @include desktop-up {
+    flex-wrap: nowrap;
+    max-width: 1400px;
+  }
+
+  @include mobile-only {
+    text-align: center;
+  }
 }
 
 .footer-about,
 .footer-links,
 .footer-connect,
 .footer-contact {
-    padding: 1rem;
+  padding: 1rem;
 
-    ul {
-      list-style: none;
-      margin-left: 0;
-      line-height: 2;
-      }
-
-    a {
-      text-decoration: none;
-      color: $footer-text-color;
-      transition-property: color;
-      transition-duration: .2s;
-      transition-timing-function: ease-out;
-
-      &:hover {
-        color: $tf-blue;
-        }
-      }
+  ul {
+    line-height: 2;
+    list-style: none;
+    margin-left: 0;
     }
 
-.footer-contact {
+  a {
+    color: $footer-text-color;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: color;
+    transition-timing-function: ease-out;
 
+    &:hover {
+      color: $tf-blue;
+      }
+    }
+  }
+
+.footer-contact {
   p {
-    margin-bottom: .75rem;
     line-height: 1.25rem;
+    margin-bottom: .75rem;
   }
 }
 
@@ -72,10 +84,9 @@ footer {
   background-color: #e6e6e6;
   color: $footer-text-color;
   justify-content: center;
-  padding-top: 1.5rem;
-  margin-right: 0;
-  width: 100%;
+  padding: 1.5rem 0 .05rem;
   text-align: center;
+  width: 100%;
 
   ul li {
     @include set-font(.8rem, 1.2);
