@@ -12,7 +12,7 @@ body {
 
 main {
   display: flex;
-  flex: 1;
+  flex: 1 0 auto;
   flex-direction: column;
   justify-content: center;
   margin-top: 76px; // Fixed position header offset
