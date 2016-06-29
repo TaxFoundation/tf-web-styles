@@ -1,4 +1,3 @@
-$categories-text-color: #aaa;
 
 .categories {
   font-size: .75rem;
@@ -37,56 +36,6 @@ $categories-text-color: #aaa;
     margin: 1rem 0 1.5rem;
     text-align: center;
   }
-}
-
-.category-links {
-  margin: -3rem 0 0 0;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-
-    &:first-child {
-      padding-top: 0;
-    }
-  }
-
-  li {
-    cursor: pointer;
-    display: block;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0 0 3rem;
-
-    p {
-      margin-top: .5rem;
-    }
-  }
-}
-
-.category-links a {
-  color: $text-default-color;
-  text-decoration: none;
-
-  h3 {
-    margin: 0;
-    transition-duration: .25s;
-    transition-property: color;
-    transition-timing-function: ease-out ease-in;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: $tf-blue;
-      text-decoration: none;
-    }
-  }
-
-  p {
-    color: $categories-text-color;
-  }
-
 }
 
 .tags {
