@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100%;
 
   &.admin-bar header {
@@ -14,9 +16,59 @@ main {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 76px; // Fixed position header offset
-  padding: 1.5rem $content-margin 5rem;
+  margin: 100px auto 5rem; // Fixed position header offset
+
+}
+
+.width-narrow {
+  margin: 0 $content-margin 0;
+
+  @include desktop-up {
+    width: 550px;
+  }
+}
+
+.width-article {
+  margin: 0 $content-margin 0;
+
+  @include desktop-up {
+    width: 700px;
+  }
+}
+
+.width-normal {
+  margin: 0 $content-margin 0;
+
+  @include desktop-up {
+    width: 900px;
+  }
+}
+
+.width-wide {
+
+
+  @include mobile-only {
+    margin: 0 $content-margin 0;
+  }
+
+  @include desktop-up {
+    width: 1100px;
+  }
+}
+
+.width-full {
+  width: 100%;
+}
+
+.indent {
+
+  @include tablet-up {
+    margin: 0 0 2rem 2rem;
+  }
+
+  @include mobile-only {
+    margin-top: 0;
+  }
 }
 
 // Horizontal Rules
@@ -27,10 +79,17 @@ hr {
   border: 0;
   color: $hr-color;
   height: 1px;
-  margin: 2.75rem 0;
+  margin: 2.5rem 0;
   position: relative;
 }
 
 .divider {
-  width: 100%;
+  width: 4000%;
+  position: relative;
+  left: -1000%;
+}
+
+.horizontal-space {
+  position: sticky;
+  width: 1rem;
 }
