@@ -17,16 +17,50 @@ table {
   tbody {
     font-family: $font-monospace;
 
-    > tr:nth-of-type(odd) {
+    th[scope="row"] {
       background-color: $table-bg-accent;
+      color: $text-default-color;
     }
+
+    td {
+      text-align: right;
+    }
+
+    td[data-title]::before {
+      color: $text-default-color;
+      content: attr(data-title);
+      float: left;
+      font-size: 1em;
+    }
+
+    tr {
+      border: 2px solid $table-border-color;
+      margin-bottom: 1em;
+
+      @include mobile-only {
+        border: 0;
+        border-top: 1px solid $table-border-color;
+        margin: 0;
+
+        &:first-child {
+          border-top: 0;
+        }
+    }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
   }
+}
 
   td,
   th {
     border-left: 1px solid $table-border-color;
     border-top: 1px solid $table-border-color;
-    padding: .7rem 1rem;
+
+    @include  mobile-only {
+      border-left: 0;
+    }
   }
 
   th {
@@ -53,4 +87,112 @@ table {
   tr:last-child td:last-child {
     border-radius: 0 0 $border-radius;
   }
+
+  thead {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    @include tablet-up {
+      clip: auto;
+      height: auto;
+      overflow: auto;
+      position: relative;
+      width: auto;
+    }
+
+    th {
+      background-color: $background-color;
+      color: $text-default-color;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+    text-align: left;
+    white-space: normal;
+  }
+
+  @include tablet-up {
+    tr {
+      display: table-row;
+    }
+  }
+
+  th,
+  td {
+    padding: .5em;
+    vertical-align: middle;
+  }
+
+  @include tablet-up {
+    th,
+    td {
+      padding: .75em .5em;
+    }
+  }
+
+  @include tablet-up {
+    th,
+    td {
+      display: table-cell;
+      padding: .75em;
+    }
+  }
+
+  tfoot {
+    color: $gray-medium;
+    font-size: .8em;
+  }
+
+  @include tablet-up {
+    tbody {
+      display: table-row-group;
+    }
+  }
+
+  @include tablet-up {
+    tbody tr {
+      border-width: 1px;
+      display: table-row;
+    }
+  }
+
+  @include tablet-up {
+    tbody tr:nth-of-type(even) {
+      background-color: $table-bg-accent;
+    }
+  }
+
+  @include tablet-up {
+    tbody th[scope="row"] {
+      background-color: transparent;
+      color: $text-default-color;
+      text-align: left;
+    }
+  }
+
+  @include tablet-up {
+    tbody td {
+      text-align: right;
+    }
+  }
+
+  @include tablet-up {
+    tbody td[data-title]::before {
+      content: none;
+    }
+  }
+
 }

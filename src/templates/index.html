@@ -304,55 +304,72 @@
           By default, tables are centered inside the parent container. To make a table horizontally fill its parent container, give it the <code>.full-width</code> class.
         </p>
         <table>
-          <thead>
-            <tr>
-              <th>
-                Item
-              </th>
-              <th>
-                Value
-              </th>
-              <th>
-                Some Other Column
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Apples
-              </td>
-              <td>
-                5
-              </td>
-              <td>
-                Resplendent
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Bananas
-              </td>
-              <td>
-                3
-              </td>
-              <td>
-                Morose
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Pineapples
-              </td>
-              <td>
-                7000
-              </td>
-              <td>
-                Concerned
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <thead>
+          <tr>
+            <th scope="col">Revenue</th>
+            <th scope="col">2012</th>
+            <th scope="col">2013</th>
+            <th scope="col">2014</th>
+            <th scope="col">2015</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="7">Note: this is a section for notes, sources, and other nifty things like that. And this is a second sentence for good measure.</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th scope="row">Philanthropic Foundations</th>
+            <td data-title="2012">$756,095</td>
+            <td data-title="2013">$1,223,977</td>
+            <td data-title="2014">$1,552,000</td>
+            <td data-title="2015">$1,275,750</td>
+          </tr>
+          <tr>
+            <th scope="row">Business Contributions</th>
+            <td data-title="2012">$802,814</td>
+            <td data-title="2013">$1,129,900</td>
+            <td data-title="2014">$1,481,004</td>
+            <td data-title=2015>$1,350,525</td>
+          </tr>
+          <tr>
+            <th scope="row">Donations from Individuals</th>
+            <td data-title="2012">$355,899</td>
+            <td data-title="2013">$348,009</td>
+            <td data-title="2014">$379,348</td>
+            <td data-title="2015">$520,467</td>
+          </tr>
+          <tr>
+            <th scope="row">Event Revenue (Net)</th>
+            <td data-title="2012">$237,643</td>
+            <td data-title="2013">$230,389</td>
+            <td data-title="2014">$290,425</td>
+            <td data-title="2015">$373,054</td>
+          </tr>
+          <tr>
+            <th scope="row">Investment Income</th>
+            <td data-title="2012">$7,820</td>
+            <td data-title="2013">$8,771</td>
+            <td data-title="2014">$18,695</td>
+            <td data-title="2015">$33,927</td>
+          </tr>
+          <tr>
+            <th scope="row">Publication Sales & Other</th>
+            <td data-title="2012">$12,944</td>
+            <td data-title="2013">$12,014</td>
+            <td data-title="2014">$12,864</td>
+            <td data-title="2015">$114,199</td>
+          </tr>
+          <tr>
+            <th scope="row">Total Revenue</th>
+            <td data-title="2012">$2,173,216</td>
+            <td data-title="2013">$2,953,060</td>
+            <td data-title="2014">$3,764,529</td>
+            <td data-title="2015">$3,667,922</td>
+          </tr>
+        </tbody>
+      </table>
 
         <hr><!-- Images -->
 
