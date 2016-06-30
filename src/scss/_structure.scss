@@ -18,58 +18,52 @@ main {
   flex-direction: column;
   margin: 100px auto 5rem; // Fixed position header offset
 
-}
+  .width-narrow {
+    margin: 0 auto;
+    padding: 0 $content-margin;
 
-.width-narrow {
-  margin: 0 $content-margin 0;
-
-  @include desktop-up {
-    width: 550px;
-  }
-}
-
-.width-article {
-  margin: 0 $content-margin 0;
-
-  @include desktop-up {
-    width: 700px;
-  }
-}
-
-.width-normal {
-  margin: 0 $content-margin 0;
-
-  @include desktop-up {
-    width: 900px;
-  }
-}
-
-.width-wide {
-
-
-  @include mobile-only {
-    margin: 0 $content-margin 0;
+    @include desktop-up {
+      width: 550px;
+    }
   }
 
-  @include desktop-up {
-    width: 1100px;
-  }
-}
 
-.width-full {
-  width: 100%;
-}
+  .width-standard {
+    margin: 0 auto;
+    padding: 0 $content-margin;
 
-.indent {
-
-  @include tablet-up {
-    margin: 0 0 2rem 2rem;
+    @include desktop-up {
+      width: 950px;
+    }
   }
 
-  @include mobile-only {
-    margin-top: 0;
+  .width-wide {
+    margin: 0 auto;
+    padding: 0 $content-margin;
+
+    @include desktop-up {
+      width: 1200px;
+    }
   }
+
+  .width-full {
+    width: 100%;
+  }
+
+  .indent {
+
+    @include tablet-up {
+      margin: 0 0 2rem 2rem;
+    }
+
+    @include mobile-only {
+      margin-top: 0;
+    }
+  }
+
 }
+
+
 
 // Horizontal Rules
 $hr-color: $gray-light;
