@@ -1,6 +1,7 @@
 $table-border-color: $gray-light;
 $table-bg-accent: $gray-lighter;
 
+
 table {
   border-collapse: collapse;
   border-radius: $border-radius;
@@ -16,9 +17,14 @@ table {
 
   tbody {
     font-family: $font-monospace;
+    font-size: .9rem;
 
     td {
       text-align: right;
+
+      &:first-child {
+        text-align: center;
+      }
     }
 
     td[data-title]::before {
@@ -26,7 +32,12 @@ table {
       content: attr(data-title);
       float: left;
       font-size: 1em;
+
+      &:first-child {
+        font-size: 3rem;
+      }
     }
+
 
     tr {
       border: 2px solid $table-border-color;
@@ -56,6 +67,10 @@ table {
   th {
     border-left: 1px solid $table-border-color;
     border-top: 1px solid $table-border-color;
+
+    &:first-child {
+      border-top: 0;
+    }
 
     @include  mobile-only {
       border-left: 0;
@@ -102,7 +117,7 @@ table {
       overflow: auto;
       position: relative;
       width: auto;
-    }
+
 
     th {
       background-color: $background-color;
@@ -111,8 +126,27 @@ table {
       font-weight: 700;
       text-align: center;
     }
+    }
   }
 
+  @include mobile-only {
+    td {
+      background-color: $background-color;
+
+    &:first-child {
+      font-weight: 700;
+      background-color: $table-bg-accent;
+    }
+
+    &:last-child {
+      background-color: $background-color;
+    }
+  }
+
+  tfoot {
+    background-color: $background-color;
+  }
+}
 
   tbody,
   tr,
@@ -145,7 +179,8 @@ table {
 
   tfoot {
     color: $gray-medium;
-    font-size: .8em;
+    font-size: .75em;
+    border-top: solid 1px $table-border-color;
   }
 
   @include tablet-up {
@@ -159,8 +194,8 @@ table {
     }
 
     tbody td {
-      text-align: right;
-    
+      text-align: left;
+
       &[data-title]::before {
         content: none;
       }
