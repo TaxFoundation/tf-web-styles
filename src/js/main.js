@@ -9,7 +9,7 @@ $(document).ready(function () {
       $('table').each(function (index) {
         var headers = responsiveTables.findHeaders($(this));
         var rows = $(this).find('tbody tr');
-        if (responsiveTables.checkHeaderAndCellLengths(rows, Object.keys(headers).length)) {
+        if (Object.keys(headers).length && responsiveTables.checkHeaderAndCellLengths(rows, Object.keys(headers).length)) {
           responsiveTables.setDataTitles(rows, headers);
         }
       });
