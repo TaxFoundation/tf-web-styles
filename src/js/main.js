@@ -8,30 +8,43 @@ $(document).ready(function () {
     initialize: function () {
       $('table').each(function (index) {
         var headers = responsiveTables.findHeaders($(this));
-        responsiveTables.setDataTitles($(this), headers);
+        var rows = $(this).find('tbody tr');
+        if (responsiveTables.checkHeaderAndCellLengths(rows, Object.keys(headers).length)) {
+          responsiveTables.setDataTitles(rows, headers);
+        }
       });
     },
 
     findHeaders: function (table) {
       var headers = {};
-      table.find('th')
+      table.find('thead').find('th')
       .each(function (index) {
         headers[index] = $(this).text();
       });
       return headers;
     },
 
-    setDataTitles: function (table, headers) {
-      var tableRows = $('tbody tr');
-      tableRows.each(function (index) {
+    setDataTitles: function (rows, headers) {
+      rows.each(function (index) {
         var cells = $(this).find('td');
-        if (cells.length === Object.keys(headers).length) {
-          cells.each(function (index) {
-            $(this).attr('data-title', headers[index]);
-          })
-        }
+        cells.each(function (index) {
+          $(this).attr('data-title', headers[index]);
+        });
       });
     },
+
+    checkHeaderAndCellLengths: function (rows, headersLength) {
+      var previousLength = 0;
+      var matches = true;
+      rows.each(function (index) {
+        if ($(this).find('td').length !== headersLength) {
+          matches = false;
+          return false;
+        }
+      });
+
+      return matches;
+    }
   }
 
   responsiveTables.initialize();
