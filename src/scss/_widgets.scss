@@ -5,7 +5,7 @@
   display: inline-block;
   margin: 0 3rem 3rem 0;
   padding: 1rem;
-  width: 325px;
+  width: 18rem;
 
   p {
     font-size: 1.1rem;
@@ -33,7 +33,7 @@
 .widget--feature {
   background-color: $tf-blue;
   border-color: transparent;
-  color: white;
+  color: $background-color;
 
   img {
     display: block;
@@ -43,12 +43,10 @@
   }
 }
 
-
 .widget--image {
-  background-image: linear-gradient($tf-blue);
-  opacity: .4;
-  border: solid 1px $background-color;
-  color: white;
+  background-size: cover;
+  border: 0;
+  color: $background-color;
 
   img {
     display: block;
@@ -56,4 +54,47 @@
     max-width: 500px;
     width: 85%;
   }
+}
+
+.widget--most-read {
+  background-color: $background-color;
+  border-color: $gray-medium;
+  color: $text-default-color;
+  margin-bottom: 0;
+  padding: 1rem 1rem 0;
+
+  a {
+    color: $text-default-color;
+    text-decoration: none;
+    transition-duration: .25s;
+    transition-property: color;
+    transition-timing-function: ease-in ease-out;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $tf-blue;
+    }
+  }
+
+  hr {
+    left: -2rem;
+    margin: 1rem 0;
+    width: 17.9rem;
+  }
+
+  li {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    vertical-align: text-top;
+  }
+
 }

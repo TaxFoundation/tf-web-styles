@@ -45,8 +45,8 @@ button,
   color: $background-color;
   cursor: pointer;
   padding: .5rem 1rem;
-  transition-property: background-color, border;
   transition-duration: .2s;
+  transition-property: background-color, border;
   transition-timing-function: ease-out;
 
   &:active,
