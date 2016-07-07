@@ -80,6 +80,20 @@ button,
     }
   }
 
+  &.dinner-accent {
+    background: $dinner-accent;
+    border: solid 1px $dinner-accent;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: solid 1px lighten($dinner-accent, 10%);
+      background-color: lighten($dinner-accent, 10%);
+      color: $background-color;
+      }
+  }
+
+
   &.inverted {
     background: $background-color;
     color: $tf-blue;

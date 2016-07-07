@@ -1,19 +1,59 @@
-.state-widget img {
-  display: block;
-  margin: 0 auto 1rem auto;
-  width: 85%;
-  max-width: 500px;
+.widget {
+  border-radius: $border-radius;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  margin: 0 3rem 3rem 0;
+  padding: 1rem;
+  width: 325px;
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  div {
+    margin-bottom: 1rem;
+  }
 }
 
-.state-widget div {
-  margin-bottom: 1rem;
+.widget--subtle {
+  background-color: $background-color;
+  border-color: $gray-medium;
+  color: $text-default-color;
+
+  img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    width: 85%;
+  }
 }
 
-.email-widget img {
-  display: block;
-  margin: 0 auto 1rem auto;
+.widget--feature {
+  background-color: $tf-blue;
+  border-color: transparent;
+  color: white;
+
+  img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    width: 85%;
+  }
 }
 
-.email-widget div {
-  margin-bottom: 1rem;
+
+.widget--image {
+  background-image: linear-gradient($tf-blue);
+  opacity: .4;
+  border: solid 1px $background-color;
+  color: white;
+
+  img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    width: 85%;
+  }
 }
