@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp = require('gulp'),
+    include = require('gulp-file-include'),
+    swig = require('gulp-swig'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     webserver = require('gulp-webserver');
@@ -24,12 +26,13 @@ gulp.task('moveImages', function () {
 });
 
 gulp.task('moveJavascript', function () {
-  gulp.src('./src/js/**/*')
+  gulp.src('./src/js/**/*.js')
   .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('moveHtml', function () {
-  gulp.src('./src/templates/**/*')
+  gulp.src('./src/templates/*.html')
+  .pipe(swig())
   .pipe(gulp.dest('./dist/'));
 });
 
