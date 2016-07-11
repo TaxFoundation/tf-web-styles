@@ -1,53 +1,58 @@
-<ul class="categories">
-  <li><a href="/category-page.html">Federal Tax Policy</a></li>
-  <li><a href="/category-page.html">Taxes &amp; Growth</a></li>
-  <li><a href="/category-page.html">Tax Plan Scoring</a></li>
-</ul>
+{% set post = {
+  "heading": "This is Test Content With Tags + Categories + A Byline",
+  "body": "<p>Bacon ipsum dolor amet kielbasa spare ribs pig, short ribs biltong hamburger leberkas porchetta alcatra short loin. Boudin capicola meatloaf, meatball sirloin <a>kevin filet</a>? mignon t-bone hamburger strip steak tongue. Pig alcatra tail venison pork belly, ball tip cupim cow beef ribs flank bresaola shoulder beef. Tri-tip venison meatball t-bone.</p><p>Bacon ipsum dolor amet jowl spare ribs boudin tenderloin ham hock, strip steak bacon swine turkey porchetta drumstick kielbasa t-bone cupim shank. <a>Strip steak meatball shoulder</a> venison flank, drumstick cupim tail porchetta alcatra short loin. Ribeye leberkas porchetta shank cupim salami hamburger. Salami pastrami chuck meatloaf chicken prosciutto. Swine turducken meatloaf ham hock corned beef turkey pork belly t-bone flank beef ham leberkas bacon. Pork beef corned beef pork chop porchetta meatloaf hamburger strip steak.</p><p>Shankle tri-tip bacon, pig swine tongue pancetta shank. Tail picanha jowl, <a>meatball leberkas fatback brisket ham hock</a>. Short ribs jowl venison, ham hock ground round hamburger   pork loin capicola brisket kevin bacon. Sirloin frankfurter pancetta, drumstick brisket short loin kevin corned beef pork loin landjaeger swine rump filet mignon turducken.</p>",
+  "date": "June 6, 2016 | 1:20 pm",
+  "categories": [
+    {
+      "name": "Federal Tax Policy",
+      "url": "/category-page.html"
+    },
+    {
+      "name": "Taxes &amp; Growth",
+      "url": "/category-page.html"
+    },
+    {
+      "name": "Tax Plan Scoring",
+      "url": "/category-page.html"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Presidential Tax Plans",
+      "url": "/tag-page.html"
+    },
+    {
+      "name": "Election 2016",
+      "url": "/tag-page.html"
+    },
+    {
+      "name": "Donald Trump",
+      "url": "/tag-page.html"
+    },
+    {
+      "name": "Hillary Clinton",
+      "url": "/tag-page.html"
+    },
+    {
+      "name": "Distributional Analysis",
+      "url": "/tag-page.html"
+    },
+    {
+      "name": "Dumpster Fire",
+      "url": "/tag-page.html"
+    }
+  ],
+  "authors":
+  [
+    {
+      "name": "Kyle Pomerleau",
+      "imageUrl": "/images/kyle-head.png"
+    },
+    {
+      "name": "Alan Cole",
+      "imageUrl": "/images/alan-head.png"
+    }
+  ]
+} %}
 
-<h1>This is Test Content With Tags + Categories + A Byline</h1>
-
-<div class="title-bar">
-  <p class="date">June 6, 2016 | 1:20 pm</p>
-  <div class="container byline">
-      <a href="#">
-        <div class="author">
-          <img src="/images/kyle-head.png">
-          <p>Kyle Pomerleau</p>
-        </div>
-      </a>
-    </div>
-    <div class="container byline">
-      <a href="#">
-        <div class="author">
-          <img src="/images/alan-head.png">
-          <p>Alan Cole</p>
-        </div>
-      </a>
-    </div>
-</div>
-
-
-<div>
-  <p>
-    Bacon ipsum dolor amet kielbasa spare ribs pig, short ribs biltong hamburger leberkas porchetta alcatra short loin. Boudin capicola meatloaf, meatball sirloin <a>kevin filet</a>? mignon t-bone hamburger strip steak tongue. Pig alcatra tail venison pork belly, ball tip cupim cow beef ribs flank bresaola shoulder beef. Tri-tip venison meatball t-bone.
-  </p>
-  <p>
-    Bacon ipsum dolor amet jowl spare ribs boudin tenderloin ham hock, strip steak bacon swine turkey porchetta drumstick kielbasa t-bone cupim shank. <a>Strip steak meatball shoulder</a> venison flank, drumstick cupim tail porchetta alcatra short loin. Ribeye leberkas porchetta shank cupim salami hamburger. Salami pastrami chuck meatloaf chicken prosciutto. Swine turducken meatloaf ham hock corned beef turkey pork belly t-bone flank beef ham leberkas bacon. Pork beef corned beef pork chop porchetta meatloaf hamburger strip steak.
-  </p>
-  <p>
-    Shankle tri-tip bacon, pig swine tongue pancetta shank. Tail picanha jowl, <a>meatball leberkas fatback brisket ham hock</a>. Short ribs jowl venison, ham hock ground round hamburger   pork loin capicola brisket kevin bacon. Sirloin frankfurter pancetta, drumstick brisket short loin kevin corned beef pork loin landjaeger swine rump filet mignon turducken.
-  </p>
-</div>
-
-<div>
-  <ul class="tags">
-    <li><a href="/tag-page.html">Presidential Tax Plans</a></li>
-    <li><a href="/tag-page.html">Election 2016</a></li>
-    <li><a href="/tag-page.html">Donald Trump</a></li>
-    <li><a href="/tag-page.html">Hillary Clinton</a></li>
-    <li><a href="/tag-page.html">Distributional Analysis</a></li>
-    <li><a href="/tag-page.html">Federal Revenue Estimates</a></li>
-    <li><a href="/tag-page.html">Progressivity</a></li>
-    <li><a href="/tag-page.html">The Progressive Trilemma</a></li>
-  </ul>
-</div>
+{% include '../_partials/post.html' with post %}
