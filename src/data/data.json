@@ -195,5 +195,51 @@
         }
       ]
     }
-  ]
+  ],
+  "footer": {
+    "links": [
+      {
+        "name": "Donate",
+        "url": "#"
+      },
+      {
+        "name": "Press Room",
+        "url": "#"
+      },
+      {
+        "name": "Events",
+        "url": "#"
+      },
+      {
+        "name": "Store",
+        "url": "#"
+      },
+      {
+        "name": "Careers",
+        "url": "#"
+      }
+    ],
+    "social": [
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/taxfoundation"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/taxfoundation"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "http://www.linkedin.com/company/tax-foundation"
+      },
+      {
+        "name": "Google+",
+        "url": "https://plus.google.com/+taxfoundation"
+      },
+      {
+        "name": "YouTube",
+        "url": "http://www.youtube.com/user/TaxFoundation"
+      }
+    ]
+  }
 }

@@ -20,22 +20,18 @@
       <div class="footer-links">
         <h3>More Links</h3>
         <ul>
-          <li><a href="#">Donate</a></li>
-          <li><a href="#">Press Room</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Careers</a></li>
+          {% for link in footer.links %}
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+          {% endfor %}
         </ul>
       </div>
 
       <div class="footer-connect">
         <h3>Connect</h3>
         <ul>
-          <li><a href="https://twitter.com/taxfoundation">Twitter</a></li>
-          <li><a href="https://www.facebook.com/taxfoundation">Facebook</a></li>
-          <li><a href="http://www.linkedin.com/company/tax-foundation">LinkedIn</a></li>
-          <li><a href="https://plus.google.com/+taxfoundation">Google+</a></li>
-          <li><a href="http://www.youtube.com/user/TaxFoundation">YouTube</a></li>
+          {% for link in footer.social %}
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+          {% endfor %}
         </ul>
       </div>
 
