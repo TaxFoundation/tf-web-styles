@@ -37,7 +37,11 @@ gulp.task('moveJavascript', function () {
 gulp.task('moveHtml', function () {
   gulp.src('./src/templates/*.html')
   .pipe(data(getTestData))
-  .pipe(swig())
+  .pipe(swig({
+    defaults: {
+      cache: false,
+    },
+  }))
   .pipe(gulp.dest('./dist/'));
 });
 
