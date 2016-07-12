@@ -1,0 +1,64 @@
+<footer>
+
+  <div class="container pre-footer">
+    <h3>Help us achieve our vision of a world where the tax code doesn't stand in the way of success.</h3>
+    <div class="pre-footer-buttons">
+      <button type="button" name="button" class="inverted">Subscribe</button>
+      <button type="button" name="button" class="featured">Contribute</button>
+    </div>
+  </div>
+
+    <div class="footer-content container row">
+
+      <div class="footer-about tablet-column-fixed-100 desktop-column-fixed-50">
+        <h3><a href="#">About Us</a></h3>
+        <p>
+          The Tax Foundation is the nation’s leading independent tax policy research organization. Since 1937, our principled research, insightful analysis, and engaged experts have informed smarter tax policy at the federal, state, and local levels. We improve lives through tax policy research and education that leads to greater economic growth and opportunity.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>More Links</h3>
+        <ul>
+          {% for link in footer.links %}
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h3>Connect</h3>
+        <ul>
+          {% for link in footer.social %}
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3><a href="#">Contact</a></h3>
+        <p>
+          Tax Foundation<br>
+          1325 G St NW<br>
+          Suite 950<br>
+          Washington, DC 20005<br>
+        </p>
+        <p>
+          202-464-6200
+        </p>
+        <p>
+          <a href="mailto:contact@taxfoundation.org">contact@taxfoundation.org</a>
+        </p>
+      </div>
+    </div>
+
+  <div class="container post-footer">
+    <ul>
+      <li>Copyright Tax Foundation 2016</li>
+      <li><a href="">Copyright Notice</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Other Unimportant Link</a></li>
+    </ul>
+  </div>
+
+</footer>
