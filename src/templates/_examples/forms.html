@@ -1,0 +1,54 @@
+<h2>Forms + Buttons</h2>
+<p>
+  Forms are, by default, 100% width of the containing element. When you put items inside a fieldset, they become inline-block.
+</p>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" />
+
+    <label for="mail">E-mail + Button:</label>
+    <div class="container row">
+      <input type="email" />
+      <div>
+        <button  class="button-form featured" type="button" name="button">Submit</button>
+      </div>
+    </div>
+
+    <label for="msg">Message:</label>
+    <textarea id="msg"></textarea>
+
+    <label for="checklist">Checklist:</label>
+    <select class="" name="checklist">
+      <option>Option 1</option>
+      <option>Banana</option>
+    </select>
+
+    <fieldset>
+      <legend>Radio Buttons</legend>
+      <input id="r1" type="radio" name="radio-buttons" value="">
+      <label for="r1">This One</label>
+      <input id="r2" type="radio" name="radio-buttons" value="">
+      <label for="r2">That One</label>
+      <input id="r3" type="radio" name="radio-buttons" value="">
+      <label for="r3">Another One</label>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Checkboxes</legend>
+      <input id="c1" type="checkbox" name="checkbox-buttons" value="">
+      <label for="c1">This One</label>
+      <input id="c2" type="checkbox" name="checkbox-buttons" value="">
+      <label for="c2">That One</label>
+      <input id="c3" type="checkbox" name="checkbox-buttons" value="">
+      <label for="c3">Another One</label>
+    </fieldset>
+
+    <fieldset>
+      <button type="button" name="button">Submit This</button>
+      <button type="button" name="button" class="inverted">Submit This</button>
+    </fieldset>
+</form>
