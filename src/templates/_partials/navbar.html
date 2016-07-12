@@ -1,16 +1,16 @@
-<header>
-  <div class="container row header-bar">
-    <div class="header-logo">
+<header class="navbar">
+  <div class="container row navbar__bar">
+    <div class="navbar__logo">
       <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
     </div>
-    <nav class="header-menu">
-      <ul id="nav-items">
+    <nav class="navbar__menu">
+      <ul class="navbar__menu-items">
         {% for item in navbar %}
-        <li class="nav-top-level-item">
-          <a class="nav-link">{{item.heading}}</a>
-          <div class="nav-submenu container row">
+        <li class="navbar__menu-top-level-item">
+          <a class="navbar__menu-top-level-link">{{item.heading}}</a>
+          <div class="navbar__submenu container row">
             {% for submenu in item.submenus %}
-            <div>
+            <div class="navbar__submenu-section">
               <h4>{{submenu.heading}}</h4>
               <ul>
                 {% for link in submenu.links %}
@@ -22,17 +22,17 @@
           </div>
         </li>
         {% endfor %}
-        <li class="nav-top-level-item">
-          <a class="nav-link">Search</a>
-          <div class="nav-submenu">
-            <div class="container row">
+        <li class="navbar__menu-top-level-item">
+          <a class="navbar__menu-top-level-link">Search</a>
+          <div class="navbar__submenu">
+            <div class="navbar__submenu-section container row">
               <input type="search">
             </div>
           </div>
         </li>
       </ul>
     </nav>
-    <div class="header-menu-mobile-toggle">
+    <div class="navbar__menu-mobile-toggle">
       <a href="#">
         <img src="images/icons/hamburger.svg" alt="" />
       </a>
