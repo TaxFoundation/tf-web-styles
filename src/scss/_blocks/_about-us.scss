@@ -1,52 +1,53 @@
-$about-nav-li-hover-bg: #cceaff;
+$about-nav-li-hover-bg: $tf-blue-lighter;
 
 .about-us-header {
-  background: $tf-blue;
-  background-image: url('../images/dots.png');
-  height: 15rem;
-  margin: 3rem 0 0;
+  background: url('/images/collage.png') center;
+  height: 18rem;
+  margin: -16px auto 0;
   padding: 0;
   position: relative;
   width: 100%;
 
   @include mobile-only {
-    height: 12rem;
+    background: url('/images/collage.png') ;
+    height: 15rem;
   }
 }
 
 .about-us-header-text {
   bottom: 0;
   color: $background-color;
-  height: 55%;
   left: 0;
-  margin: auto;
   position: absolute;
   right: 0;
   top: 0;
 
-  @include desktop-up {
-    height: 70%;
+  @include tablet-up {
+    margin: 3.25rem auto 0;
+  }
+
+  @include mobile-only {
+    margin: 3rem auto 0;
   }
 
   h1 {
-    font-size: 2.5rem;
-    line-height: 2.25rem;
-    margin-bottom: 1rem;
     text-align: center;
 
-    @include desktop-up {
-      font-size: 3rem;
-      line-height: 2.75rem;
+    @include tablet-up {
+      font-size: 3.25rem;
+      line-height: 3.25rem;
     }
 
     @include mobile-only {
-      font-size: 2.25rem;
-      line-height: 1.75rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
     }
   }
 }
 
 .about-nav {
+  margin-bottom: 2.5rem;
+  margin: 0 auto 2rem;
 
   @include mobile-only {
     display: table;
@@ -57,10 +58,10 @@ $about-nav-li-hover-bg: #cceaff;
     margin: 0;
   }
 
-  li {
+  a {
     background-color: $background-color;
     border-bottom: 1.5px solid $gray-light;
-    border-right: 1.5px solid $gray-light;
+    border-right: .5px solid $gray-light;
     color: $gray-medium;
     display: block;
     float: left;
@@ -69,7 +70,8 @@ $about-nav-li-hover-bg: #cceaff;
     list-style: none;
     padding: 0 .75rem;
     text-align: center;
-    transition-duration: .1s;
+    text-decoration: none;
+    transition-duration: .2s;
     transition-property: background-color, color;
     transition-timing-function: ease-out;
 
@@ -90,6 +92,7 @@ $about-nav-li-hover-bg: #cceaff;
     }
 
     &:first-child {
+      border-bottom-left-radius: $border-radius;
       border-left: 1.5px solid $gray-light;
 
       @include mobile-only {
@@ -97,33 +100,76 @@ $about-nav-li-hover-bg: #cceaff;
       }
     }
 
+    &:last-child {
+      border-bottom-right-radius: $border-radius;
+    }
+
     &:hover,
     &:active {
       background-color: $about-nav-li-hover-bg;
-      color: $gray-dark;
-    }
 
-    a {
+      @include tablet-up {
+        background: linear-gradient(to top, $tf-blue, $tf-blue 3px, $background-color 2px, $background-color);
+        cursor: pointer;
+      }
+      }
+
+    li {
       color: $gray-medium;
-      text-decoration: none;
       transition-duration: .1s;
       transition-property: color;
       transition-timing-function: ease-out;
-
-      &:hover {
-        color: $gray-dark;
-      }
     }
   }
 }
 
-.about-body {
-  flex: 1;
-  margin-top: 2rem;
-  max-width: $max-width;
-  padding: 0 $content-margin;
+.about-contact-form {
+  textarea {
+    height: 100%;
+  }
 
-  @include desktop-up {
-    max-width: 900px;
+  button {
+    width: 100%;
+  }
+}
+
+
+.about-connect {
+  padding-left: 2.5rem;
+
+  @include mobile-only {
+    padding-left: 0;
+  }
+}
+
+.about-contact-info {
+  padding-left: 2.5rem;
+
+  @include mobile-only {
+    padding-left: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.feature-text {
+
+  margin: 0 auto 0;
+  text-align: center;
+  width: 800px;
+
+  @include mobile-only {
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
   }
 }

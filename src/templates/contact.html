@@ -1,0 +1,160 @@
+{% extends './_partials/base.html' %}
+
+{% block content %}
+
+<div class="about-us-header">
+    <div class="about-us-header-text">
+        <h1>Principled Research.</h1>
+        <h1>Insightful Analysis.</h1>
+        <h1>Engaged Experts.</h1>
+    </div>
+</div>
+
+<div class="about-nav">
+    <ul>
+        <a href="/about-us.html" class="about-nav-first">
+            <li>About</li>
+        </a>
+        <a href="/impact.html">
+            <li>Impact</li>
+        </a>
+        <a href="/principles.html">
+            <li>Principles</li>
+        </a>
+        <a href="/staff.html">
+            <li>Staff</li>
+        </a>
+        <a href="/board.html">
+            <li>Board</li>
+        </a>
+        <a href="/financials.html">
+            <li>Financials</li>
+        </a>
+        <a href="/media.html">
+            <li>Media</li>
+        </a>
+        <a href="/careers.html">
+            <li>Careers</li>
+        </a>
+        <a href="/contact.html">
+            <li>Contact</li>
+        </a>
+    </ul>
+</div>
+
+<div class="wide">
+
+    <div class="container row">
+
+        <div class="tablet-column-fixed-66 desktop-column-fixed-66">
+
+            <h2>Send Us A Messages</h2>
+
+            <div class="container row about-contact-form">
+
+                <div>
+                    <textarea id="msg" placeholder="Have a question or comment? Send us a message and we'll get back to you as soon as possible!"></textarea>
+                </div>
+
+                <div>
+                    <input type="text" id="name" placeholder="Name" />
+                    <input type="email" id="mail" placeholder="Email" />
+                    <select name="checklist" id="topic">
+                        <option value="" disabled selected class="inactive">Select A Topic</option>
+                        <option value="state">State Tax Policy</option>
+                        <option value="fed">Federal Tax Policy</option>
+                        <option value="law">Tax Law</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="button" name="button" class="featured full-button">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-contact-info">
+            <h2>Contact Info</h2>
+            <p>
+                Tax Foundation
+                <br> 1325 G St NW
+                <br> Suite 950
+                <br> Washington, DC 20005
+                <br>
+            </p>
+            <p>
+                202-464-6200
+            </p>
+            <p>
+                <a href="mailto:contact@taxfoundation.org">contact@taxfoundation.org</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container row">
+
+        <div class="tablet-column-fixed-66 desktop-column-fixed-66">
+
+            <div>
+                <h2>Subscribe</h2>
+                <p>Get the latest in tax news and analysis, delivered directly to your inbox.</p>
+                <fieldset>
+                    <input type="email" id="mail" placeholder="Email*" />
+                    <div class="container row">
+                        <div>
+                            <input type="text" id="fname" placeholder="First Name*" />
+                        </div>
+                        <div>
+                            <input type="text" id="lname" placeholder="Last Name*" />
+                        </div>
+                    </div>
+                    <button type="button" name="button" class="featured full-width">Subscribe</button>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="about-connect">
+            <h2>Connect</h2>
+            <div class="link-list-box">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <img class="twitter">
+                            <p>Twitter</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img class="facebook">
+                            <p>Facebook</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img class="linkedin">
+                            <p>LinkedIn</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img class="google">
+                            <p>Google+</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <img class="youtube">
+                            <p>YouTube</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

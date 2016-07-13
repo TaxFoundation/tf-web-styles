@@ -49,6 +49,7 @@ button,
   transition-duration: .2s;
   transition-timing-function: ease-out;
 
+
   &:active,
   &:focus,
   &:hover {
@@ -78,6 +79,10 @@ button,
     background-color: lighten($green, 8%);
     color: $background-color;
     }
+  }
+
+  &.full-width {
+    width: 100%;
   }
 
   &.inverted {
