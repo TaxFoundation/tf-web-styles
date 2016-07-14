@@ -1,17 +1,17 @@
-$header-height: 60px;
-$header-background: $tf-blue;
-$header-color: #fff;
+$navbar-height: $header-height;
+$navbar-background: $tf-blue;
+$navbar-color: #fff;
 
 %header-bar-link-styles {
   background: none;
-  color: $header-color;
+  color: $navbar-color;
   text-decoration: none;
   text-shadow: none;
 }
 
 .navbar {
   align-items: stretch;
-  background-color: $header-background;
+  background-color: $navbar-background;
   box-shadow: 0 0 3px $gray-darker;
   display: flex;
   flex: none;
@@ -30,11 +30,11 @@ $header-color: #fff;
 
   &__bar {
     align-items: stretch;
-    color: $header-color;
+    color: $navbar-color;
     flex-wrap: nowrap;
     font-family: $font-sans-serif;
     font-size: 1rem;
-    height: $header-height;
+    height: $navbar-height;
     margin: 0;
     max-width: $max-width;
     padding-left: $content-margin;
@@ -66,8 +66,8 @@ $header-color: #fff;
     padding-right: $content-margin;
 
     img {
-      height: $header-height / 3;
-      width: $header-height / 3;
+      height: $navbar-height / 3;
+      width: $navbar-height / 3;
     }
   }
 
@@ -113,7 +113,7 @@ $header-color: #fff;
     flex: 1;
     font-size: .85rem;
     font-weight: 700;
-    padding: ($header-height / 4) ($content-margin / 2.5) 0;
+    padding: ($navbar-height / 4) ($content-margin / 2.5) 0;
     text-transform: uppercase;
 
     &:hover {
@@ -126,8 +126,8 @@ $header-color: #fff;
   }
 
   &__submenu {
-    background: $header-color;
-    border-bottom: 1px solid $header-background;
+    background: $navbar-color;
+    border-bottom: 1px solid $navbar-background;
     color: $text-default-color;
     display: none;
     left: 0;
@@ -138,7 +138,7 @@ $header-color: #fff;
     transition: opacity .3s linear;
 
     a {
-      color: $header-background;
+      color: $navbar-background;
     }
 
     li {
