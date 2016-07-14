@@ -10,14 +10,7 @@
   <p class="date">{{post.date}}</p>
 
     {% for author in post.authors %}
-      <div class="container byline">
-        <a href="#">
-          <div class="author">
-            <img src="{{author.imageUrl}}">
-            <p>{{author.name}}</p>
-          </div>
-        </a>
-      </div>
+      {% include 'byline.html' with author %}
     {% endfor %}
 </div>
 
