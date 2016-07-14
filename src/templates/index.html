@@ -1,38 +1,53 @@
 {% extends './_partials/base.html' %}
 
 {% block content %}
-  <div class="container width-constrained">
+
+  <div class="container width-medium">
 
     {% include './_examples/typography.html' %}
 
-    <hr><!--List Styles -->
+    <hr class="divider"><!--List Styles -->
     {% include './_examples/lists.html' %}
 
-    <hr><!-- Example Content -->
+  </div>
+
+  <div class="width-article">
+
+    <hr class="divider"><!-- Example Content -->
     {% include './_examples/post.html' %}
 
-    <hr><!-- Tables -->
+  </div>
+
+  <div class="width-medium">
+
+    <hr class="divider"><!-- Tables -->
     {% include './_examples/tables.html' %}
 
-    <hr><!-- Images -->
+    <hr class="divider"><!-- Images -->
     {% include './_examples/images.html' %}
 
-    <hr><!-- Forms -->
+    <hr class="divider"><!-- Forms -->
     {% include './_examples/forms.html' %}
 
-    <hr><!-- Containers -->
+  </div>
+
+  <div class="width-wide">
+
+    <hr class="divider"><!-- Containers -->
     {% include './_examples/boxes.html' %}
 
-    <hr><!-- Widgets-->
+    <hr class="divider"><!-- Widgets-->
     {% include './_examples/widgets.html' %}
+
+    <hr class="divider"><!-- Content Cards -->
+
+    <div class="container">
+      {% include './_examples/cards.html' %}
+    </div>
+
+    <hr class="divider"><!-- Grids -->
+    {% include './_examples/grid-layout.html' %}
+
   </div>
 
-  <hr><!-- Content Cards -->
-
-  <div class="container">
-    {% include './_examples/cards.html' %}
-  </div>
-
-  <hr>
-  {% include './_examples/grid-layout.html' %}
 {% endblock %}
