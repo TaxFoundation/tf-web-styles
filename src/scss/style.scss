@@ -1,8 +1,11 @@
+// Reset, always first
 @import '_global/reset';
+// Global, import before blocks
 @import '_global/global';
 @import '_global/mixins';
 @import '_global/grid';
 @import '_global/structure';
+// Blocks, import in any order
 @import '_blocks/headings';
 @import '_blocks/paragraphs';
 @import '_blocks/links';
