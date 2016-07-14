@@ -16,51 +16,55 @@ main {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 100px auto 5rem; // Fixed position header offset
-
-  .width-narrow {
-    margin: 0 auto;
-    padding: 0 $content-margin;
-
-    @include desktop-up {
-      width: 550px;
-    }
-  }
-
-  .width-standard {
-    margin: 0 auto;
-    padding: 0 $content-margin;
-
-    @include desktop-up {
-      width: 950px;
-    }
-  }
-
-  .width-wide {
-    margin: 0 auto;
-    padding: 0 $content-margin;
-
-    @include desktop-up {
-      width: 1200px;
-    }
-  }
-
-  .width-full {
-    width: 100%;
-  }
-
-  .indent {
-
-    @include tablet-up {
-      margin: 0 0 2rem 2rem;
-    }
-
-    @include mobile-only {
-      margin-top: 0;
-    }
-  }
-
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 76px; // Fixed position header offset
 }
+
+.width-article {
+  margin: 0 auto;
+  padding: 0 $content-margin;
+
+  @include desktop-up {
+    min-width: 750px;
+    width: 35%;
+  }
+}
+
+.width-medium {
+  margin: 0 auto;
+  padding: 0 $content-margin;
+
+  @include desktop-up {
+    min-width: 800px;
+    width: 45%;
+  }
+}
+
+.width-wide {
+  margin: 0 auto;
+  padding: 0 $content-margin;
+
+  @include desktop-up {
+    min-width: 1200px;
+    width: 60%;
+  }
+
+  @include mobile-only {
+    width: 95%;
+  }
+}
+
+.indent {
+  @include tablet-up {
+    margin: 0 0 2rem 2rem;
+  }
+
+  @include mobile-only {
+    margin-top: 0;
+  }
+}
+
 
 
 // Horizontal Rules
