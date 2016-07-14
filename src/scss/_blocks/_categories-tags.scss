@@ -39,6 +39,8 @@
 
   a {
     color: inherit;
+    display: block;
+    padding: .3rem .6rem;
     text-decoration: none;
   }
 
@@ -49,7 +51,6 @@
     cursor: pointer;
     display: inline-block;
     margin: .75rem .5rem 0 0;
-    padding: .3rem .6rem;
     transition-duration: .4s;
     transition-property: background-color, border-color, color;
     transition-timing-function: ease-out ease-in;
@@ -61,13 +62,6 @@
       border-color: $tf-blue;
       color: $background-color;
     }
-  }
-}
-
-.tag-header {
-  h1 {
-    margin: 1rem 0 1.5rem;
-    text-align: center;
   }
 }
 
