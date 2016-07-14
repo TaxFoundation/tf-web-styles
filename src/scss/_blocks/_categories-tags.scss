@@ -37,14 +37,14 @@
   margin: 0 0 4rem;
   text-transform: lowercase; //TODO should it be lowercase?
 
-  a {
+  .tags__link {
     color: inherit;
     display: block;
     padding: .3rem .6rem;
     text-decoration: none;
   }
 
-  li {
+  .tags__tag {
     border: solid 1.5px $categories-text-color;
     border-radius: 4px;
     color: $categories-text-color;
