@@ -1,0 +1,169 @@
+$table-border-color: $gray-light;
+$table-bg-accent: $gray-lighter;
+
+table {
+  border-collapse: collapse;
+  border-radius: $border-radius;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px $table-border-color;
+  margin: 1.5rem auto;
+  max-width: 100%;
+
+  &.full-width {
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+
+  tbody {
+    font-family: $font-monospace;
+
+    td {
+      text-align: right;
+    }
+
+    td[data-title]::before {
+      color: $text-default-color;
+      content: attr(data-title);
+      float: left;
+      font-size: 1em;
+    }
+
+    tr {
+      border: 2px solid $table-border-color;
+      margin-bottom: 1em;
+
+      @include mobile-only {
+        border: 0;
+        border-top: 1px solid $table-border-color;
+        margin: 0;
+
+        &:first-child {
+          border-top: 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(odd) {
+        background-color: $table-bg-accent;
+      }
+    }
+  }
+
+  td,
+  th {
+    border-left: 1px solid $table-border-color;
+    border-top: 1px solid $table-border-color;
+
+    @include  mobile-only {
+      border-left: 0;
+    }
+  }
+
+  th {
+    border-top: 0;
+    font-weight: 700;
+  }
+
+  th:first-child {
+    border-radius: $border-radius 0 0;
+  }
+
+  th:last-child {
+    border-radius: 0 $border-radius 0 0;
+  }
+
+  th:only-child {
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  tr:last-child td:first-child {
+    border-radius: 0 0 0 $border-radius;
+  }
+
+  tr:last-child td:last-child {
+    border-radius: 0 0 $border-radius;
+  }
+
+  thead {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    @include tablet-up {
+      clip: auto;
+      height: auto;
+      overflow: auto;
+      position: relative;
+      width: auto;
+    }
+
+    th {
+      background-color: $background-color;
+      color: $text-default-color;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+    text-align: left;
+    white-space: normal;
+  }
+
+  @include tablet-up {
+    tr {
+      display: table-row;
+    }
+  }
+
+  th,
+  td {
+    padding: .5em;
+    vertical-align: middle;
+  }
+
+  @include tablet-up {
+    th,
+    td {
+      display: table-cell;
+      padding: .75em;
+    }
+  }
+
+  tfoot {
+    color: $gray-medium;
+    font-size: .8em;
+  }
+
+  @include tablet-up {
+    tbody {
+      display: table-row-group;
+    }
+
+    tbody tr {
+      border-width: 1px;
+      display: table-row;
+    }
+
+    tbody td {
+      text-align: right;
+    
+      &[data-title]::before {
+        content: none;
+      }
+    }
+  }
+}

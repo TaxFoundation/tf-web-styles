@@ -1,0 +1,137 @@
+%container--flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 1 0 calc(100% - 1rem);
+
+    @include tablet-up {
+      flex: 1;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.container {
+  .container {
+    margin-bottom: 0;
+  }
+}
+
+// Default rows and columns with gutters
+.row {
+  @extend %container--flex;
+
+  flex-direction: row;
+  margin: 0 0 0 -1rem;
+
+  @include tablet-up {
+    margin: 0 0 0 -1rem;
+  }
+
+  > * {
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+.column {
+  @extend %container--flex;
+  flex-direction: column;
+  margin: -.5rem 0;
+
+  > * {
+    margin: .5rem 0;
+  }
+}
+
+@include tablet-up {
+  .tablet-column-fixed-25 {
+    flex: 0 0 calc(25% - 1rem);
+  }
+
+  .tablet-column-fixed-33 {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+
+  .tablet-column-fixed-50 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .tablet-column-fixed-66 {
+    flex: 0 0 calc(66.666% - 1rem);
+  }
+
+  .tablet-column-fixed-100 {
+    flex: 0 0 calc(100% - 1rem);
+  }
+
+  .tablet-column-grow-25 {
+    flex: 1 0 calc(25% - 1rem);
+  }
+
+  .tablet-column-grow-33 {
+    flex: 1 0 calc(33.333% - 1rem);
+  }
+
+  .tablet-column-grow-50 {
+    flex: 1 0 calc(50% - 1rem);
+  }
+
+  .tablet-column-grow-66 {
+    flex: 1 0 calc(66.666% - 1rem);
+  }
+
+  .tablet-column-grow-100 {
+    flex: 1 0 calc(100% - 1rem);
+  }
+}
+
+@include desktop-up {
+  .desktop-column-fixed-25 {
+    flex: 0 0 calc(25% - 1rem);
+  }
+
+  .desktop-column-fixed-33 {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+
+  .desktop-column-fixed-50 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .desktop-column-fixed-66 {
+    flex: 0 0 calc(66.666% - 1rem);
+  }
+
+  .desktop-column-fixed-100 {
+    flex: 0 0 calc(100% - 1rem);
+  }
+
+  .desktop-column-grow-25 {
+    flex: 1 0 calc(25% - 1rem);
+  }
+
+  .desktop-column-grow-33 {
+    flex: 1 0 calc(33.333% - 1rem);
+  }
+
+  .desktop-column-grow-50 {
+    flex: 1 0 calc(50% - 1rem);
+  }
+
+  .desktop-column-grow-66 {
+    flex: 1 0 calc(66.666% - 1rem);
+  }
+
+  .desktop-column-grow-100 {
+    flex: 1 0 calc(100% - 1rem);
+  }
+}
+
+@media only screen and (min-width: #{$max-width + 2 * $content-margin}) {
+  .width-constrained {
+    margin-left: auto;
+    margin-right: auto;
+    width: $max-width;
+  }
+}

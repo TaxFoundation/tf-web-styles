@@ -1,0 +1,41 @@
+<header>
+  <div class="container row header-bar">
+    <div class="header-logo">
+      <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
+    </div>
+    <nav class="header-menu">
+      <ul id="nav-items">
+        {% for item in navbar %}
+        <li class="nav-top-level-item">
+          <a class="nav-link">{{item.heading}}</a>
+          <div class="nav-submenu container row">
+            {% for submenu in item.submenus %}
+            <div>
+              <h4>{{submenu.heading}}</h4>
+              <ul>
+                {% for link in submenu.links %}
+                  <li><a href="{{link.url}}">{{link.name}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </li>
+        {% endfor %}
+        <li class="nav-top-level-item">
+          <a class="nav-link">Search</a>
+          <div class="nav-submenu">
+            <div class="container row">
+              <input type="search">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-menu-mobile-toggle">
+      <a href="#">
+        <img src="images/icons/hamburger.svg" alt="" />
+      </a>
+    </div>
+  </div>
+</header>
