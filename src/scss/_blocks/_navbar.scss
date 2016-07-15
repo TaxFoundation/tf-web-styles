@@ -31,13 +31,15 @@ $navbar-color: #fff;
   &__bar {
     align-items: stretch;
     color: $navbar-color;
+    display: flex;
     flex-wrap: nowrap;
     font-family: $font-sans-serif;
     font-size: 1rem;
     height: $navbar-height;
+    justify-content: space-between;
     margin: 0;
     max-width: $max-width;
-    padding-left: $content-margin;
+    padding-left: 1rem;
     width: 100%;
 
     * {
@@ -57,13 +59,13 @@ $navbar-color: #fff;
     }
   }
 
-  &____menu-mobile-toggle {
+  &__menu-mobile-toggle {
     align-content: stretch;
     align-self: center;
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    padding-right: $content-margin;
+    padding-right: 1rem;
 
     img {
       height: $navbar-height / 3;
@@ -155,11 +157,17 @@ $navbar-color: #fff;
 }
 
 @include tablet-up {
-  .navbar__menu {
-    display: flex;
-  }
+  .navbar {
+    &__menu {
+      display: flex;
+    }
 
-  .navbar__menu-mobile-toggle {
-    display: none;
+    &__bar {
+      padding-left: $content-margin;
+    }
+
+    &__menu-mobile-toggle {
+      display: none;
+    }
   }
 }
