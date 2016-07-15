@@ -1,7 +1,7 @@
 {% extends './_partials/base.html' %}
 
 {% block content %}
-  <div class="container width-constrained">
+  <div class="container container--padded container--width-constrained">
 
     {% include './_examples/typography.html' %}
 
@@ -25,14 +25,16 @@
 
     <hr><!-- Widgets-->
     {% include './_examples/widgets.html' %}
+
+    <hr><!-- Content Cards -->
   </div>
 
-  <hr><!-- Content Cards -->
-
-  <div class="container">
+  <div class="container container--padded">
     {% include './_examples/cards.html' %}
   </div>
 
-  <hr>
-  {% include './_examples/grid-layout.html' %}
+  <div class="container container--padded container--width-constrained">
+    <hr>
+    {% include './_examples/grid-layout.html' %}
+  </div>
 {% endblock %}

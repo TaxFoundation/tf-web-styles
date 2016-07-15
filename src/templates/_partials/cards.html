@@ -1,9 +1,9 @@
 <div class="container row cards">
 {% for card in cards %}
-  <div class="card tablet-column-grow-33">
-    <div class="image" style="background-image:url('{{card.imageUrl}}')">
+  <div class="cards__card tablet-column-grow-33">
+    <div class="cards__card-image" style="background-image:url('{{card.imageUrl}}')">
     </div>
-    <div class="content">
+    <div class="cards__card-content">
       <h2>{{card.heading}}</h2>
       <p>{{card.description}}</p>
     </div>

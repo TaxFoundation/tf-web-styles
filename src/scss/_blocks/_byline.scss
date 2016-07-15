@@ -9,7 +9,7 @@ $author-block-border-color: #ddd;
   color: $date-text-color;
   font-size: .8rem;
   margin-bottom: .8rem;
-  }
+}
 
 .byline {
   display: inline-block;
@@ -22,7 +22,7 @@ $author-block-border-color: #ddd;
     opacity: .7;
   }
 
-  .author {
+  &__author {
     border: solid 1.5px $author-block-border-color;
     border-radius: 4px;
     cursor: pointer;
