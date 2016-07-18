@@ -1,36 +1,39 @@
 $about-nav-li-hover-bg: $tf-blue-lighter;
 
-.about-us-header {
-  background: url('/images/collage.png') center;
-  height: 18rem;
-  margin: -16px auto 0;
-  padding: 0;
-  position: relative;
-  width: 100%;
+.about-us {
 
-  @include mobile-only {
-    background: url('/images/collage.png') ;
-    height: 15rem;
-  }
-}
+  &__hero {
+    background: $tf-blue;
+    background-image: url('../images/collage.png');
+    height: 18rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
 
-.about-us-header-text {
-  bottom: 0;
-  color: $background-color;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  @include tablet-up {
-    margin: 3.25rem auto 0;
+    @include mobile-only {
+      height: 12rem;
+    }
   }
 
-  @include mobile-only {
-    margin: 3rem auto 0;
+  &__headings {
+    bottom: 0;
+    color: $background-color;
+    height: 55%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include desktop-up {
+      height: 70%;
+    }
   }
 
-  h1 {
+  &__heading {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
     text-align: center;
 
     @include tablet-up {
@@ -45,9 +48,8 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 }
 
-.about-nav {
-  margin-bottom: 2.5rem;
-  margin: 0 auto 2rem;
+.about-us__navbar {
+  margin: auto;
 
   @include mobile-only {
     display: table;
@@ -158,8 +160,8 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 }
 
-.feature-text {
 
+.feature-text {
   margin: 0 auto 0;
   text-align: center;
   width: 800px;
@@ -167,6 +169,13 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   @include mobile-only {
     width: 90%;
   }
+}
+
+.about-us__body {
+  flex: 1;
+  margin-top: 2rem;
+  max-width: $max-width;
+  padding: 0 $content-margin;
 
   p {
     font-size: 1.2rem;
