@@ -1,6 +1,13 @@
 'use strict'
 
 $(document).ready(function () {
+  var $mobileMenuToggle = $('.navbar__menu-mobile-toggle');
+  var $mobileMenu = $('.mobile-nav');
+
+  $mobileMenuToggle.on('click', function () {
+    $mobileMenu.toggleClass('mobile-nav--active');
+  });
+
   var responsiveTables;
 
   // Find Tables and Set Data Titles
