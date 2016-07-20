@@ -1,7 +1,7 @@
 {
   "navbar": [
     {
-      "heading": "Federal",
+      "heading": "Federal Taxes",
       "submenus": [
         {
           "heading": "Section 1",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "heading": "State",
+      "heading": "State Taxes",
       "submenus": [
         {
           "heading": "Section 1",
@@ -79,85 +79,7 @@
       ]
     },
     {
-      "heading": "Legal",
-      "submenus": [
-        {
-          "heading": "Section 1",
-          "links": [
-            {
-              "name": "Test 1",
-              "url": "#"
-            },
-            {
-              "name": "Test 2",
-              "url": "#"
-            },
-            {
-              "name": "Test 3",
-              "url": "#"
-            }
-          ]
-        },
-        {
-          "heading": "Section 1",
-          "links": [
-            {
-              "name": "Test 1",
-              "url": "#"
-            },
-            {
-              "name": "Test 2",
-              "url": "#"
-            },
-            {
-              "name": "Test 3",
-              "url": "#"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "heading": "About",
-      "submenus": [
-        {
-          "heading": "Section 1",
-          "links": [
-            {
-              "name": "Test 1",
-              "url": "#"
-            },
-            {
-              "name": "Test 2",
-              "url": "#"
-            },
-            {
-              "name": "Test 3",
-              "url": "#"
-            }
-          ]
-        },
-        {
-          "heading": "Section 1",
-          "links": [
-            {
-              "name": "Test 1",
-              "url": "#"
-            },
-            {
-              "name": "Test 2",
-              "url": "#"
-            },
-            {
-              "name": "Test 3",
-              "url": "#"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "heading": "Donate",
+      "heading": "Tax Law",
       "submenus": [
         {
           "heading": "Section 1",
