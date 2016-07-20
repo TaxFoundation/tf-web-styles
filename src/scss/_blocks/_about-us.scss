@@ -6,7 +6,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
     background: $tf-blue;
     background-image: url('../images/collage.png');
     height: 18rem;
-    margin: 0;
+    margin: -1rem 0 0;
     padding: 0;
     position: relative;
 
@@ -49,7 +49,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 }
 
 .about-us__navbar {
-  margin: auto;
+  margin: 0 auto 2.5rem;
 
   @include mobile-only {
     display: table;
@@ -125,7 +125,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 }
 
-.about-contact-form {
+.about-us__contact-form {
   textarea {
     height: 100%;
   }
@@ -136,7 +136,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 }
 
 
-.about-connect {
+.about-us__connect {
   padding-left: 2.5rem;
 
   @include mobile-only {
@@ -144,7 +144,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 }
 
-.about-contact-info {
+.about-us__contact-info {
   padding-left: 2.5rem;
 
   @include mobile-only {
@@ -161,24 +161,16 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 }
 
 
-.feature-text {
-  margin: 0 auto 0;
+.about-us__feature-text {
+  margin: 0 auto;
   text-align: center;
   width: 800px;
 
   @include mobile-only {
     width: 90%;
   }
-}
-
-.about-us__body {
-  flex: 1;
-  margin-top: 2rem;
-  max-width: $max-width;
-  padding: 0 $content-margin;
 
   p {
     font-size: 1.2rem;
-    line-height: 1.75rem;
   }
 }
