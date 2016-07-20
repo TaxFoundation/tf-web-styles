@@ -154,9 +154,18 @@ $navbar-color: #fff;
     max-width: $max-width;
     padding: 1rem;
   }
+
+  &__mobile-menu {
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: $navbar-height;
+  }
 }
 
-@include tablet-up {
+@include desktop-up {
   .navbar {
     &__menu {
       display: flex;
@@ -166,7 +175,8 @@ $navbar-color: #fff;
       padding-left: $content-margin;
     }
 
-    &__menu-mobile-toggle {
+    &__menu-mobile-toggle,
+    &__mobile-menu {
       display: none;
     }
   }
