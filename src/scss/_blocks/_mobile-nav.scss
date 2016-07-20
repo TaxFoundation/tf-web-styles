@@ -1,27 +1,29 @@
 .mobile-nav {
   background: transparent;
-  bottom: 0;
-  box-shadow: 0 0 5px $gray-darker;
-  display: none;
+  bottom: 100%;
   left: 0;
   position: fixed;
   right: 0;
-  top: $header-height;
-  transform: translateY(-100%);
-  transition: transform 3s ease-in-out, background-color 2s ease-in-out;
+  overflow-y: hidden;
+  top: -100%;
+  transition: bottom .3s ease-in-out .1s, background-color .1s ease-in-out;
   z-index: 2;
 
   &--active {
-    background-color: rgba($gray-dark, .7);
-    display: block;
-    transform: translateY(0);
+    background-color: rgba($gray-light, .7);
+    bottom: 0;
+    top: $header-height;
   }
 
   &__items {
     background-color: $gray-lighter;
+    box-shadow: 0 0 5px $gray-darker;
+    left: 0;
     list-style: none;
     margin: 0;
-    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   &__search {
