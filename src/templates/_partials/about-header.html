@@ -8,8 +8,8 @@
 
 <nav class="about-us__navbar">
   <ul>
-    {% for item in about-header %}
-    <a href="{{link.url}}"><li>{{item.heading}}</li></a>
+    {% for item in aboutHeader %}
+      <a href="{{item.url}}"><li>{{item.name}}</li></a>
     {% endfor %}
   </ul>
 </nav>

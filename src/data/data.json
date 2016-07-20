@@ -196,6 +196,44 @@
       ]
     }
   ],
+  "aboutHeader": [
+        {
+          "name": "About",
+          "url": "#"
+        },
+        {
+          "name": "Impact",
+          "url": "#"
+        },
+        {
+          "name": "Principles",
+          "url": "#"
+        },
+        {
+          "name": "Staff",
+          "url": "#"
+        },
+        {
+          "name": "Board",
+          "url": "#"
+        },
+        {
+          "name": "Financials",
+          "url": "#"
+        },
+        {
+          "name": "Media",
+          "url": "#"
+        },
+        {
+          "name": "Careers",
+          "url": "#"
+        },
+        {
+          "name": "Contact",
+          "url": "#"
+        }
+    ],
   "footer": {
     "links": [
       {
