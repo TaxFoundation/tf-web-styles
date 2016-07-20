@@ -1,23 +1,11 @@
-<nav class="navbar__mobile-menu">
-  <ul class="navbar__mobile-menu-items">
-    <li class="navbar__mobile-menu-top-level-item">
-      <input type="search">
+<nav class="mobile-nav">
+  <ul class="mobile-nav__items">
+    <li class="mobile-nav__search">
+      <input type="search" placeholder="Search...">
     </li>
     {% for item in navbar %}
-    <li class="navbar__mobile-menu-top-level-item">
-      <a class="navbar__mobile-menu-top-level-link">{{item.heading}}</a>
-      <div class="navbar__submenu container row">
-        {% for submenu in item.submenus %}
-        <div class="navbar__submenu-section">
-          <h4>{{submenu.heading}}</h4>
-          <ul>
-            {% for link in submenu.links %}
-              <li><a href="{{link.url}}">{{link.name}}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}
-      </div>
+    <li class="mobile-nav__top-level-item">
+      <a href="{{item.url}}" class="mobile-nav__top-level-link">{{item.heading}}</a>
     </li>
     {% endfor %}
   </ul>

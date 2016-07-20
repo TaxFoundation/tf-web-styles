@@ -15,7 +15,7 @@ main {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  margin-top: $header-height; // Fixed position header offset
+  margin-top: calc(#{$header-height} + 1rem); // Fixed position header offset
 }
 
 // Horizontal Rules

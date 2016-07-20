@@ -7,7 +7,7 @@
       <ul class="navbar__menu-items">
         {% for item in navbar %}
         <li class="navbar__menu-top-level-item">
-          <a class="navbar__menu-top-level-link">{{item.heading}}</a>
+          <a href="{{item.url}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
           <div class="navbar__submenu container row">
             {% for submenu in item.submenus %}
             <div class="navbar__submenu-section">
