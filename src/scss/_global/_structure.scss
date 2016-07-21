@@ -17,8 +17,7 @@ main {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 76px; // Fixed position header offset
+  margin-top: $header-height; // Fixed position header offset
 }
 
 .width-article {
@@ -85,6 +84,11 @@ hr {
   height: 1px;
   margin: 2.5rem 0;
   position: relative;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
 
 .divider {

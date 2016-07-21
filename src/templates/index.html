@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  <div class="container width-medium">
+  <div class="container container--padded container--width-constrained">
 
     {% include './_examples/typography.html' %}
 
@@ -39,15 +39,15 @@
     <hr class="divider"><!-- Widgets-->
     {% include './_examples/widgets.html' %}
 
-    <hr class="divider"><!-- Content Cards -->
-
-    <div class="container">
-      {% include './_examples/cards.html' %}
-    </div>
-
-    <hr class="divider"><!-- Grids -->
-    {% include './_examples/grid-layout.html' %}
-
+    <hr><!-- Content Cards -->
   </div>
 
+  <div class="container container--padded">
+    {% include './_examples/cards.html' %}
+  </div>
+
+  <div class="container container--padded container--width-constrained">
+    <hr>
+    {% include './_examples/grid-layout.html' %}
+  </div>
 {% endblock %}

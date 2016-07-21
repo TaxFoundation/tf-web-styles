@@ -1,8 +1,4 @@
-<ul class="categories">
-  {% for category in post.categories %}
-    <li><a href="{{category.url}}">{{category.name}}</a></li>
-  {% endfor %}
-</ul>
+{% include 'categories.html' with categories %}
 
 <h1>{{post.heading}}</h1>
 
@@ -10,14 +6,7 @@
   <p class="date">{{post.date}}</p>
 
     {% for author in post.authors %}
-      <div class="container byline">
-        <a href="#">
-          <div class="author">
-            <img src="{{author.imageUrl}}">
-            <p>{{author.name}}</p>
-          </div>
-        </a>
-      </div>
+      {% include 'byline.html' with author %}
     {% endfor %}
 </div>
 
@@ -27,9 +16,5 @@
 </div>
 
 <div>
-  <ul class="tags">
-    {% for tag in tags %}
-      <li><a href="{{tag.url}}">{{tag.name}}</a></li>
-    {% endfor %}
-  </ul>
+  {% include 'tags.html' with tags %}
 </div>
