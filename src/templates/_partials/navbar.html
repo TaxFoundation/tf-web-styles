@@ -7,12 +7,12 @@
       <ul class="navbar__menu-items">
         {% for item in navbar %}
         <li class="navbar__menu-top-level-item">
-          <a href="{{link.url}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
+          <a class="navbar__menu-top-level-link">{{item.heading}}</a>
           <div class="navbar__submenu">
             <div class="navbar__submenu-columns">
             {% for submenu in item.submenus %}
               <div class="navbar__submenu-section">
-                <h3>{{submenu.heading}}</h3>
+                <a href="{{submenu.url}}"><h3>{{submenu.heading}}</h3></a>
                 <ul>
                   {% for link in submenu.links %}
                     <li><a href="{{link.url}}">{{link.name}}</a></li>
@@ -25,7 +25,10 @@
         </li>
         {% endfor %}
         <li class="navbar__menu-top-level-item">
-          <a class="navbar__menu-top-level-link">About</a>
+          <a href="#" class="navbar__menu-top-level-link">Tax Law</a>
+        </li>
+        <li class="navbar__menu-top-level-item">
+          <a href="#" class="navbar__menu-top-level-link">About</a>
         </li>
         <li class="navbar__menu-top-level-item">
           <a class="navbar__menu-top-level-link">Search</a>
@@ -36,7 +39,7 @@
           </div>
         </li>
         <li class="navbar__menu-top-level-item">
-          <a class="navbar__menu-top-level-link donate">Donate</a>
+          <a href="#" class="navbar__menu-top-level-link donate">Donate</a>
         </li>
       </ul>
     </nav>
