@@ -20,60 +20,6 @@ main {
   margin-top: $header-height; // Fixed position header offset
 }
 
-.width-article {
-  margin: 0 auto;
-  padding: 0 $content-margin;
-
-  @include desktop-up {
-    min-width: 750px;
-    width: 35%;
-  }
-
-  @include mobile-only {
-    width: 95%;
-  }
-}
-
-.width-medium {
-  margin: 0 auto;
-  padding: 0 $content-margin;
-
-  @include desktop-up {
-    min-width: 800px;
-    width: 45%;
-  }
-
-  @include mobile-only {
-    width: 95%;
-  }
-}
-
-.width-wide {
-  margin: 0 auto;
-  padding: 0 $content-margin;
-
-  @include desktop-up {
-    min-width: 1200px;
-    width: 60%;
-  }
-
-  @include mobile-only {
-    width: 95%;
-  }
-}
-
-.indent {
-  @include tablet-up {
-    margin: 0 0 2rem 2rem;
-  }
-
-  @include mobile-only {
-    margin-top: 0;
-  }
-}
-
-
-
 // Horizontal Rules
 $hr-color: $gray-light;
 
@@ -83,21 +29,9 @@ hr {
   color: $hr-color;
   height: 1px;
   margin: 2.5rem 0;
-  position: relative;
 }
 
 img {
   height: auto;
   width: 100%;
-}
-
-.divider {
-  left: -1000%;
-  position: relative;
-  width: 4000%;
-}
-
-.horizontal-space {
-  position: sticky;
-  width: 1rem;
 }
