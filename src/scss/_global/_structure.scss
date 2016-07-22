@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
 
   &.admin-bar header {
@@ -26,15 +28,10 @@ hr {
   border: 0;
   color: $hr-color;
   height: 1px;
-  margin: 2.75rem 0;
-  position: relative;
+  margin: 2.5rem 0;
 }
 
 img {
   height: auto;
-  width: 100%;
-}
-
-.divider {
   width: 100%;
 }
