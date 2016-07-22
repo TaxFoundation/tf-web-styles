@@ -56,6 +56,10 @@
     flex-grow: 1;
     flex-shrink: 0;
   }
+
+  &--centered {
+    margin: 0 auto;
+  }
 }
 
 $column-widths: 10 20 25 30 33.333 40 50 60 66.666 70 80 90 100;
