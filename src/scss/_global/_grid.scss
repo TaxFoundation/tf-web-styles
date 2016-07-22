@@ -58,87 +58,21 @@
   }
 }
 
+$column-widths: 10 20 25 30 33.333 40 50 60 66.666 70 80 90 100;
+
 @include tablet-up {
-  .tablet-column-25 {
-    flex-basis: calc(25% - 1rem);
-  }
-
-  .tablet-column-33 {
-    flex-basis: calc(33.333% - 1rem);
-  }
-
-  .tablet-column-50 {
-    flex-basis: calc(50% - 1rem);
-  }
-
-  .tablet-column-66 {
-    flex-basis: calc(66.666% - 1rem);
-  }
-
-  .tablet-column-100 {
-    flex-basis: calc(100% - 1rem);
-  }
-
-  .tablet-column-25 {
-    flex-basis: calc(25% - 1rem);
-  }
-
-  .tablet-column-33 {
-    flex-basis: calc(33.333% - 1rem);
-  }
-
-  .tablet-column-50 {
-    flex-basis: calc(50% - 1rem);
-  }
-
-  .tablet-column-66 {
-    flex-basis: calc(66.666% - 1rem);
-  }
-
-  .tablet-column-100 {
-    flex-basis: calc(100% - 1rem);
+  @each $width in $column-widths {
+    .tablet-column-#{$width} {
+      flex-basis: calc(#{$width}% - 1rem);
+    }
   }
 }
 
 @include desktop-up {
-  .desktop-column-25 {
-    flex-basis: calc(25% - 1rem);
-  }
-
-  .desktop-column-33 {
-    flex-basis: calc(33.333% - 1rem);
-  }
-
-  .desktop-column-50 {
-    flex-basis: calc(50% - 1rem);
-  }
-
-  .desktop-column-66 {
-    flex-basis: calc(66.666% - 1rem);
-  }
-
-  .desktop-column-100 {
-    flex-basis: calc(100% - 1rem);
-  }
-
-  .desktop-column-25 {
-    flex-basis: calc(25% - 1rem);
-  }
-
-  .desktop-column-33 {
-    flex-basis: calc(33.333% - 1rem);
-  }
-
-  .desktop-column-50 {
-    flex-basis: calc(50% - 1rem);
-  }
-
-  .desktop-column-66 {
-    flex-basis: calc(66.666% - 1rem);
-  }
-
-  .desktop-column-100 {
-    flex-basis: calc(100% - 1rem);
+  @each $width in $column-widths {
+    .desktop-column-#{$width} {
+      flex-basis: calc(#{$width}% - 1rem);
+    }
   }
 }
 
