@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
 
   &.admin-bar header {
@@ -15,15 +17,21 @@ main {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 76px; // Fixed position header offset
+  margin-top: $header-height; // Fixed position header offset
 }
 
 // Horizontal Rules
 $hr-color: $gray-light;
 
 hr {
-  border-top: .25px solid $hr-color;
-  margin: 3rem 0;
-  position: relative;
+  background-color: $hr-color;
+  border: 0;
+  color: $hr-color;
+  height: 1px;
+  margin: 2.5rem 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
