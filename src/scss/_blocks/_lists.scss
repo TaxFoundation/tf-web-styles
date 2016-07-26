@@ -87,7 +87,7 @@ ul {
 }
 
 .link-list ul {
-  margin: 0 0 -1rem;
+  margin: 0;
 
   a {
     color: $text-default-color;
@@ -136,7 +136,7 @@ ul {
     color: $gray-medium;
     display: block;
     list-style: none;
-    padding: 1rem .75rem;
+    padding: .5rem .75rem;
     text-align: left;
     text-decoration: none;
     transition-duration: .2s;

@@ -4,15 +4,15 @@
 
 {% include './_partials/about-header.html' %}
 
-    <div class="about-us__feature-text">
-      <p>The Tax Foundation is the nation’s leading independent tax policy research organization. Since 1937, our principled research, insightful analysis, and engaged experts have informed smarter tax policy at the federal, state, and local levels.</p>
-    </div>
+  <div class="about-us__feature-text">
+    <p>The Tax Foundation is the nation’s leading independent tax policy research organization. Since 1937, our principled research, insightful analysis, and engaged experts have informed smarter tax policy at the federal, state, and local levels.</p>
+  </div>
 
-    <hr>
+  <hr>
 
-    <div>
+  <div class="container container--padded row">
 
-    <div  class="container row">
+    <div  class="tablet-column-60 desktop-column-60 column--fixed">
       <div class="link-list">
         <ul>
           <li>
@@ -85,197 +85,199 @@
           </li>
         </ul>
       </div>
+    </div>
 
-      <div class="about-us__media-contact desktop-column-fixed-33 tablet-column-fixed-33">
+    <br>
 
-        <h2>Contact</h2>
+    <div class="about-us__media-contact tablet-column-40 desktop-column-40 column--fixed">
+
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Richard Borean</strong></li>
+        <li>Communications Director</li>
+        <li>202-464-5120</li>
+        <li><a href="mailto:media@taxfoundation.org">media@taxfoundation.org</a></li>
+      </ul>
+
+      <br><br>
+
+      <h2>Subscribe</h2>
+      <p>Sign up to recieve Tax Foundation press releases &amp; media advisories.</p>
+      <fieldset>
+        <input type="text" id="fname" placeholder="First Name*"/>
+        <input type="text" id="lname" placeholder="Last Name*"/>
+        <input type="email" id="mail" placeholder="Email*"/>
+        <select name="checklist" id="state">
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+        <button type="button" name="button" class="featured full-width">Subscribe</button>
+      </fieldset>
+
+      <br><br>
+
+      <h2>Resources</h2>
+      <div class="link-list-box">
         <ul>
-          <li><strong>Richard Borean</strong></li>
-          <li>Communications Director</li>
-          <li>202-464-5120</li>
-          <li><a href="mailto:media@taxfoundation.org">media@taxfoundation.org</a></li>
+          <a href="/staff.html">
+            <li>
+              <p>Our Experts</p>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <p>Brand Assets</p>
+            </li>
+          </a>
+          <a href="/about-us.html">
+            <li>
+              <p>About Us</p>
+            </li>
+          </a>
         </ul>
+      </div>
 
-        <br>
-        <br>
+    </div>
 
-        <h2>Subscribe</h2>
-        <p>Sign up to recieve Tax Foundation press releases &amp; media advisories.</p>
-        <fieldset>
-          <div class="container row">
-            <div><input type="text" id="fname" placeholder="First Name*"/></div>
-            <div><input type="text" id="lname" placeholder="Last Name*"/></div>
-          </div>
-          <input type="email" id="mail" placeholder="Email*"/>
-          <select name="checklist" id="state">
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
-            <option value="AR">Arkansas</option>
-            <option value="CA">California</option>
-            <option value="CO">Colorado</option>
-            <option value="CT">Connecticut</option>
-            <option value="DE">Delaware</option>
-            <option value="DC">District Of Columbia</option>
-            <option value="FL">Florida</option>
-            <option value="GA">Georgia</option>
-            <option value="HI">Hawaii</option>
-            <option value="ID">Idaho</option>
-            <option value="IL">Illinois</option>
-            <option value="IN">Indiana</option>
-            <option value="IA">Iowa</option>
-            <option value="KS">Kansas</option>
-            <option value="KY">Kentucky</option>
-            <option value="LA">Louisiana</option>
-            <option value="ME">Maine</option>
-            <option value="MD">Maryland</option>
-            <option value="MA">Massachusetts</option>
-            <option value="MI">Michigan</option>
-            <option value="MN">Minnesota</option>
-            <option value="MS">Mississippi</option>
-            <option value="MO">Missouri</option>
-            <option value="MT">Montana</option>
-            <option value="NE">Nebraska</option>
-            <option value="NV">Nevada</option>
-            <option value="NH">New Hampshire</option>
-            <option value="NJ">New Jersey</option>
-            <option value="NM">New Mexico</option>
-            <option value="NY">New York</option>
-            <option value="NC">North Carolina</option>
-            <option value="ND">North Dakota</option>
-            <option value="OH">Ohio</option>
-            <option value="OK">Oklahoma</option>
-            <option value="OR">Oregon</option>
-            <option value="PA">Pennsylvania</option>
-            <option value="RI">Rhode Island</option>
-            <option value="SC">South Carolina</option>
-            <option value="SD">South Dakota</option>
-            <option value="TN">Tennessee</option>
-            <option value="TX">Texas</option>
-            <option value="UT">Utah</option>
-            <option value="VT">Vermont</option>
-            <option value="VA">Virginia</option>
-            <option value="WA">Washington</option>
-            <option value="WV">West Virginia</option>
-            <option value="WI">Wisconsin</option>
-            <option value="WY">Wyoming</option>
-          </select>
-          <button type="button" name="button" class="featured full-width">Subscribe</button>
-        </fieldset>
+  </div>
 
-        <br><br>
+  <hr>
 
-        <h2>Resources</h2>
-        <div class="link-list-box">
-          <ul>
-            <a href="/staff.html">
-              <li>
-                <img class="staff">
-                <p>Our Experts</p>
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                <img class="file">
-                <p>Brand Assets</p>
-              </li>
-            </a>
-            <a href="/about-us.html">
-              <li>
-                <img class="tf">
-                <p>About Us</p>
-              </li>
-            </a>
-          </ul>
+    <h2 class="center">Featured Coverage</h2>
+
+    <div class="about-us__media-coverage container container--width-constrained row">
+
+      <div href="#" class="card">
+        <div class="content">
+          <h2>Wall Street Journal</h2>
+          <p>
+            "Pabst yr freegan iPhone. VHS gastropub single-origin coffee, seitan biodiesel austin offal. Kitsch man braid selfies vinyl freegan lo-fi iPhone, authentic ennui keytar banh mi cronut yr. Food truck scenester church-key paleo fanny pack. Disrupt cred dreamcatcher slow-carb DIY cronut."
+          </p>
         </div>
       </div>
-    </div>
 
-  </div>
-
-<hr>
-
-<div class="about-us__media-coverage">
-
-  <h2 class="center">Featured Coverage</h2>
-
-  <br>
-
-  <div class="container row cards">
-
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>Wall Street Journal</h2>
-        <p>
-          "Pabst yr freegan iPhone. VHS gastropub single-origin coffee, seitan biodiesel austin offal. Kitsch man braid selfies vinyl freegan lo-fi iPhone, authentic ennui keytar banh mi cronut yr. Food truck scenester church-key paleo fanny pack. Disrupt cred dreamcatcher slow-carb DIY cronut."
-        </p>
+      <div href="#" class="card">
+        <div class="content">
+          <h2>New York Times</h2>
+          <p>
+            "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>New York Times</h2>
-        <p>
-          "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
-        </p>
+      <div href="#" class="card">
+        <div class="content">
+          <h2>New York Times</h2>
+          <p>
+            "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
+          </p>
+        </div>
       </div>
+
     </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>Washington Post</h2>
-        <p>
-          "Irony put a bird on it asymmetrical letterpress selvage. Fashion axe tofu sriracha, banh mi kickstarter mixtape cold-pressed paleo. Kickstarter bushwick poutine, YOLO tousled kale chips disrupt selvage pour-over drinking vinegar deep v next level before they sold out."
-        </p>
+    <div class="about-us__media-coverage container container--width-constrained row">
+
+      <div href="#" class="card">
+        <div class="content">
+          <h2>Wall Street Journal</h2>
+          <p>
+            "Pabst yr freegan iPhone. VHS gastropub single-origin coffee, seitan biodiesel austin offal. Kitsch man braid selfies vinyl freegan lo-fi iPhone, authentic ennui keytar banh mi cronut yr. Food truck scenester church-key paleo fanny pack. Disrupt cred dreamcatcher slow-carb DIY cronut."
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>Los Angeles Times</h2>
-        <p>
-          "Butcher pickled man braid meggings irony stumptown. Migas taxidermy echo park lomo, skateboard deep v tousled banjo DIY hoodie kogi. You probably haven't heard of them heirloom whatever, pinterest literally single-origin coffee quinoa crucifix deep v intelligentsia chambray tote bag letterpress."
-        </p>
+      <div href="#" class="card">
+        <div class="content">
+          <h2>New York Times</h2>
+          <p>
+            "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
+          </p>
+        </div>
       </div>
+
     </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>Chicago Tribune</h2>
-        <p>
-          "Intelligentsia austin asymmetrical cliche. Taxidermy cliche direct trade bushwick waistcoat. Dreamcatcher tilde normcore skateboard, master cleanse DIY selvage. Tacos flannel bushwick deep v fixie migas."
-        </p>
+    <div class="about-us__media-coverage container container--width-constrained row">
+
+      <div href="#" class="card">
+        <div class="content">
+          <h2>Wall Street Journal</h2>
+          <p>
+            "Pabst yr freegan iPhone. VHS gastropub single-origin coffee, seitan biodiesel austin offal. Kitsch man braid selfies vinyl freegan lo-fi iPhone, authentic ennui keytar banh mi cronut yr. Food truck scenester church-key paleo fanny pack. Disrupt cred dreamcatcher slow-carb DIY cronut."
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>The Economist</h2>
-        <p>
-          "Locavore kale chips slow-carb hammock, beard plaid artisan four loko deep v shabby chic art party. Pork belly skateboard gluten-free, tofu truffaut waistcoat twee butcher poutine meggings gastropub. VHS before they sold out viral, raw denim readymade fingerstache pug slow-carb selfies fanny pack."
-        </p>
+      <div href="#" class="card">
+        <div class="content">
+          <h2>New York Times</h2>
+          <p>
+            "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>USA Today</h2>
-        <p>
-          "Food truck scenester church-key paleo fanny pack. Disrupt cred dreamcatcher slow-carb DIY cronut. Chicharrones cold-pressed lumbersexual master cleanse meh pug. Occupy cray sriracha, post-ironic keytar pitchfork meggings ethical."
-        </p>
+      <div href="#" class="card">
+        <div class="content">
+          <h2>New York Times</h2>
+          <p>
+            "Sartorial occupy mixtape tumblr jean shorts tousled. Swag synth cornhole banjo. Asymmetrical master cleanse twee williamsburg yr gochujang, umami knausgaard kombucha tacos. Photo booth chillwave gentrify echo park tattooed irony gastropub, kogi beard tofu banh mi cray man bun meh pabst."
+          </p>
+        </div>
       </div>
+
     </div>
 
-    <div href="#" class="card desktop-column-grow-33 tablet-column-grow-33">
-      <div class="content">
-        <h2>The Denver Post</h2>
-        <p>
-          "Cray trust fund godard, tacos bicycle rights cupidatat labore marfa. Voluptate cray meh labore YOLO, cliche ut DIY intelligentsia scenester direct trade vero pop-up listicle. Quis biodiesel vice photo booth, et vero master cleanse brunch farm-to-table direct trade esse vinyl."
-        </p>
-      </div>
-    </div>
 
-  </div>
-</div>
 
 {% endblock %}

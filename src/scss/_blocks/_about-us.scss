@@ -274,10 +274,12 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 }
 
 .about-us__media-coverage {
-  margin: 2.5rem 1rem 0;
+  margin: .5rem auto 0;
 
   h2 {
     text-align: center;
+    font-size: 1.25rem;
+    margin: .5rem .75rem;
   }
 }
 
