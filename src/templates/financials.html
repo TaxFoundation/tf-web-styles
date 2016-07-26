@@ -5,112 +5,85 @@
 {% include './_partials/about-header.html' %}
 
 
-    <div>
+    <div class="container container--padded row">
 
-      <h1>2015 By The Numbers</h1>
-      <p>The Tax Foundation is an independent 501(c)(3) non-partisan, non-profit organization founded in 1937. We have no endowment and must raise our budget to support our programs each year. As a policy, we neither solicit nor receive financial support from any government entity.</p>
-      <p>Our 2014 revenue ($3,675,132) consisted of support from philanthropic foundations (42%), corporate contributions (40%), donations from over 1,600 individuals (10%), and events revenue and miscellaneous (8%). No one donor contributed more than 12 percent of our revenue.</p>
-      <p>Our 2014 expenses ($2,971,778) consisted of $2.22 million (75%) spent on programs, $0.20 million (7%) on administrative costs, and $0.55 million (19%) on fundraising costs (in which we include donor outreach costs). Our 2015 budget is $4 million. <a href="/support.html">Support the Tax Foundation by clicking here!</a></p>
+      <div class="tablet-column-80 desktop-column-50 column--fixed column--centered">
+
+        <h1>2015 By The Numbers</h1>
+        <p>The Tax Foundation is an independent 501(c)(3) non-partisan, non-profit organization founded in 1937. We have no endowment and must raise our budget to support our programs each year. As a policy, we neither solicit nor receive financial support from any government entity.</p>
+        <p>Our 2014 revenue ($3,675,132) consisted of support from philanthropic foundations (42%), corporate contributions (40%), donations from over 1,600 individuals (10%), and events revenue and miscellaneous (8%). No one donor contributed more than 12 percent of our revenue.</p>
+        <p>Our 2014 expenses ($2,971,778) consisted of $2.22 million (75%) spent on programs, $0.20 million (7%) on administrative costs, and $0.55 million (19%) on fundraising costs (in which we include donor outreach costs). Our 2015 budget is $4 million. <a href="/support.html">Support the Tax Foundation by clicking here!</a></p>
+
+      </div>
 
     </div>
 
     <hr>
 
-    <div>
+      <div class="container container--padded container--width-constrained row">
 
-        <div class="container row">
-          <div class="tablet-column-66 desktop-column-66">
-            <h2>Annual Reports</h2>
+        <div class="tablet-column-100 desktop-column-70 column--grow">
 
-            <div class="container row cards">
-
-              <div class="card">
-                <div class="image" style="background-image:url('/images/AR2015.png')"></div>
-                <div class="content">
-                  <h2>2015 Annual Report</h2>
-                  <p>
-                    2015 was our most successful year ever. We gained more media attention than ever, successfully guided the presidential tax debate, and influenced state tax reform across the country.
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image" style="background-image:url('/images/AR2014.png')"></div>
-                <div class="content">
-                  <h2>2014 Annual Report</h2>
-                  <p>
-                    This is space to say a bunch of nice things about the annual report, hopefully convincing vistors to click on it, download it, read it ect. And this sentence is just here to fill extra space in the content card.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
+          <div class="container">
+            {% include './_partials/about-cards.html' %}
           </div>
 
-          <div class="tablet-column-fixed-33 desktop-column-fixed-33">
-            <h2>Financial Documents</h2>
+        </div>
+
+        <div class="tablet-column-100 desktop-column-30">
+          <h2>Financial Documents</h2>
             <div class="link-list-box">
               <ul>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2015 Form 990</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2015 Financial Statement</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2014 Form 990</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2014 Financial Statement</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2013 Form 990</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2013 Financial Statement</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2012 Form 990</p>
                   </li>
                 </a>
                 <a href="#">
                   <li>
-                    <img class="download">
                     <p>2012 Financial Statement</p>
                   </li>
                 </a>
               </ul>
             </div>
           </div>
-        </div>
 
-    </div>
+        </div>
 
       <div class="hero hero--white">
         <h3>We are one of the most trustworthy non-profits in Washington D.C.</h3>
-        <img class="charity-logo" src="images/charity-nav.png">
-        <img class="charity-logo" src="images/guidestar.png">
+        <img class="charity-logo charity-logo__cn" src="images/charity-nav.png">
+        <img class="charity-logo charity-logo__gs" src="images/guidestar.png">
       </div>
 
   {% endblock %}

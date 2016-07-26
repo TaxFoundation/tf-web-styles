@@ -1,0 +1,19 @@
+<h2>Annual Reports</h2>
+{% set cards = [
+  {
+    "imageUrl": "/images/capitol.png",
+    "heading": "2016 Annual Report",
+    "description": "This is the place for a brief description of the 2016 Annual Report."
+  },
+  {
+    "imageUrl": "/images/AR2015.png",
+    "heading": "2015 Annual Report",
+    "description": "This is the place for a brief description of the 2015 Annual Report."
+  },
+  {
+    "imageUrl": "/images/AR2014.png",
+    "heading": "2014 Annual Report",
+    "description": "This is the place for a brief description of the 2014 Annual Report."
+  }
+  ] %}
+{% include '../_partials/cards.html' with cards %}

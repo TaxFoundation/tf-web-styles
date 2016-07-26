@@ -27,7 +27,6 @@
   @extend %container--flex;
 
   flex-direction: row;
-  margin: 0 0 0 -1rem;
 
   @include tablet-up {
     margin: 0 0 0 -1rem;
@@ -55,6 +54,10 @@
   &--grow {
     flex-grow: 1;
     flex-shrink: 0;
+
+    @include mobile-only {
+      margin-left: 0;
+    }
   }
 
   &--centered {
