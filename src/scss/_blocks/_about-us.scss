@@ -214,6 +214,16 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
       max-width: 13rem;
       width: 13rem;
     }
+
+    @include mobile-only {
+      margin: 0 auto;
+    }
+  }
+
+  &__name-title {
+    @include mobile-only {
+      text-align: center;
+    }
   }
 }
 
