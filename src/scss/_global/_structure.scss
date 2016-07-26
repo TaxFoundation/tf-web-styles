@@ -18,6 +18,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin-top: $header-height; // Fixed position header offset
+  width: 100%;
 }
 
 // Horizontal Rules
