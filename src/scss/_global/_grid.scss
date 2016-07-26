@@ -54,6 +54,10 @@
   &--grow {
     flex-grow: 1;
     flex-shrink: 0;
+
+    @include mobile-only {
+      margin-left: 0;
+    }
   }
 
   &--centered {

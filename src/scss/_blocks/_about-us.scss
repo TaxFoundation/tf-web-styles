@@ -280,3 +280,25 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
     text-align: center;
   }
 }
+
+.charity-logo {
+  margin: 1rem .5rem 0;
+  height: 100%;
+  transition-duration: .2s;
+  transition-property: opacity;
+  transition-timing-function: ease-in ease-out;
+
+
+  &__cn {
+    width: 250px;
+  }
+
+  &__gs {
+    width: 320px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+}
