@@ -255,10 +255,6 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 
 .about-us__media-contact {
 
-  @include desktop-up {
-    margin-left: 2rem;
-  }
-
   fieldset {
     margin-top: 1rem;
   }
