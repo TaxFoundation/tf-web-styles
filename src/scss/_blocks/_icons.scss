@@ -1,105 +1,44 @@
-.tf {
-  background: url('../images/icons/tf.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
+$twitter: #00aced;
+$facebook: #3b5998;
+$google: #dd4b39;
+$linkedin: #007bb6;
+$youtube: #bb0000;
 
-.file {
-  background: url('../images/icons/file.svg');
-  background-size: 25px 25px;
+.icon {
+  display: inline-block;
   height: 25px;
   margin: .5rem;
-  vertical-align: middle;
   width: 25px;
-}
-
-.staff {
-  background: url('../images/icons/staff.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
+  transition: all .25s ease-out;
   vertical-align: middle;
-  width: 25px;
-}
-
-.twitter {
-  background: url('../images/icons/twitter.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  transition-duration: .25s;
-  transition-property: opacity;
-  transition-timing-function: ease-out;
-  vertical-align: middle;
-  width: 25px;
 
   &:hover {
-    opacity: 50;
+    opacity: .80;
+  }
+
+  &__twitter {
+    fill: $twitter;
+  }
+
+  &__facebook {
+    fill: $facebook;
+  }
+
+  &__linkedin {
+    fill: $linkedin;
+  }
+
+  &__youtube {
+    fill: $youtube;
+  }
+
+  &__google {
+    fill: $google;
   }
 }
 
-.facebook {
-  background: url('../images/icons/facebook.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.linkedin {
-  background: url('../images/icons/linkedin.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.google {
-  background: url('../images/icons/google.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.youtube {
-  background: url('../images/icons/youtube.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.pdf {
-  background: url('../images/icons/PDF.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.download {
-  background: url('../images/icons/download.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
-}
-
-.email {
-  background: url('../images/icons/email.svg');
-  background-size: 25px 25px;
-  height: 25px;
-  margin: .5rem;
-  vertical-align: middle;
-  width: 25px;
+.icon-large {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
