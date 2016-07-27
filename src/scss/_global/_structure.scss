@@ -26,11 +26,9 @@ main {
 $hr-color: $gray-light;
 
 hr {
-  background-color: $hr-color;
   border: none;
-  color: $hr-color;
-  height: 1px;
-  margin: 2.5rem 0;
+  border-bottom: .25px solid $hr-color;
+  margin: 3rem 0;
 }
 
 img {

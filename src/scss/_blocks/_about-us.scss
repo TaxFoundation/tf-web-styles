@@ -310,3 +310,29 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 
 }
+
+.about-us__job-opening {
+  margin: 2rem 0;
+
+  &__title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+
+    a {
+      text-decoration: none;
+      color: $text-default-color;
+      transition-property: color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        color: $tf-blue;
+      }
+    }
+  }
+
+  &__dept {
+    color: $gray-medium;
+    margin-bottom: .5rem;
+  }
+}
