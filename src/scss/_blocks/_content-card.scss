@@ -1,6 +1,10 @@
 .cards {
   position: relative;
   margin-right: -2rem;
+
+  @include mobile-only {
+    margin-right: -1rem;
+  }
 }
 
 .card {
