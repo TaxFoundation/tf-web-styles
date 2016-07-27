@@ -225,6 +225,10 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
       text-align: center;
     }
   }
+
+  &__social {
+    margin: 1rem auto 0;
+  }
 }
 
 
@@ -252,13 +256,9 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
     line-height: 1;
     margin: 0;
   }
-}
 
-.about-us__social {
-  margin: 0 auto;
-
-  img {
-    margin: .5rem;
+  &__social {
+    margin: auto;
   }
 }
 
