@@ -7,43 +7,22 @@ $pdf: #ff0000;
 
 .icon {
   display: inline-block;
-  height: 25px;
+  height: 32px;
   margin: .5rem;
-  width: 25px;
-  transition: all .25s ease-out;
+  width: 30px;
   vertical-align: middle;
 
-  &:hover {
+  &__hover {
+    cursor: pointer;
+    transition: all .25s ease-out;
+
+    &:hover {
     opacity: .75;
+    }
   }
 
-  &__twitter {
-    fill: $twitter;
+  &__large {
+    height: 64px;
+    width: 64px;
   }
-
-  &__facebook {
-    fill: $facebook;
-  }
-
-  &__linkedin {
-    fill: $linkedin;
-  }
-
-  &__youtube {
-    fill: $youtube;
-  }
-
-  &__google {
-    fill: $google;
-  }
-
-  &__pdf {
-    fill: $pdf;
-  }
-}
-
-.icon-large {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
 }
