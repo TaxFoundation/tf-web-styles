@@ -1,6 +1,7 @@
 $navbar-height: $header-height;
 $navbar-background: $tf-blue;
 $navbar-color: #fff;
+$navbar-max-width: 1400px;
 
 %header-bar-link-styles {
   background: none;
@@ -39,9 +40,7 @@ $navbar-color: #fff;
     font-size: 1rem;
     height: $navbar-height;
     justify-content: space-between;
-    margin: 0;
-    max-width: $max-width;
-    padding-left: 1rem;
+    max-width: $navbar-max-width;
     width: 100%;
 
     * {
@@ -55,6 +54,15 @@ $navbar-color: #fff;
     display: flex;
     flex: none;
 
+    @include desktop-up {
+      margin-left: -2rem;
+      padding-left: 2rem;
+  }
+
+  @include mobile-only {
+      margin-left: 2rem;
+  }
+
     a,
     a:hover {
       @extend %header-bar-link-styles;
@@ -67,11 +75,11 @@ $navbar-color: #fff;
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    padding-right: 1rem;
+    padding-right: $content-margin;
 
     img {
-      height: $navbar-height / 3;
-      width: $navbar-height / 3;
+      height: $header-height / 3;
+      width: $header-height / 3;
     }
   }
 
@@ -109,16 +117,22 @@ $navbar-color: #fff;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      margin: 0 auto;
     }
   }
 
   &__menu-top-level-link {
     @extend %header-bar-link-styles;
     flex: 1;
-    font-size: .85rem;
+    font-size: .8rem;
     font-weight: 700;
-    padding: ($navbar-height / 4) ($content-margin / 2.5) 0;
+    padding: ($navbar-height / 4) ($content-margin / 5) 0;
     text-transform: uppercase;
+
+    @include desktop-up {
+      font-size: .85rem;
+      padding: ($navbar-height / 4) ($content-margin / 2.25) 0;
+    }
 
     &:hover {
       @extend %header-bar-link-styles;
@@ -127,22 +141,66 @@ $navbar-color: #fff;
       background-color: lighten($tf-blue, 15%);
       cursor: pointer;
     }
+
+    &--donate {
+      background: $green;
+      transition-duration: .2s;
+      transition-property: background;
+      transition-timing-function: ease-out ease-in;
+
+      &:hover, {
+        background: lighten($green, 5%);
+      }
+    }
   }
 
   &__submenu {
     background: $navbar-color;
-    border-bottom: 1px solid $navbar-background;
+    border-bottom: 5px solid $navbar-background;
     color: $text-default-color;
     display: none;
     left: 0;
+    margin: 0 auto;
     opacity: 0;
     position: fixed;
     right: 0;
     text-align: left;
     transition: opacity .3s linear;
+    padding: 2.5rem;
+
+    h3 {
+      color: $tf-blue;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: .3rem;
+      text-transform: uppercase;
+      transition-duration: .2s;
+      transition-property: color;
+      transition-timing-function: ease-out ease-in;
+
+      &:hover, {
+        color: lighten($tf-blue, 15%);
+      }
+    }
+
+    p {
+      color: $tf-blue;
+      font-weight: bold;
+      padding-bottom: .4rem;
+      text-transform: uppercase;
+    }
 
     a {
-      color: $navbar-background;
+      color: $text-default-color;
+      font-size: 1rem;
+      text-decoration: none;
+      transition-duration: .2s;
+      transition-property: color;
+      transition-timing-function: ease-out ease-in;
+
+      &:hover, {
+        color: $tf-blue;
+      }
     }
 
     li {
@@ -150,11 +208,22 @@ $navbar-color: #fff;
     }
   }
 
+  &__submenu-columns {
+    margin: auto;
+    display: flex;
+  }
+
   &__submenu-section {
     display: none;
     margin: 0 auto;
+    padding: 0 2rem;
     max-width: $max-width;
-    padding: 1rem;
+
+    input {
+      color: $text-default-color;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
   }
 }
 
@@ -173,3 +242,5 @@ $navbar-color: #fff;
     }
   }
 }
+
+

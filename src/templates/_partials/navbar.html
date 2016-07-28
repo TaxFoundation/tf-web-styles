@@ -7,28 +7,35 @@
       <ul class="navbar__menu-items">
         {% for item in navbar %}
         <li class="navbar__menu-top-level-item">
-          <a class="navbar__menu-top-level-link">{{item.heading}}</a>
-          <div class="navbar__submenu container row">
+          <a href="{{item.link}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
+          {% if item.submenus != nil %}
+          <div class="navbar__submenu">
+            <div class="navbar__submenu-columns">
             {% for submenu in item.submenus %}
-            <div class="navbar__submenu-section">
-              <h4>{{submenu.heading}}</h4>
-              <ul>
-                {% for link in submenu.links %}
-                  <li><a href="{{link.url}}">{{link.name}}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
+              <div class="navbar__submenu-section">
+                <a href="{{submenu.link}}"><h3>{{submenu.heading}}</h3></a>
+                <ul>
+                  {% for page in submenu.links %}
+                    <li><a href="{{page.link}}">{{page.name}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
             {% endfor %}
+            </div>
           </div>
+          {% endif %}
         </li>
         {% endfor %}
         <li class="navbar__menu-top-level-item">
           <a class="navbar__menu-top-level-link">Search</a>
           <div class="navbar__submenu">
             <div class="navbar__submenu-section container row">
-              <input type="search">
+              <input type="search" placeholder="Search...">
             </div>
           </div>
+        </li>
+        <li class="navbar__menu-top-level-item">
+          <a href="#" class="navbar__menu-top-level-link navbar__menu-top-level-link--donate">Donate</a>
         </li>
       </ul>
     </nav>
