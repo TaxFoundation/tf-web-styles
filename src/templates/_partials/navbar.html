@@ -1,10 +1,10 @@
-<header>
-  <div class="container row header-bar">
-    <div class="header-logo">
+<header class="navbar">
+  <div class="container row navbar__bar">
+    <div class="navbar__logo">
       <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
     </div>
-    <nav class="header-menu">
-      <ul id="nav-items">
+    <nav class="navbar__menu">
+      <ul class="navbar__menu-items">
         {% for item in navbar %}
         <li class="navbar__menu-top-level-item">
           <a href="{{item.link}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
@@ -39,7 +39,7 @@
         </li>
       </ul>
     </nav>
-    <div class="header-menu-mobile-toggle">
+    <div class="navbar__menu-mobile-toggle">
       <a href="#">
         <img src="images/icons/hamburger.svg" alt="" />
       </a>

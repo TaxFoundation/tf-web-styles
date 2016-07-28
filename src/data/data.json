@@ -308,46 +308,6 @@
       "link": "/about-us.html"
     }
   ],
-
-  "aboutHeader": [
-        {
-          "name": "About",
-          "url": "/about-us.html"
-        },
-        {
-          "name": "Impact",
-          "url": "/impact.html"
-        },
-        {
-          "name": "Principles",
-          "url": "/principles.html"
-        },
-        {
-          "name": "Staff",
-          "url": "/staff.html"
-        },
-        {
-          "name": "Board",
-          "url": "/board.html"
-        },
-        {
-          "name": "Financials",
-          "url": "/financials.html"
-        },
-        {
-          "name": "Media",
-          "url": "/media.html"
-        },
-        {
-          "name": "Careers",
-          "url": "/careers.html"
-        },
-        {
-          "name": "Contact",
-          "url": "/contact.html"
-        }
-    ],
-
   "footer": {
     "links": [
       {
