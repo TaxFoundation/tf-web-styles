@@ -9,7 +9,7 @@ $pdf: #ff0000;
   display: inline-block;
   height: 32px;
   margin: .5rem;
-  width: 30px;
+  width: 32px;
   vertical-align: middle;
 
   &__hover {
@@ -21,8 +21,26 @@ $pdf: #ff0000;
     }
   }
 
+  &__small {
+    height: 18px;
+    width: 18px;
+  }
+
   &__large {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
+  }
+
+  &__boxed {
+    cursor: pointer;
+    border: 1px solid $gray-light;
+    padding: .4rem;
+    border-radius: $border-radius;
+    transition: all .2s ease-out;
+
+    &:hover {
+      opacity: .75;
+      border: 1px solid #adadad;
+    }
   }
 }
