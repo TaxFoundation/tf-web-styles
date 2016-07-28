@@ -17,18 +17,18 @@ main {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6rem; // Fixed position header offset
-  margin-bottom: 3rem;
-  width: 100%;
+  margin-top: $header-height; // Fixed position header offset
 }
 
 // Horizontal Rules
 $hr-color: $gray-light;
 
 hr {
-  border: none;
-  border-bottom: .25px solid $hr-color;
-  margin: 3rem 0;
+  background-color: $hr-color;
+  border: 0;
+  color: $hr-color;
+  height: 1px;
+  margin: 2.5rem 0;
 }
 
 img {
