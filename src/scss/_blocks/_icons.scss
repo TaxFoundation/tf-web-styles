@@ -40,7 +40,7 @@ $pdf: #ff0000;
 
     &:hover {
       opacity: .75;
-      border: 1px solid #adadad;
+      border: 1px solid $gray-medium;
     }
   }
 }
