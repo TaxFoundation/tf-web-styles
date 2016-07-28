@@ -3,8 +3,18 @@
   Forms are, by default, 100% width of the containing element. When you put items inside a fieldset, they become inline-block.
 </p>
 <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" />
+  <fieldset><div class="fieldset">
+    <div>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" />
+    </div>
+    
+    <div>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" />
+    </div>
+    
+  </div></fieldset>
 
     <label for="mail">E-mail:</label>
     <input type="email" id="mail" />
@@ -26,18 +36,24 @@
       <option>Banana</option>
     </select>
 
-    <fieldset>
+    <fieldset><div class="fieldset">
       <legend>Radio Buttons</legend>
-      <input id="r1" type="radio" name="radio-buttons" value="">
-      <label for="r1">This One</label>
-      <input id="r2" type="radio" name="radio-buttons" value="">
-      <label for="r2">That One</label>
-      <input id="r3" type="radio" name="radio-buttons" value="">
-      <label for="r3">Another One</label>
-    </fieldset>
+      <div>
+        <input id="r1" type="radio" name="radio-buttons" value="">
+        <label for="r1">This One</label>
+      </div>
+      <div>
+        <input id="r2" type="radio" name="radio-buttons" value="">
+        <label for="r2">That One</label>
+      </div>
+      <div>
+        <input id="r3" type="radio" name="radio-buttons" value="">
+        <label for="r3">Another One</label>
+      </div>
+    </div></fieldset>
 
 
-    <fieldset>
+    <fieldset><div class="fieldset">
       <legend>Checkboxes</legend>
       <input id="c1" type="checkbox" name="checkbox-buttons" value="">
       <label for="c1">This One</label>
@@ -45,7 +61,7 @@
       <label for="c2">That One</label>
       <input id="c3" type="checkbox" name="checkbox-buttons" value="">
       <label for="c3">Another One</label>
-    </fieldset>
+    </div></fieldset>
 
     <fieldset>
       <button type="button" name="button">Submit This</button>

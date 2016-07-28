@@ -115,3 +115,25 @@ legend {
     margin-right: 0;
   }
 }
+
+@include tablet-up {
+  .fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 0 1rem -1rem;
+
+    > * {
+      flex: 1 0 auto;
+        margin: 0 0 0 1rem;
+
+      > * {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
