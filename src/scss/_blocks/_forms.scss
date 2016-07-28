@@ -34,6 +34,7 @@ textarea {
 input[type="radio"],
 input[type="checkbox"] {
   align-self: flex-start;
+  margin: 0 1rem 0 0;
   width: auto;
 }
 
@@ -99,17 +100,11 @@ button,
 label,
 legend {
   align-self: flex-start;
-  display: block;
   margin-bottom: .4rem;
 }
 
 .fieldset {
   width: 100%;
-
-  label {
-    display: inline-block;
-    margin-right: 1rem;
-  }
 
   &:last-child {
     margin-right: 0;
