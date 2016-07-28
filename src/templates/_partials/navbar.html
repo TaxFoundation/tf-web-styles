@@ -7,29 +7,25 @@
       <ul class="navbar__menu-items">
         {% for item in navbar %}
         <li class="navbar__menu-top-level-item">
-          <a class="navbar__menu-top-level-link">{{item.heading}}</a>
+          <a href="{{item.link}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
+          {% if item.submenus != nil %}
           <div class="navbar__submenu">
             <div class="navbar__submenu-columns">
             {% for submenu in item.submenus %}
               <div class="navbar__submenu-section">
-                <a href="{{submenu.url}}"><h3>{{submenu.heading}}</h3></a>
+                <a href="{{submenu.link}}"><h3>{{submenu.heading}}</h3></a>
                 <ul>
-                  {% for link in submenu.links %}
-                    <li><a href="{{link.url}}">{{link.name}}</a></li>
+                  {% for page in submenu.links %}
+                    <li><a href="{{page.link}}">{{page.name}}</a></li>
                   {% endfor %}
                 </ul>
               </div>
             {% endfor %}
             </div>
           </div>
+          {% endif %}
         </li>
         {% endfor %}
-        <li class="navbar__menu-top-level-item">
-          <a href="#" class="navbar__menu-top-level-link">Tax Law</a>
-        </li>
-        <li class="navbar__menu-top-level-item">
-          <a href="#" class="navbar__menu-top-level-link">About</a>
-        </li>
         <li class="navbar__menu-top-level-item">
           <a class="navbar__menu-top-level-link">Search</a>
           <div class="navbar__submenu">
