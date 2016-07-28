@@ -139,6 +139,17 @@ $navbar-max-width: 1400px;
       background-color: lighten($tf-blue, 15%);
       cursor: pointer;
     }
+
+    &--donate {
+      background: $green;
+      transition-duration: .2s;
+      transition-property: background;
+      transition-timing-function: ease-out ease-in;
+
+      &:hover, {
+        background: lighten($green, 5%);
+      }
+    }
   }
 
   &__submenu {
@@ -230,13 +241,4 @@ $navbar-max-width: 1400px;
   }
 }
 
-.donate {
-  background: $green;
-  transition-duration: .2s;
-  transition-property: background;
-  transition-timing-function: ease-out ease-in;
 
-  &:hover, {
-    background: lighten($green, 5%);
-  }
-}
