@@ -11,6 +11,10 @@
     transition-property: background;
     transition-timing-function: ease-in ease-out;
 
+    @include mobile-only {
+      margin-left: 0;
+    }
+
     &:hover {
       background: linear-gradient(to top, $tf-blue, $tf-blue 5px, $background-color 5px, $background-color);
       cursor: pointer;

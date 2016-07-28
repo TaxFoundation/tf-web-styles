@@ -201,11 +201,10 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
     display: block;
     flex: 1 0 auto;
     height: 17rem;
-    margin: 0 2rem 0 0;
+    margin: 0 auto 0;
     max-height: 17rem;
     max-width: 17rem;
     padding-right: 2rem;
-    position: relative;
     width: 17rem;
 
     @include tablet-only {
@@ -221,13 +220,19 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 
   &__name-title {
+    margin: 0 auto 2rem;
+
     @include mobile-only {
       text-align: center;
     }
   }
 
   &__social {
-    margin: 1rem auto 0;
+    margin: 1rem auto 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -240,7 +245,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   &__name {
     font-size: 1.3rem;
     font-weight: 700;
-    margin: 0 auto .25rem;
+    margin: 0 auto;
   }
 
   &__position {
@@ -259,6 +264,9 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 
   &__social {
     margin: auto;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
