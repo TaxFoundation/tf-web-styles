@@ -1,26 +1,27 @@
+// Reset, always first
 @import '_global/reset';
+// Global, import before blocks
 @import '_global/global';
 @import '_global/mixins';
 @import '_global/grid';
 @import '_global/structure';
+// Blocks, import in any order
 @import '_blocks/headings';
 @import '_blocks/paragraphs';
-@import '_blocks/icons';
 @import '_blocks/links';
 @import '_blocks/lists';
 @import '_blocks/code';
-@import '_blocks/header';
+@import '_blocks/navbar';
 @import '_blocks/footer';
 @import '_blocks/forms';
 @import '_blocks/tables';
 @import '_blocks/box';
 @import '_blocks/widgets';
 @import '_blocks/categories-tags';
+@import '_blocks/category-page';
 @import '_blocks/byline';
-@import '_blocks/content-card';
+@import '_blocks/cards';
 @import '_blocks/pagination';
 @import '_blocks/about-us';
 @import '_blocks/pullquote';
-@import '_blocks/hero';
-@import '_blocks/about-us';
 @import '_blocks/icons';
