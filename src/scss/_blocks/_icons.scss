@@ -31,21 +31,16 @@ $pdf: #ff0000;
     width: 48px;
   }
 
-  &__grey {
-    color: $gray-dark;
-    fill: $gray-dark;
-  }
-
   &__boxed {
     cursor: pointer;
-    border: 1px solid $gray-light;
+    border: 1px solid #aaa;
     padding: .4rem;
     border-radius: $border-radius;
     transition: all .2s ease-out;
 
     &:hover {
-      opacity: .75;
-      border: 1px solid $gray-medium;
+      opacity: .8;
+      border: 1px solid #bbb;
     }
   }
 }
