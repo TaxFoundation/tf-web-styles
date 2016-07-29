@@ -1,24 +1,31 @@
 {% extends './_partials/base.html' %}
 
 {% block content %}
-<div class="container container--padded">
-  <div>
+
+<div class="container container--padded row">
+  <div class="tablet-column-10 desktop-column-30"></div>
+  <div class="tablet-column-80 desktop-column-40">
     <h1 class="category-page__heading">Generic Category</h1>
-      <p>
-        This is a description of the category. Most categories should probably include descriptions that give the related links context. Bacon ipsum dolor amet fugiat cupim in short ribs shoulder bacon boudin kevin occaecat porchetta hamburger short loin ground round velit esse. Sint pancetta magna commodo ball tip deserunt. Qui nulla rump capicola t-bone venison dolore. Cupim ham hock ea pork belly, leberkas boudin cillum elit cupidatat nulla.
-      </p>
+    <p>
+      This is a description of the category. Most categories should probably include descriptions that give the related links context. Bacon ipsum dolor amet fugiat cupim in short ribs shoulder bacon boudin kevin occaecat porchetta hamburger short loin ground round velit esse. Sint pancetta magna commodo ball tip deserunt. Qui nulla rump capicola t-bone venison dolore. Cupim ham hock ea pork belly, leberkas boudin cillum elit cupidatat nulla.
+    </p>
   </div>
+  <div class="tablet-column-10 desktop-column-30"></div>
+</div>
 
+<hr>
 
-  <hr class="divider">
-
-  <div class="container">
+<div class="container container--padded row">
+  <div class="tablet-column-10 desktop-column-20"></div>
+  <div class="tablet-column-80 desktop-column-60">
     {% include './_examples/cards.html' %}
   </div>
+  <div class="tablet-column-10 desktop-column-20"></div>
+</div>
 
-  <hr class="divider">
+<hr>
 
-
+<div class="container container--padded column--centered">
   <ul class="links-list-big">
     <li>
       <a href="#">
@@ -31,7 +38,7 @@
         <h3>Cost Recovery for New Corporate Investments  in 2012</h3>
         <p>February 01, 2016</p>
       </a>
-  </li>
+    </li>
     <li>
       <a href="#">
         <h3>Details and Analysis of Dr. Ben Carson’s Tax Plan</h3>
@@ -67,7 +74,7 @@
         <h3>Cost Recovery for New Corporate Investments  in 2012</h3>
         <p>February 01, 2016</p>
       </a>
-  </li>
+    </li>
     <li>
       <a href="#">
         <h3>Details and Analysis of Dr. Ben Carson’s Tax Plan</h3>
@@ -141,9 +148,10 @@
       </a>
     </li>
   </ul>
+  <div class="desktop-column-30"></div>
+</div>
 
   {% include './_partials/pagination.html' %}
-</div>
 
 
 {% endblock %}
