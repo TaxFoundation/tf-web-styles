@@ -1,37 +1,37 @@
 .pagination {
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   text-align: center;
 
-  &__page {
-    border-radius: 2px;
+  li {
     display: inline-block;
     font-size: 1rem;
-    line-height: 30px;
     padding: 0 10px;
+    line-height: 30px;
+    border-radius: 2px;
     text-align: center;
 
     a {
       text-decoration: none;
     }
-
-    &--active {
-      background-color: $tf-blue;
-      color: $background-color;
-      text-decoration: none;
-
-      a {
-        color: $background-color;
-      }
-    }
   }
+}
 
-  &__arrow {
-    height: 1rem;
-    margin: 0 1rem;
-    padding-top: .25rem;
+.active {
+  background-color: $tf-blue;
+  color: $background-color;
+  text-decoration: none;
 
-    &--disabled {
-      opacity: .5;
-    }
+  a {
+    color: $background-color;
   }
+}
+
+.arrow {
+  height: 1rem;
+  margin: 0 1rem;
+  padding-top: .25rem;
+}
+
+.disabled {
+  opacity: .5;
 }

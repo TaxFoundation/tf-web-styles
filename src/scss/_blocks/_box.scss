@@ -5,22 +5,22 @@
   padding: 1rem;
 }
 
-.box--brand {
+.box-brand {
   background-color: $background-color;
   border-color: $tf-blue;
 }
 
-.box--subtle {
+.box-subtle {
   background-color: $background-color;
   border-color: $gray-light;
 }
 
-.box--gray {
+.box-gray {
   background-color: $gray-lighter;
   border-color: transparent;
 }
 
-.box--feature {
+.box-feature {
   background-color: $tf-blue;
   border-color: transparent;
   color: white;

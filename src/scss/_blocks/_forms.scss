@@ -52,6 +52,7 @@ button,
   transition-duration: .2s;
   transition-timing-function: ease-out;
 
+
   &:active,
   &:focus,
   &:hover {
@@ -83,6 +84,10 @@ button,
     }
   }
 
+  &.full-width {
+    width: 100%;
+  }
+
   &.inverted {
     background: $background-color;
     color: $tf-blue;
@@ -105,7 +110,7 @@ legend {
   margin-bottom: .4rem;
 }
 
-.fieldset {
+fieldset {
   width: 100%;
 
   &:last-child {

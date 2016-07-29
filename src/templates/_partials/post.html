@@ -1,24 +1,35 @@
-<div class="container row">
+<ul class="categories">
+  {% for category in post.categories %}
+    <li><a href="{{category.url}}">{{category.name}}</a></li>
+  {% endfor %}
+</ul>
 
-  <div class="tablet-column-60 column--fixed column--centered">
-    {% include 'categories.html' with categories %}
-    <h1>{{post.heading}}</h1>
+<h1>{{post.heading}}</h1>
 
-    <div class="title-bar">
-      <p class="date">{{post.date}}</p>
+<div class="title-bar">
+  <p class="date">{{post.date}}</p>
 
-        {% for author in post.authors %}
-          {% include 'byline.html' with author %}
-        {% endfor %}
-    </div>
+    {% for author in post.authors %}
+      <div class="container byline">
+        <a href="#">
+          <div class="author">
+            <img src="{{author.imageUrl}}">
+            <p>{{author.name}}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+</div>
 
 
-    <div>
-      {{post.body | raw}}
-    </div>
+<div>
+  {{post.body | raw}}
+</div>
 
-    <div>
-      {% include 'tags.html' with tags %}
-    </div>
-  </div>
+<div>
+  <ul class="tags">
+    {% for tag in tags %}
+      <li><a href="{{tag.url}}">{{tag.name}}</a></li>
+    {% endfor %}
+  </ul>
 </div>

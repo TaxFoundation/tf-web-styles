@@ -1,14 +1,14 @@
-$about-nav-li-hover-bg: #cceaff;
+$about-nav-li-hover-bg: $tf-blue-lighter;
 
 .about-us {
+
   &__hero {
     background: $tf-blue;
-    background-image: url('../images/dots.png');
-    height: 15rem;
-    margin: 3rem 0 0;
+    background-image: url('../images/collage.png');
+    height: 18rem;
+    margin: -2.75rem 0 0;
     padding: 0;
     position: relative;
-    width: 100%;
 
     @include mobile-only {
       height: 12rem;
@@ -18,37 +18,28 @@ $about-nav-li-hover-bg: #cceaff;
   &__headings {
     bottom: 0;
     color: $background-color;
-    height: 55%;
+    height: 65%;
     left: 0;
     margin: auto;
     position: absolute;
     right: 0;
     top: 0;
-
-    @include desktop-up {
-      height: 70%;
-    }
   }
 
   &__heading {
-    font-size: 2.5rem;
-    line-height: 2.25rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
     text-align: center;
 
-    @include desktop-up {
-      font-size: 3rem;
-      line-height: 2.75rem;
-    }
-
     @include mobile-only {
-      font-size: 2.25rem;
+      font-size: 2rem;
       line-height: 1.75rem;
     }
   }
 }
 
 .about-us__navbar {
+  margin: 0 auto 2.5rem;
 
   @include mobile-only {
     display: table;
@@ -59,10 +50,10 @@ $about-nav-li-hover-bg: #cceaff;
     margin: 0;
   }
 
-  li {
+  a {
     background-color: $background-color;
     border-bottom: 1.5px solid $gray-light;
-    border-right: 1.5px solid $gray-light;
+    border-right: .5px solid $gray-light;
     color: $gray-medium;
     display: block;
     float: left;
@@ -71,7 +62,8 @@ $about-nav-li-hover-bg: #cceaff;
     list-style: none;
     padding: 0 .75rem;
     text-align: center;
-    transition-duration: .1s;
+    text-decoration: none;
+    transition-duration: .2s;
     transition-property: background-color, color;
     transition-timing-function: ease-out;
 
@@ -92,6 +84,7 @@ $about-nav-li-hover-bg: #cceaff;
     }
 
     &:first-child {
+      border-bottom-left-radius: $border-radius;
       border-left: 1.5px solid $gray-light;
 
       @include mobile-only {
@@ -99,33 +92,264 @@ $about-nav-li-hover-bg: #cceaff;
       }
     }
 
+    &:last-child {
+      border-bottom-right-radius: $border-radius;
+    }
+
     &:hover,
     &:active {
       background-color: $about-nav-li-hover-bg;
-      color: $gray-dark;
-    }
 
-    a {
+      @include tablet-up {
+        background: linear-gradient(to top, $tf-blue, $tf-blue 3px, $background-color 2px, $background-color);
+        cursor: pointer;
+      }
+      }
+
+    li {
       color: $gray-medium;
-      text-decoration: none;
       transition-duration: .1s;
       transition-property: color;
       transition-timing-function: ease-out;
-
-      &:hover {
-        color: $gray-dark;
-      }
     }
   }
 }
 
-.about-us__body {
-  flex: 1;
-  margin-top: 2rem;
-  max-width: $max-width;
-  padding: 0 $content-margin;
+.about-us__contact-form {
+  margin-bottom: 1rem;
 
-  @include desktop-up {
-    max-width: 900px;
+  textarea {
+    height: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.about-us__contact-form--indent {
+  @include mobile-only {
+    margin-left: 1rem;
+  }
+}
+
+
+.about-us__connect {
+  padding-left: 2.5rem;
+
+  @include mobile-only {
+    padding-left: 0;
+  }
+}
+
+.about-us__contact-info {
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+
+  @include mobile-only {
+    padding-left: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.about-us__feature-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+
+  @include mobile-only {
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.about-us__staff-member {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  width: 18rem;
+
+  &__headshot {
+    background: $gray-light;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1000rem;
+    display: block;
+    flex: 1 0 auto;
+    height: 13rem;
+    margin: 0 auto;
+    max-height: 13rem;
+    max-width: 13rem;
+    padding: 0;
+    position: relative;
+    width: 13rem;
+  }
+}
+
+.about-us__staff-feature {
+  border: 0;
+  width: 18rem;
+
+  &__headshot {
+    background: $gray-light;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1000rem;
+    display: block;
+    flex: 1 0 auto;
+    height: 17rem;
+    margin: 0 auto 0;
+    max-height: 17rem;
+    max-width: 17rem;
+    padding-right: 2rem;
+    width: 17rem;
+
+    @include tablet-only {
+      height: 13rem;
+      max-height: 13rem;
+      max-width: 13rem;
+      width: 13rem;
+    }
+
+    @include mobile-only {
+      margin: 0 auto;
+    }
+  }
+
+  &__name-title {
+    margin: 0 auto 2rem;
+
+    @include mobile-only {
+      text-align: center;
+    }
+  }
+
+  &__social {
+    margin: 1rem auto 1.5rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.about-us__staff-title {
+  flex: 0 0 auto;
+  padding: 1em 1em 0;
+  text-align: center;
+
+  &__name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  &__position {
+    color: $gray-medium;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+  }
+
+  &__organization {
+    color: $gray-medium;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  &__social {
+    margin: auto;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.about-us__media-contact {
+
+  fieldset {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-bottom: .75rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.about-us__media-coverage {
+  margin: .5rem auto 0;
+
+  h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: .5rem .75rem;
+  }
+}
+
+.charity-logo {
+  margin: 1rem .5rem 0;
+  height: 100%;
+  transition-duration: .2s;
+  transition-property: opacity;
+  transition-timing-function: ease-in ease-out;
+
+
+  &__cn {
+    width: 250px;
+  }
+
+  &__gs {
+    width: 300px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+}
+
+.about-us__job-opening {
+  margin: 2rem 0;
+
+  &__title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+
+    a {
+      text-decoration: none;
+      color: $text-default-color;
+      transition-property: color;
+      transition-duration: .2s;
+      transition-timing-function: ease-out;
+
+      &:hover {
+        color: $tf-blue;
+      }
+    }
+  }
+
+  &__dept {
+    color: $gray-medium;
+    margin-bottom: .5rem;
   }
 }

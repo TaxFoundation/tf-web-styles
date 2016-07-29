@@ -15,10 +15,11 @@
 .container {
   &--padded {
     padding: 0 1rem;
+    margin: 0 auto;
   }
 
   .container {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
@@ -27,7 +28,6 @@
   @extend %container--flex;
 
   flex-direction: row;
-  margin: 0 0 0 -1rem;
 
   @include tablet-up {
     margin: 0 0 0 -1rem;
@@ -50,11 +50,19 @@
   &--fixed {
     flex-grow: 0;
     flex-shrink: 0;
+
+    @include mobile-only {
+      margin-left: 0;
+    }
   }
 
   &--grow {
     flex-grow: 1;
     flex-shrink: 0;
+
+    @include mobile-only {
+      margin-left: 0;
+    }
   }
 
   &--centered {
@@ -82,8 +90,7 @@ $column-widths: 10 20 25 30 33.333 40 50 60 66.666 70 80 90 100;
 
 @media only screen and (min-width: #{$max-width + 2 * $content-margin}) {
   .container--width-constrained {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: $max-width;
   }
 }

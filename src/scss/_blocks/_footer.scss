@@ -1,113 +1,24 @@
 $footer-text-color: $gray-dark;
 $footer-link-hover-color: $gray-darker;
-$footer-background-color: $gray-lighter;
-$footer-copyright-background-color: #e6e6e6;
 
-.footer {
-  background-color: $footer-background-color;
+footer {
+  background-color: $gray-lighter;
   color: $footer-text-color;
   padding: 0;
   width: 100%;
+}
 
-  &__promotion {
-    background-color: $tf-blue;
-    justify-content: center;
-    padding: 0 $content-margin 1rem;
-    width: 100%;
+.pre-footer {
+  background-color: $tf-blue;
+  justify-content: center;
+  padding: 0 $content-margin 1rem;
+  width: 100%;
 
-    h3 {
-      color: $background-color;
-      padding: 2rem $content-margin 1rem;
-      text-align: center;
-      width: 100%;
-    }
-  }
-
-  &__content {
-    margin: 1rem auto -1rem;
-    width: 95%;
-
-    @include desktop-up {
-      flex-wrap: nowrap;
-      max-width: 1400px;
-    }
-
-    @include mobile-only {
-      text-align: center;
-    }
-  }
-
-  &__about,
-  &__links,
-  &__connect,
-  &__contact {
-    padding: 1rem;
-
-    ul {
-      line-height: 2;
-      list-style: none;
-      margin-left: 0;
-    }
-
-    a {
-      color: $footer-text-color;
-      text-decoration: none;
-      transition-duration: .2s;
-      transition-property: color;
-      transition-timing-function: ease-out;
-
-      &:hover {
-        color: $tf-blue;
-      }
-    }
-  }
-
-  &__contact {
-    p {
-      line-height: 1.25rem;
-      margin-bottom: .75rem;
-    }
-  }
-
-  &__copyright {
-    background-color: $footer-copyright-background-color;
-    color: $footer-text-color;
-    justify-content: center;
-    padding: 1.5rem 0 .05rem;
+  h3 {
+    color: $background-color;
+    padding: 2rem $content-margin 1rem;
     text-align: center;
     width: 100%;
-
-    ul li {
-      @include set-font(.8rem, 1.2);
-
-      display: inline-block;
-      line-height: 2;
-      list-style: none;
-      margin: 0 .75rem 0 0;
-
-      &::after {
-        content: '|';
-        display: inline-block;
-        margin: 0 0 0 .75rem;
-      }
-
-      &:last-child::after {
-        content: '';
-        margin: 0;
-      }
-    }
-
-    a {
-      color: $text-default-color;
-      text-decoration: none;
-      transition-duration: .2s;
-      transition-property: color;
-      transition-timing-function: ease-out;
-
-      &:hover {
-        color: $tf-blue;
-      }
-    }
   }
 }
 
@@ -121,3 +32,92 @@ $footer-copyright-background-color: #e6e6e6;
     padding: .75rem 1.25rem;
     }
   }
+
+.footer-content {
+  margin: 1rem auto -1rem;
+  width: 95%;
+
+  @include desktop-up {
+    flex-wrap: nowrap;
+    max-width: 1400px;
+  }
+
+  @include mobile-only {
+    text-align: center;
+  }
+}
+
+.footer-about,
+.footer-links,
+.footer-connect,
+.footer-contact {
+  padding: 1rem;
+
+  ul {
+    line-height: 2;
+    list-style: none;
+    margin-left: 0;
+    }
+
+  a {
+    color: $footer-text-color;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      color: $tf-blue;
+      }
+    }
+  }
+
+.footer-contact {
+  p {
+    line-height: 1.25rem;
+    margin-bottom: .75rem;
+  }
+}
+
+
+.post-footer {
+  background-color: #e6e6e6;
+  color: $footer-text-color;
+  justify-content: center;
+  padding: 1.5rem 0 .05rem;
+  text-align: center;
+  width: 100%;
+
+  ul li {
+    @include set-font(.8rem, 1.2);
+
+    display: inline-block;
+    line-height: 2;
+    list-style: none;
+    margin: 0 .75rem 0 0;
+
+    &::after {
+      content: '|';
+      display: inline-block;
+      margin: 0 0 0 .75rem;
+    }
+
+    &:last-child::after {
+      content: '';
+      margin: 0;
+    }
+  }
+
+  a {
+    color: $text-default-color;
+    text-decoration: none;
+    transition-duration: .2s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+
+    &:hover {
+      color: $tf-blue;
+    }
+  }
+
+}

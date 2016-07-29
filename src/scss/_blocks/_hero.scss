@@ -1,0 +1,72 @@
+.hero {
+  margin: 3rem 0;
+  padding: 2rem $content-margin;
+  text-align: center;
+  width: 100%;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+
+}
+
+.hero--blue {
+  background-color: $tf-blue;
+  color: $background-color;
+}
+
+.hero--green {
+  background-color: $green;
+  color: $background-color;
+}
+
+.hero--red {
+  background-color: $red;
+  color: $background-color;
+}
+
+.hero--purple {
+  background-color: $purple;
+  color: $background-color;
+}
+
+.hero--orange {
+  background-color: $orange;
+  color: $background-color;
+}
+
+.hero--white {
+  background-color: $background-color;
+  border-top: solid .5px $gray-light;
+  border-bottom: solid .5px $gray-light;
+  color: $text-default-color;
+}
+
+.hero--gray {
+  background-color: $gray-lighter;
+  border-bottom: solid .5px $gray-light;
+  border-top: solid .5px $gray-light;
+  color: $text-default-color;
+}
+
+.mobile-hide {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.charity-logo {
+  height: 200px;
+  padding: 2rem 2rem 0;
+}

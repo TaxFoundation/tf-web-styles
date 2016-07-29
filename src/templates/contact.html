@@ -1,0 +1,126 @@
+{% extends './_partials/base.html' %}
+
+{% block content %}
+
+{% include './_partials/about-header.html' %}
+
+    <div class="container container--padded container--width-constrained row">
+
+        <div class="tablet-column-70 desktop-column-70 column--fixed">
+
+            <h2 class="about-us__contact-form--indent">Send Us A Messages</h2>
+
+            <div class="row about-us__contact-form">
+
+                <div>
+                    <textarea id="msg" placeholder="Have a question or comment? Send us a message and we'll get back to you as soon as possible!"></textarea>
+                </div>
+
+                <div>
+                    <input type="text" id="name" placeholder="Name" />
+                    <input type="email" id="mail" placeholder="Email" />
+                    <select name="checklist" id="topic">
+                        <option value="" disabled selected class="inactive">Select A Topic</option>
+                        <option value="state">State Tax Policy</option>
+                        <option value="fed">Federal Tax Policy</option>
+                        <option value="law">Tax Law</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="button" name="button" class="featured full-button">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-us__contact-info">
+            <h2>Contact Info</h2>
+            <p>
+                Tax Foundation
+                <br> 1325 G St NW
+                <br> Suite 950
+                <br> Washington, DC 20005
+                <br>
+            </p>
+            <p>
+                202-464-6200
+            </p>
+            <p>
+                <a href="mailto:contact@taxfoundation.org">contact@taxfoundation.org</a>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container container--padded container--width-constrained row">
+
+        <div class="tablet-column-70 desktop-column-70 column--fixed">
+
+            <div class="row">
+              <div>
+                <h2>Subscribe</h2>
+                <p>Get the latest in tax news and analysis, delivered directly to your inbox.</p>
+                <fieldset>
+                    <input type="email" id="mail" placeholder="Email*" />
+                    <input type="text" id="fname" placeholder="First Name*" />
+                    <input type="text" id="lname" placeholder="Last Name*" />
+                    <button type="button" name="button" class="featured full-width">Subscribe</button>
+                </fieldset>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="about-us__connect">
+            <h2>Connect</h2>
+            <div class="link-list-box">
+                <ul>
+                    <a href="#">
+                        <li>
+                          <svg class="icon">
+                            <use xlink:href="#twitter" />
+                          </svg>
+                          <p>Twitter</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                          <svg class="icon">
+                            <use xlink:href="#facebook" />
+                          </svg>
+                          <p>Facebook</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                          <svg class="icon">
+                            <use xlink:href="#linkedin" />
+                          </svg>
+                          <p>LinkedIn</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                          <svg class="icon">
+                            <use xlink:href="#youtube" />
+                          </svg>
+                          <p>YouTube</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                          <svg class="icon">
+                            <use xlink:href="#google" />
+                          </svg>
+                          <p>Google+</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

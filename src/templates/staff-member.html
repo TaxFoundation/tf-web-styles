@@ -1,0 +1,165 @@
+{% extends './_partials/base.html' %}
+
+{% block content %}
+
+    <div class="container container--padded container--width-constrained row">
+
+      <div class="about-us__staff-feature tablet-column-30 desktop-column-30 column--centered">
+        <a href="#">
+          <div class="about-us__staff-feature__headshot" style="background-image:url('')"></div>
+        </a>
+
+        <div class="about-us__staff-feature__social center">
+          <a href="#">
+            <svg class="icon icon__hover">
+              <use xlink:href="#twitter" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon__hover">
+              <use xlink:href="#linkedin" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="tablet-column-60 desktop-column-60 column--grow">
+        <div class="about-us__staff-feature__name-title">
+          <h1>Person Name</h1>
+          <h4>Director of Things & Stuff</h4>
+        </div>
+        <div class="social"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas mattis risus, nec tristique nunc ornare et. Sed sed orci in eros molestie gravida. Fusce euismod leo quis mauris luctus accumsan ullamcorper sit amet mauris. Fusce viverra eu nulla eu vehicula. Mauris posuere vestibulum leo, non tempor mi faucibus consequat.</p>
+        <p>Ut vel lacus sit amet velit auctor bibendum vitae non urna. Curabitur aliquam auctor consequat. In at tincidunt justo. Phasellus sagittis mattis ante, nec viverra mi vulputate sit amet. Etiam finibus accumsan vehicula. Aliquam molestie tempus mauris ac hendrerit. Sed vel tempor orci.</p>
+        <a href="/staff.html" class="about-us__staff-feature__back">&larr; Back to Full Staff</a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h2 class="center">Featured Work</h2>
+
+    <br>
+
+    <div class="container container--padded row cards">
+
+      <div class="tablet-column-10 desktop-column-20 column--fixed"></div>
+
+        <div class="cards__card">
+          <div class="cards__card-image" style="background-image:url('/images/complexity.png')"></div>
+          <div class="cards__card-content">
+            <h2>A Content Title Goes Here</h2>
+            <p>
+              This is the place for one of those brief content descriptions you hear about. Qui nulla rump capicola t-bone venison dolore.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__card-image" style="background-image:url('/images/jets.gif')"></div>
+          <div class="cards__card-content">
+            <h2>Another Content Title Goes Right Here</h2>
+            <p>
+              Qui nulla rump capicola t-bone venison dolore. Cupim ham hock ea pork belly, leberkas boudin cillum elit cupidatat nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__card-image" style="background-image:url('/images/wind.jpg')"></div>
+          <div class="cards__card-content">
+            <h2>3rd Content Title</h2>
+            <p>
+              Bacon ipsum dolor amet fugiat cupim in short ribs shoulder bacon boudin kevin occaecat porchetta hamburger short loin ground round velit esse.
+            </p>
+          </div>
+        </div>
+
+      <div class="tablet-column-10 desktop-column-20 column--fixed"></div>
+
+    </div>
+
+    <hr>
+
+    <div class="link-list container container--padded">
+      <ul>
+        <li>
+          <h2>Recent Work</h2>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Pennsylvania Illustrated: A Visual Guide to  Taxes &amp; The Economy</h3>
+            <p>May 16, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Cost Recovery for New Corporate Investments  in 2012</h3>
+            <p>February 01, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Dr. Ben Carson’s Tax Plan</h3>
+            <p>January 21, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Senator Ted Cruz’s Tax Plan</h3>
+            <p>January 14, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Senator Rick   Santorum’s TaxPlan</h3>
+            <p>January 06, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Pennsylvania Illustrated: A Visual Guide to  Taxes &amp; The Economy</h3>
+            <p>May 16, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Cost Recovery for New Corporate Investments  in 2012</h3>
+            <p>February 01, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Dr. Ben Carson’s Tax Plan</h3>
+            <p>January 21, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Senator Ted Cruz’s Tax Plan</h3>
+            <p>January 14, 2016</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Details and Analysis of Senator Rick   Santorum’s TaxPlan</h3>
+            <p>January 06, 2016</p>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <ul class="pagination">
+      <a class="disabled" href="#!"><img class="arrow" src="images\icons\arrow-left.svg" alt="left"></a>
+      <li class="active"><a href="#!">1</a></li>
+      <li><a href="#!">2</a></li>
+      <li><a href="#!">3</a></li>
+      <li><a href="#!">4</a></li>
+      <li><a href="#!">5</a></li>
+      <a href="#!"><img class="arrow" src="images\icons\arrow-right.svg" alt="left"></a>
+    </ul>
+
+  {% endblock %}

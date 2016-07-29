@@ -12,10 +12,15 @@ $gray-dark: #666;
 $gray-darker: #555;
 
 $tf-blue: #0094ff;
+$tf-blue-light: #99d5ff;
+$tf-blue-lighter: #e6f4ff;
 $background-color: #fefefe;
 $text-default-color: $gray-darker;
 
-$green: #6eb76e;
+$green: #4daf4e;
+$red: #ef4538;
+$purple: #904098;
+$orange: #f89820;
 
 // Root Em Size
 $root-em: 18px;
@@ -28,9 +33,6 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $max-width: 1100px;
 
-// Header dimensions
-$header-height: 60px;
-
 // Font sizes
 $paragraph-font-size-mobile: 1rem;
 $paragraph-font-size-tablet: 1rem;
@@ -41,6 +43,9 @@ $paragraph-line-height-desktop: 1.7rem;
 
 // Structure Variables
 $content-margin: 36px;
+
+// Header Height
+$header-height: 60px;
 
 // Global Screen Styles
 html {

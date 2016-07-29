@@ -1,0 +1,15 @@
+<div class="about-us__hero">
+  <div background-image: url class="about-us__headings">
+    <p class="about-us__heading">Principled Research.</p>
+    <p class="about-us__heading">Insightful Analysis.</p>
+    <p class="about-us__heading">Engaged Experts.</p>
+  </div>
+</div>
+
+<nav class="about-us__navbar">
+  <ul>
+    {% for item in aboutHeader %}
+      <a href="{{item.url}}"><li>{{item.name}}</li></a>
+    {% endfor %}
+  </ul>
+</nav>

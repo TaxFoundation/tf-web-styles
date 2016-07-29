@@ -7,9 +7,9 @@ $pdf: #ff0000;
 
 .icon {
   display: inline-block;
-  height: 32px;
+  height: 28px;
   margin: .5rem;
-  width: 32px;
+  width: 28px;
   vertical-align: middle;
 
   &__hover {
@@ -22,13 +22,13 @@ $pdf: #ff0000;
   }
 
   &__small {
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
   }
 
   &__large {
-    height: 48px;
-    width: 48px;
+    height: 36px;
+    width: 36px;
   }
 
   &__boxed {
