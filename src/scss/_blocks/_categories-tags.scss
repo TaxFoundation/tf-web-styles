@@ -23,6 +23,10 @@
     transition-property: color;
     transition-timing-function: ease-out ease-in;
 
+    a {
+      text-decoration: none;
+    }
+
     &:active,
     &:focus,
     &:hover {
@@ -51,9 +55,17 @@
     cursor: pointer;
     display: inline-block;
     margin: .75rem .5rem 0 0;
-    transition-duration: .4s;
+    transition-duration: .3s;
     transition-property: background-color, border-color, color;
     transition-timing-function: ease-out ease-in;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
 
     &:active,
     &:focus,
