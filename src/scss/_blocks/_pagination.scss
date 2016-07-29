@@ -2,36 +2,37 @@
   margin: 1rem auto;
   text-align: center;
 
-  &__page {
-    border-radius: 2px;
+  .current {
+    background-color: $tf-blue;
+    border-radius: $border-radius;
     display: inline-block;
     font-size: 1rem;
-    line-height: 30px;
-    padding: 0 10px;
+    margin: 0 .25rem;
+    padding: 0 .5rem;
     text-align: center;
 
     a {
-      text-decoration: none;
-    }
-
-    &--active {
-      background-color: $tf-blue;
       color: $background-color;
       text-decoration: none;
-
-      a {
-        color: $background-color;
-      }
     }
   }
 
-  &__arrow {
-    height: 1rem;
-    margin: 0 1rem;
-    padding-top: .25rem;
+  .page {
+    border-radius: $border-radius;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .25rem;
+    padding: 0 .5rem;
+    text-align: center;
+    transition: all .1s ease-out;
 
-    &--disabled {
-      opacity: .5;
+    a {
+      color: $text-default-color;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $gray-lighter;
     }
   }
 }
