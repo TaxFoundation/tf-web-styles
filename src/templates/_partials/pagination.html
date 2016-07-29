@@ -1,9 +1,22 @@
 <ul class="pagination">
-  <a href="#"><img class="pagination__arrow pagination__arrow--disabled" src="images\icons\arrow-left.svg" alt="left"></a>
-  <li class="pagination__page pagination__page--active"><a href="#">1</a></li>
+  <li class="pagination__page pagination--prev">
+    <a href="#">
+      <svg class="icon icon__small">
+        <use xlink:href="#arrow-left" />
+      </svg>
+    </a>  
+  </li>
+  
+  <li class="pagination__page pagination--current"><a href="#">1</a></li>
   <li class="pagination__page"><a href="#">2</a></li>
   <li class="pagination__page"><a href="#">3</a></li>
   <li class="pagination__page"><a href="#">4</a></li>
   <li class="pagination__page"><a href="#">5</a></li>
-  <a href="#"><img class="pagination__arrow" src="images\icons\arrow-right.svg" alt="left"></a>
+  <li class="pagination__page pagination--next">
+    <a href="#">
+      <svg class="icon icon__small">
+        <use xlink:href="#arrow-right" />
+      </svg>
+    </a>
+  </li>
 </ul>
