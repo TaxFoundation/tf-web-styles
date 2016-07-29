@@ -30,7 +30,14 @@
       <h3>Connect</h3>
       <ul>
         {% for link in footer.social %}
-          <li><a href="{{link.url}}">{{link.name}}</a></li>
+        <li>
+          <a href="{{link.url}}">
+            <svg class="icon icon__small">
+              <use xlink:href="#{{link.icon}}" />
+            </svg>
+            <p>{{link.name}}</p>
+          </a>
+        </li>
         {% endfor %}
       </ul>
     </div>
