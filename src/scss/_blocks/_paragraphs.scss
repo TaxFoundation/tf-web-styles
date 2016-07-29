@@ -32,4 +32,8 @@ strong {
 
 .indent {
   margin: 0 3rem;
+
+  @include mobile-only {
+    margin: 0 1.5rem;
+  }
 }

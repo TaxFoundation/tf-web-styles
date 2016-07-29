@@ -116,12 +116,20 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 }
 
 .about-us__contact-form {
+  margin-bottom: 1rem;
+
   textarea {
     height: 100%;
   }
 
   button {
     width: 100%;
+  }
+}
+
+.about-us__contact-form--indent {
+  @include mobile-only {
+    margin-left: 1rem;
   }
 }
 
@@ -136,6 +144,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
 
 .about-us__contact-info {
   padding-left: 2.5rem;
+  margin-bottom: 1rem;
 
   @include mobile-only {
     padding-left: 0;
@@ -310,7 +319,7 @@ $about-nav-li-hover-bg: $tf-blue-lighter;
   }
 
   &__gs {
-    width: 320px;
+    width: 300px;
   }
 
   &:hover {
