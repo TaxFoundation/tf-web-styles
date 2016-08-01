@@ -1,11 +1,13 @@
-<h2>More Articles</h2>
-<ul class="links-list-big">
-  {% for post in link-list %}
-  <li>
-    <a href="{{ post.link }}">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.date }}</p>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<div class="post-list">
+  <h2 class="post-list__title">More Articles</h2>
+  <ul class="post-list__list">
+    {% for post in posts %}
+    <li class="post-list__list-item">
+      <a href="{{ post.link }}" class="post-list__post-link">
+        <h3 class="post-list__post-title">{{ post.title }}</h3>
+        <p class="post-list__post-date">{{ post.date }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

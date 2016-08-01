@@ -1,0 +1,44 @@
+.post-list {
+  &__list {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__list-item {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 2.25rem;
+  }
+
+  &__post-title {
+    margin: 0;
+    transition-duration: .25s;
+    transition-property: color;
+    transition-timing-function: ease-out ease-in;
+  }
+
+  &__post-link {
+    color: $text-default-color;
+    display: block;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $tf-blue;
+      text-decoration: none;
+    }
+  }
+
+  &__post-date {
+    color: $categories-text-color;
+    margin-top: .5rem;
+  }
+}
