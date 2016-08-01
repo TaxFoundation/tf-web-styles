@@ -1,0 +1,46 @@
+$twitter: #00aced;
+$facebook: #3b5998;
+$google: #dd4b39;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$pdf: #ff0000;
+
+.icon {
+  display: inline-block;
+  height: 32px;
+  margin: .5rem;
+  width: 32px;
+  vertical-align: middle;
+
+  &__hover {
+    cursor: pointer;
+    transition: all .25s ease-out;
+
+    &:hover {
+    opacity: .75;
+    }
+  }
+
+  &__small {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__large {
+    height: 48px;
+    width: 48px;
+  }
+
+  &__boxed {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    padding: .4rem;
+    border-radius: $border-radius;
+    transition: all .2s ease-out;
+
+    &:hover {
+      opacity: .8;
+      border: 1px solid #bbb;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.pagination {
+  margin: 1rem auto;
+  text-align: center;
+
+  a {
+    display: block;
+    padding: 0 .5rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+
+  &__page {
+    border-radius: $border-radius;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .25rem;
+    text-align: center;
+    transition: all .1s ease-out;
+
+    a {
+      color: $text-default-color;
+    }
+
+    &:hover {
+      background-color: lighten($tf-blue, 35%);
+    }
+  }
+
+  &--current {
+    background-color: $tf-blue;
+
+    a {
+      color: $background-color;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+  }
+}

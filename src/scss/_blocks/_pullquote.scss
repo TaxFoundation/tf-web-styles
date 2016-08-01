@@ -1,0 +1,30 @@
+.pullquote::before {
+  border: 0;
+  border-left: solid 5px $tf-blue;
+  color: $tf-blue;
+  content: attr(data-pullquote);
+  display: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  padding: 0 0 0 1rem;
+  position: relative;
+  top: 5px;
+  width: 25rem;
+}
+
+.pullquote--left::before {
+  float: left;
+  margin: 1rem .5rem 1rem -5rem;
+}
+
+.pullquote--right::before {
+  float: right;
+  margin: 1rem -5rem 1rem 2.5rem;
+}
+
+@include desktop-up {
+  .pullquote::before {
+    display: block;
+  }
+}

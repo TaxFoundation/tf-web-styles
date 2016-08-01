@@ -1,0 +1,374 @@
+{
+  "navbar": [
+    {
+      "heading": "Federal Taxes",
+      "link": "federal.html",
+      "submenus": [
+        {
+          "heading": "Personal &amp; Sales Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Individual Income Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Property Taxes",
+              "link": "#"
+            },
+            {
+              "name": "State &amp; Local Sales Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Sales Tax Holidays",
+              "link": "#"
+            },
+            {
+              "name": "Internet Sales Tax",
+              "link": "#"
+            },
+            {
+              "name": "Estate &amp; Gift Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Credits &amp; Deductions",
+              "link": "#"
+            },
+            {
+              "name": "Alternative Minimum Tax",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Business Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Corporate Income Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Small Business Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Gross Receipts Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Property Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Captial Gains &amp; Dividends Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Credits &amp; Deductions",
+              "link": "#"
+            },
+            {
+              "name": "State Business Tax Climate Index",
+              "link": "#"
+            },
+            {
+              "name": "Location Matters",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Excise Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Cigarette &amp; Tobacco Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Sugar, Snack, &amp; Soda Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Marijuana Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Alcohol Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Gas Taxes &amp; Transportation",
+              "link": "#"
+            },
+            {
+              "name": "Hotel &amp; Tourism Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Cellphone &amp; Wireless Taxes",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Major Publications",
+          "link": "#",
+          "links": [
+            {
+              "name": "Facts &amp; Figures",
+              "link": "#"
+            },
+            {
+              "name": "State Business Tax Climate Index",
+              "link": "#"
+            },
+            {
+              "name": "Location Matters",
+              "link": "#"
+            },
+            {
+              "name": "Burdens Ranking",
+              "link": "#"
+            },
+            {
+              "name": "State Tax Reform Books",
+              "link": "#"
+            },
+            {
+              "name": "State Chartbooks",
+              "link": "#"
+            },
+            {
+              "name": "Tax Maps",
+              "link": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "State Taxes",
+      "submenus": [
+        {
+          "heading": "Personal &amp; Sales Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Individual Income Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Property Taxes",
+              "link": "#"
+            },
+            {
+              "name": "State &amp; Local Sales Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Sales Tax Holidays",
+              "link": "#"
+            },
+            {
+              "name": "Internet Sales Tax",
+              "link": "#"
+            },
+            {
+              "name": "Estate &amp; Gift Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Credits &amp; Deductions",
+              "link": "#"
+            },
+            {
+              "name": "Alternative Minimum Tax",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Business Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Corporate Income Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Small Business Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Gross Receipts Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Property Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Captial Gains &amp; Dividends Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Credits &amp; Deductions",
+              "link": "#"
+            },
+            {
+              "name": "State Business Tax Climate Index",
+              "link": "#"
+            },
+            {
+              "name": "Location Matters",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Excise Taxes",
+          "link": "#",
+          "links": [
+            {
+              "name": "Cigarette &amp; Tobacco Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Sugar, Snack, &amp; Soda Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Marijuana Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Alcohol Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Gas Taxes &amp; Transportation",
+              "link": "#"
+            },
+            {
+              "name": "Hotel &amp; Tourism Taxes",
+              "link": "#"
+            },
+            {
+              "name": "Cellphone &amp; Wireless Taxes",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "heading": "Major Publications",
+          "link": "#",
+          "links": [
+            {
+              "name": "Facts &amp; Figures",
+              "link": "#"
+            },
+            {
+              "name": "State Business Tax Climate Index",
+              "link": "#"
+            },
+            {
+              "name": "Location Matters",
+              "link": "#"
+            },
+            {
+              "name": "Burdens Ranking",
+              "link": "#"
+            },
+            {
+              "name": "State Tax Reform Books",
+              "link": "#"
+            },
+            {
+              "name": "State Chartbooks",
+              "link": "#"
+            },
+            {
+              "name": "Tax Maps",
+              "link": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Tax Law",
+      "link": "#"
+    },
+    {
+      "heading": "About",
+      "link": "/about-us.html"
+    }
+  ],
+  "footer": {
+    "links": [
+      {
+        "name": "Donate",
+        "url": "#"
+      },
+      {
+        "name": "Press Room",
+        "url": "#"
+      },
+      {
+        "name": "Events",
+        "url": "#"
+      },
+      {
+        "name": "Store",
+        "url": "#"
+      },
+      {
+        "name": "Careers",
+        "url": "#"
+      }
+    ],
+    "social": [
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/taxfoundation"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/taxfoundation"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "http://www.linkedin.com/company/tax-foundation"
+      },
+      {
+        "name": "Google+",
+        "url": "https://plus.google.com/+taxfoundation"
+      },
+      {
+        "name": "YouTube",
+        "url": "http://www.youtube.com/user/TaxFoundation"
+      }
+    ]
+  },
+  "pagination": [
+    {
+      "link": "#"
+    },
+    {
+      "link": "#"
+    },
+    {
+      "link": "#"
+    },
+    {
+      "link": "#"
+    },
+    {
+      "link": "#"
+    }
+  ]
+}

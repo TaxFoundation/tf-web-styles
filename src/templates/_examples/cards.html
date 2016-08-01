@@ -1,0 +1,29 @@
+<h2>Content Cards</h2>
+{% set cards = [
+  {
+    "imageUrl": "/images/complexity.png",
+    "heading": "A Content Title Goes Here",
+    "description": "This is the place for one of those brief content descriptions you hear about. Qui nulla rump capicola t-bone venison dolore."
+  },
+  {
+    "imageUrl": "/images/jets.gif",
+    "heading": "Another Content Title Goes Right Here",
+    "description": "Qui nulla rump capicola t-bone venison dolore. Cupim ham hock ea pork belly, leberkas boudin cillum elit cupidatat nulla."
+  },
+  {
+    "imageUrl": "/images/wind.jpg",
+    "heading": "3rd Content Title",
+    "description": "Bacon ipsum dolor amet fugiat cupim in short ribs shoulder bacon boudin kevin occaecat porchetta hamburger short loin ground round velit esse."
+  },
+  {
+    "imageUrl": "/images/capitol.png",
+    "heading": "Another Content Title That's' a Little Bit Longer Goes Right Here",
+    "description": "This is the place for one of those brief content descriptions you hear about. Qui nulla rump capicola t-bone venison dolore."
+  },
+  {
+    "imageUrl": "/images/oregon.png",
+    "heading": "A Content Title Goes Here",
+    "description": "Bacon ipsum dolor amet fugiat cupim in short ribs shoulder bacon boudin kevin occaecat porchetta hamburger short loin ground round velit esse."
+  }
+  ] %}
+{% include '../_partials/cards.html' with cards %}

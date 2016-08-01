@@ -1,0 +1,48 @@
+<header class="navbar">
+  <div class="container row navbar__bar">
+    <div class="navbar__logo">
+      <a href="#"><img src="images/tf-logo-228x35.svg" alt="" /></a>
+    </div>
+    <nav class="navbar__menu">
+      <ul class="navbar__menu-items">
+        {% for item in navbar %}
+        <li class="navbar__menu-top-level-item">
+          <a href="{{item.link}}" class="navbar__menu-top-level-link">{{item.heading}}</a>
+          {% if item.submenus != nil %}
+          <div class="navbar__submenu">
+            <div class="navbar__submenu-columns">
+            {% for submenu in item.submenus %}
+              <div class="navbar__submenu-section">
+                <a href="{{submenu.link}}"><h3>{{submenu.heading}}</h3></a>
+                <ul>
+                  {% for page in submenu.links %}
+                    <li><a href="{{page.link}}">{{page.name}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </li>
+        {% endfor %}
+        <li class="navbar__menu-top-level-item">
+          <a class="navbar__menu-top-level-link">Search</a>
+          <div class="navbar__submenu">
+            <div class="navbar__submenu-section container row">
+              <input type="search" placeholder="Search...">
+            </div>
+          </div>
+        </li>
+        <li class="navbar__menu-top-level-item">
+          <a href="#" class="navbar__menu-top-level-link navbar__menu-top-level-link--donate">Donate</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="navbar__menu-mobile-toggle">
+      <a href="#">
+        <img src="images/icons/hamburger.svg" alt="" />
+      </a>
+    </div>
+  </div>
+</header>

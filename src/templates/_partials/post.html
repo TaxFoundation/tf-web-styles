@@ -1,0 +1,24 @@
+<div class="container row">
+
+  <div class="tablet-column-60 column--fixed column--centered">
+    {% include 'categories.html' with categories %}
+    <h1>{{post.heading}}</h1>
+
+    <div class="title-bar">
+      <p class="date">{{post.date}}</p>
+
+        {% for author in post.authors %}
+          {% include 'byline.html' with author %}
+        {% endfor %}
+    </div>
+
+
+    <div>
+      {{post.body | raw}}
+    </div>
+
+    <div>
+      {% include 'tags.html' with tags %}
+    </div>
+  </div>
+</div>

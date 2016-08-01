@@ -13,6 +13,10 @@
 }
 
 .container {
+  &--padded {
+    padding: 0 1rem;
+  }
+
   .container {
     margin-bottom: 0;
   }
@@ -42,54 +46,42 @@
   > * {
     margin: .5rem 0;
   }
+
+  &--fixed {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &--grow {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &--centered {
+    margin: 0 auto;
+  }
 }
 
+$column-widths: 10 20 25 30 33 40 50 60 66 70 80 90 100;
+
 @include tablet-up {
-  .tablet-column-25 {
-    flex: 0 0 calc(25% - 1rem);
-  }
-
-  .tablet-column-33 {
-    flex: 0 0 calc(33.333% - 1rem);
-  }
-
-  .tablet-column-50 {
-    flex: 0 0 calc(50% - 1rem);
-  }
-
-  .tablet-column-66 {
-    flex: 0 0 calc(66.666% - 1rem);
-  }
-
-  .tablet-column-100 {
-    flex: 0 0 calc(100% - 1rem);
+  @each $width in $column-widths {
+    .tablet-column-#{$width} {
+      flex-basis: calc(#{$width}% - 1rem);
+    }
   }
 }
 
 @include desktop-up {
-  .desktop-column-25 {
-    flex: 0 0 calc(25% - 1rem);
-  }
-
-  .desktop-column-33 {
-    flex: 0 0 calc(33.333% - 1rem);
-  }
-
-  .desktop-column-50 {
-    flex: 0 0 calc(50% - 1rem);
-  }
-
-  .desktop-column-66 {
-    flex: 0 0 calc(66.666% - 1rem);
-  }
-
-  .desktop-column-100 {
-    flex: 0 0 calc(100% - 1rem);
+  @each $width in $column-widths {
+    .desktop-column-#{$width} {
+      flex-basis: calc(#{$width}% - 1rem);
+    }
   }
 }
 
 @media only screen and (min-width: #{$max-width + 2 * $content-margin}) {
-  .width-constrained {
+  .container--width-constrained {
     margin-left: auto;
     margin-right: auto;
     width: $max-width;
