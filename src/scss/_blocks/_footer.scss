@@ -69,6 +69,16 @@ $footer-copyright-background-color: #e6e6e6;
     }
   }
 
+  &__connect {
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    li {
+      margin-left: -.5rem;
+    }
+  }
+
   &__copyright {
     background-color: $footer-copyright-background-color;
     color: $footer-text-color;
