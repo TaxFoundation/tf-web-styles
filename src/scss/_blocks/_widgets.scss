@@ -1,19 +1,110 @@
-.widget__state img {
-  display: block;
-  margin: 0 auto 1rem auto;
-  width: 85%;
-  max-width: 500px;
-}
+.widget {
+  border-radius: $border-radius;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  margin: 0 0 3rem 3rem;
+  padding: 1rem;
+  width: 16rem;
 
-.widget__state div {
-  margin-bottom: 1rem;
-}
+  @include mobile-only {
+    width: 100%;
+  }
 
-.widget__email img {
-  display: block;
-  margin: 0 auto 1rem auto;
-}
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
 
-.widget__email div {
-  margin-bottom: 1rem;
+  div {
+    margin-bottom: 1rem;
+  }
+
+  &__subtle {
+    background-color: $background-color;
+    border-color: $gray-medium;
+    color: $text-default-color;
+
+    img {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 500px;
+      width: 85%;
+    }
+  }
+
+  &__feature {
+    background-color: $tf-blue;
+    border-color: transparent;
+    color: $background-color;
+
+    img {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 500px;
+      width: 85%;
+    }
+  }
+
+  &__image {
+    background-size: cover;
+    border: 0;
+    color: $background-color;
+
+    img {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 500px;
+      width: 85%;
+    }
+  }
+
+  &__most-read {
+    background-color: $background-color;
+    border-color: $gray-medium;
+    color: $text-default-color;
+    padding: 1rem 1rem 0;
+
+    a {
+      color: $text-default-color;
+      text-decoration: none;
+      transition-duration: .25s;
+      transition-property: color;
+      transition-timing-function: ease-in ease-out;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $tf-blue;
+      }
+    }
+
+
+    li {
+      border-bottom: 1px solid $gray-light;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-left: 1rem;
+      padding: 1.5rem 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: .5rem;
+        border-bottom: none;
+      }
+    }
+
+    p {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      padding-left: .5rem;
+      vertical-align: text-top;
+    }
+  }
+
 }
