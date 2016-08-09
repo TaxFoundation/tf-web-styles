@@ -48,8 +48,8 @@ button,
   color: $background-color;
   cursor: pointer;
   padding: .5rem 1rem;
-  transition-property: background-color, border;
   transition-duration: .2s;
+  transition-property: background-color, border;
   transition-timing-function: ease-out;
 
   &:active,
@@ -82,6 +82,20 @@ button,
     color: $background-color;
     }
   }
+
+  &.dinner-accent {
+    background: $dinner-accent;
+    border: solid 1px $dinner-accent;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: solid 1px lighten($dinner-accent, 10%);
+      background-color: lighten($dinner-accent, 10%);
+      color: $background-color;
+      }
+  }
+
 
   &.inverted {
     background: $background-color;

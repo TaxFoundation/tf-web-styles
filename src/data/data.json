@@ -333,22 +333,27 @@
     ],
     "social": [
       {
+        "icon": "twitter",
         "name": "Twitter",
         "url": "https://twitter.com/taxfoundation"
       },
       {
+        "icon": "facebook",
         "name": "Facebook",
         "url": "https://www.facebook.com/taxfoundation"
       },
       {
+        "icon": "linkedin",
         "name": "LinkedIn",
         "url": "http://www.linkedin.com/company/tax-foundation"
       },
       {
+        "icon": "google",
         "name": "Google+",
         "url": "https://plus.google.com/+taxfoundation"
       },
       {
+        "icon": "youtube",
         "name": "YouTube",
         "url": "http://www.youtube.com/user/TaxFoundation"
       }
