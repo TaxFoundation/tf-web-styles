@@ -54,14 +54,9 @@ $navbar-max-width: 1400px;
     display: flex;
     flex: none;
 
-    @include desktop-up {
-      margin-left: -2rem;
-      padding-left: 2rem;
-  }
-
-  @include mobile-only {
+    @include mobile-only {
       margin-left: 2rem;
-  }
+    }
 
     a,
     a:hover {
@@ -78,14 +73,14 @@ $navbar-max-width: 1400px;
     padding-right: $content-margin;
 
     img {
-      height: $header-height / 3;
-      width: $header-height / 3;
+      height: $navbar-height / 3;
+      width: $navbar-height / 3;
     }
   }
 
   &__menu {
     align-content: stretch;
-    display: none;
+    display: none; //Because mobile-first
     flex: 1;
     flex-direction: column;
     justify-content: center;
@@ -165,6 +160,7 @@ $navbar-max-width: 1400px;
     position: fixed;
     right: 0;
     text-align: left;
+    top: $navbar-height;
     transition: opacity .3s linear;
     padding: 2.5rem;
 
@@ -217,7 +213,7 @@ $navbar-max-width: 1400px;
     display: none;
     margin: 0 auto;
     padding: 0 2rem;
-    max-width: $max-width;
+    max-width: $navbar-max-width;
 
     input {
       color: $text-default-color;
@@ -242,5 +238,3 @@ $navbar-max-width: 1400px;
     }
   }
 }
-
-
