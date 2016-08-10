@@ -14,6 +14,10 @@ body {
   &.admin-bar header {
     top: 32px;
   }
+
+  &.admin-bar .navbar__submenu {
+    top: calc(#{$header-height} + 32px);
+  }
 }
 
 main {
