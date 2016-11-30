@@ -2,148 +2,149 @@
   "navbar": [
     {
       "heading": "Federal Taxes",
+      "link": "federal.html",
       "submenus": [
         {
           "heading": "Personal &amp; Sales Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Individual Income Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Property Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State &amp; Local Sales Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Sales Tax Holidays",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Internet Sales Tax",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Estate &amp; Gift Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Credits &amp; Deductions",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Alternative Minimum Tax",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Business Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Corporate Income Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Small Business Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Gross Receipts Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Property Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Captial Gains &amp; Dividends Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Credits &amp; Deductions",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Business Tax Climate Index",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Location Matters",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Excise Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Cigarette &amp; Tobacco Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Sugar, Snack, &amp; Soda Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Marijuana Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Alcohol Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Gas Taxes &amp; Transportation",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Hotel &amp; Tourism Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Cellphone &amp; Wireless Taxes",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Major Publications",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Facts &amp; Figures",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Business Tax Climate Index",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Location Matters",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Burdens Ranking",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Tax Reform Books",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Chartbooks",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Tax Maps",
-              "url": "#"
+              "link": "#"
             }
           ]
         }
@@ -154,149 +155,157 @@
       "submenus": [
         {
           "heading": "Personal &amp; Sales Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Individual Income Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Property Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State &amp; Local Sales Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Sales Tax Holidays",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Internet Sales Tax",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Estate &amp; Gift Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Credits &amp; Deductions",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Alternative Minimum Tax",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Business Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Corporate Income Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Small Business Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Gross Receipts Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Property Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Captial Gains &amp; Dividends Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Credits &amp; Deductions",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Business Tax Climate Index",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Location Matters",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Excise Taxes",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Cigarette &amp; Tobacco Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Sugar, Snack, &amp; Soda Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Marijuana Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Alcohol Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Gas Taxes &amp; Transportation",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Hotel &amp; Tourism Taxes",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Cellphone &amp; Wireless Taxes",
-              "url": "#"
+              "link": "#"
             }
           ]
         },
         {
           "heading": "Major Publications",
-          "url": "#",
+          "link": "#",
           "links": [
             {
               "name": "Facts &amp; Figures",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Business Tax Climate Index",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Location Matters",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Burdens Ranking",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Tax Reform Books",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "State Chartbooks",
-              "url": "#"
+              "link": "#"
             },
             {
               "name": "Tax Maps",
-              "url": "#"
+              "link": "#"
             }
           ]
         }
       ]
+    },
+    {
+      "heading": "Tax Law",
+      "link": "#"
+    },
+    {
+      "heading": "About",
+      "link": "/about-us.html"
     }
   ],
   "footer": {
